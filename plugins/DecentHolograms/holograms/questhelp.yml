@@ -1,0 +1,18 @@
+location: LunarCrater:-23.066:75.126:193.855
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: People with &f&l(&e&l!&f&l)&r above their heads have quests for you!
+    height: 0.3
+  - content: People with &f&l(&b&l?&f&l)&f above their heads are part of a quest.
+    height: 0.3
+  - content: '&dRight-click &f people to &dtalk&f to them.'
+    height: 0.3
+  - content: '&fYou may need to &dclick twice &fto accept quests.'
+    height: 0.3
+  actions: {}

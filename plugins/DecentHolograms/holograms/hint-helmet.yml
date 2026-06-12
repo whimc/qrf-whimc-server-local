@@ -1,0 +1,14 @@
+location: LunarCrater:-9.445:72.956:163.149
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: 'Hint: Press F5 a few times'
+    height: 0.3
+  - content: to see your helmet!
+    height: 0.3
+  actions: {}

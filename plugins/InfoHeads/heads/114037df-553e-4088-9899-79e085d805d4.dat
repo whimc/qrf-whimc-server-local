@@ -1,0 +1,28 @@
+{
+  "uniqueId": "114037df-553e-4088-9899-79e085d805d4",
+  "location": {
+    "x": -133,
+    "y": 36,
+    "z": 122,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "mvtp {player-name} sagittarius"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

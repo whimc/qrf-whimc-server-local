@@ -1,0 +1,1740 @@
+# For non-English characters, this file MUST stay encoded in UTF-8
+quests:
+  custom1:
+    name: Welcome to Lunar Base LeGuin!
+    ask-message: '[You have a quest!]'
+    finish-message: '[Welcome to LeGuin, initiate.]'
+    stages:
+      ordered:
+        '1':
+          npc-ids-to-talk-to:
+          - 14
+          start-message: '&e[Roger]&f: Go talk to Heinlein to get suited up!'
+          complete-message: |
+            &e[Heinlein]&f: You must be the new recruit we heard about. Welcome to LeGuin! Before you get to the rest of the base, you should get an EV suit.
+          objective-override:
+          - '&a(1/5)&7Talk to &bFacility Administrator Heinlein&7. (Right click to
+            talk to people or accept assignments from them)'
+          - '| &7&nNote:&7 When a quest is completed, it will disappear from your
+            &5Quest Journal&7. When you have completed the quests listed above, record
+            your progress in the &eCentral Dome&7 with &bAbe K.&7 to go to the exoplanet
+            exploration space station!'
+        '2':
+          locations-to-reach:
+          - LunarCrater -8.0 71.0 168.0
+          reach-location-radii:
+          - 1
+          reach-location-names:
+          - SuitUp
+          complete-message: '&e[Beginning diagnostic... helmet is functioning properly...]'
+          objective-override:
+          - '&a(2/5)&7Get a new helmet and then talk to Wells at the desk.'
+        '3':
+          locations-to-reach:
+          - LunarCrater -19.0 70.0 164.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Outside
+          complete-message: '&e[Pressure and temperature difference detected. Compensating.]'
+          objective-override:
+          - '&a(3/5) &7Talk to &bWells&7 at the desk and then make your way outside
+            and jump around!'
+        '4':
+          locations-to-reach:
+          - LunarCrater 13.0 21.0 10.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Central Dome Entrance
+          objective-override:
+          - '&a(4/5) &7Walk to the &eCentral Dome&7 (main entrance marked with yellow)
+            to meet with &bFacility Overseer, E.A. Blair&7.'
+        '5':
+          locations-to-reach:
+          - LunarCrater 9.0 17.0 -5.0
+          reach-location-radii:
+          - 4
+          reach-location-names:
+          - E.A. Blair (yellow EV suit)
+          objective-override:
+          - '&a(5/5) &7Meet with &bFacility Overseer, E.A. Blair&7.'
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: false
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom2:
+    name: Meeting People
+    ask-message: '...'
+    finish-message: '...'
+    npc-giver-id: 19
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - LunarCrater 66.0 37.0 105.0
+          - LunarCrater 37.0 26.0 38.0
+          - LunarCrater 55.0 13.0 -14.0
+          - LunarCrater -34.0 17.0 -22.0
+          reach-location-radii:
+          - 3
+          - 3
+          - 3
+          - 3
+          reach-location-names:
+          - Misavo I. (Ice storage)
+          - Harlem R. (Construction)
+          - Olivia C. (Materials Lab)
+          - Huxley A. (Biodome)
+        '2':
+          locations-to-reach:
+          - LunarCrater 18.0 17.0 -13.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Abe K. (Launch Director central dome)
+          start-message: '&e[E.A. Blair]&f: &fIf you''ve got the time, I''d like you
+            to meet some of the folks here on LeGuin.'
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom3:
+    name: Feeling the Pressure
+    ask-message: '...'
+    finish-message: |
+      §e[Harlem]§f: If you haven't talked to Misavo in the facility that's built into the crater wall, I think they needed help calibrating some temperature sensors if you wanna lend 'em a hand.
+    npc-giver-id: 21
+    stages:
+      ordered:
+        '1':
+          start-message: |
+            &e[Harlem]&f: You're the latest arrival, huh? Nice to meet ya. Say, if you could help me with calibrating these sensors it would be much appreciated. Just head into the building under us and tell the computer what the pressure is inside.
+          complete-message: |
+            &e[Harlem]&f: Thanks for helping me out - don't want peoples' eyes popping like water balloons when they pull off their helmet, right?
+          objective-override:
+          - |
+            &7Use /pressure to record the pressure inside the new construction, and input it into the data entry computer next to Harlem.
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom4:
+    name: What's Cooler Than Being Cool?
+    ask-message: '...'
+    finish-message: |
+      &e[Misavo]&f: I appreciate your assistance. If you have not spoken with Olivia in the materials lab yet, I recommend you do so. I believe she could use an extra hand.
+    npc-giver-id: 16
+    stages:
+      ordered:
+        '1':
+          objective-override: |
+            &7Use /temperature to gauge the temperature inside the ice storage facility, and then input it into the computer near Misavo.
+          start-message: |
+            &e[Misavo]&f: Greetings, initiate. If you would be so kind as to assist me in calibrating the temperature sensors for our ice storage, it would be appreciated. Just go into the area behind me and tell the computer the current temperature. You seem capable enough.
+          complete-message: |
+            &e[Misavo]&f: It is comforting to know that we will not be dying of thirst any time soon. Your assistance is greatly appreciated!
+    options:
+      allow-commands: true
+      allow-quitting: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      require-same-quest: true
+  custom5:
+    name: Not-So-Solar-Wind
+    ask-message: '...'
+    finish-message: |
+      &e[Herbert]&f: Hey, by the way newbie, I heard you're making yourself useful and helpin' out around here. From one maintenance person to another, thanks. This place never stops needing an extra pair of hands. And right now, you're making my life less stressful.
+    npc-giver-id: 20
+    stages:
+      ordered:
+        '1':
+          objective-override: |
+            &7Measure the wind inside the biodome using /wind, then input the data into the computer near Huxley.
+          start-message: |
+            &e[Huxley]&f: I can't tell whether it's just me or if the air circulators are jammed, but could you check real quick? If the circulators are jammed, it could cause a lot of problems for the plants. Enter your findings into this computer so we can document it.
+          complete-message: |
+            &e[Huxley]&f: Oh, well thanks for checking for me. If you could talk to Herbert in the living quarters and make them aware of the issue, it would be greatly appreciated!
+        '2':
+          objective-override: |
+            &7Find Herbert in the mess hall.
+          locations-to-reach:
+          - LunarCrater 25.0 17.0 -65.0
+          reach-location-radii:
+          - 3
+          reach-location-names:
+          - HerbertLunch
+          start-message: |
+            &e[Huxley]&f: I think ol' Herbert is on his lunch break right now, so you'll probably find him in the mess hall portion of the living quarters.
+          complete-message: |
+            &e[Herbert]&f: Sheesh, yet another thing to go on my list. Thanks for lettin' me know. The faster I know about it, the faster I can fix it.
+    options:
+      allow-commands: true
+      allow-quitting: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      require-same-quest: true
+  custom6:
+    name: A Breath of Fresh Air
+    ask-message: '...'
+    finish-message: |
+      &e[Olivia]&f: This was kind of a two person job if you couldn't tell... so thanks for stopping by; Lynn can't be punctual to save her life. I'm sure some others around here would appreciate your help, if you haven't already asked around.
+    npc-giver-id: 12
+    stages:
+      ordered:
+        '1':
+          objective-override: |
+            &7Record the oxygen levels outside the airlock using /oxygen, then input the data into the computer near Olivia.
+          start-message: |
+            &e[Olivia]&f: Oh, hey. You're the new initiate, right? Cool. Uh, if you could lend me a hand here that would be great. This airlock is leaking and I'm trying to fix it but I don't know how much it's leaking. Could you walk back outside and tell this data entry computer how much oxygen is leaking?
+          complete-message: |
+            &e[Olivia]&f: Okay. It's not leaking much so as long as I can get a few things from Herbert before the day's done, I should be able to fix it.
+    options:
+      allow-commands: true
+      allow-quitting: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      require-same-quest: true
+  custom7:
+    name: Space Station Access
+    ask-message: '...'
+    finish-message: Step into the portal next to the Launch Director to move on!
+    npc-giver-id: 30
+    requirements:
+      quests:
+      - custom2
+    stages:
+      ordered:
+        '1':
+          npc-ids-to-talk-to:
+          - 30
+          objective-override:
+          - '&2All individuals met!&7 - Did you help everyone with their tasks? If
+            not, go back and do so! If you did, then talk to &3(right-click) Abe K.
+            &7again and go through the portal here to move on.'
+    rewards:
+      commands:
+      - lp user <player> parent add initiate
+      details-override:
+      - You've received the rank of Initiate!
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom8:
+    name: Tour de Exoplanet
+    ask-message: Visit all exoplanet simulations
+    finish-message: Well done!
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Gliese 0.0 91.0 51.0
+          - Cancri 46.0 77.0 64.0
+          - Trappist -35.0 68.0 6.0
+          - Kepler 274.0 90.0 -33.0
+          reach-location-radii:
+          - 4
+          - 4
+          - 4
+          - 4
+          reach-location-names:
+          - Gliese
+          - Cancri
+          - Trappist
+          - Kepler
+          start-message: Go in any order
+        '2':
+          npc-ids-to-talk-to:
+          - 143
+          locations-to-reach:
+          - BrownDwarf 41.0 133.0 20.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Brown Dwarf probe platform
+          objective-override:
+          - Consult with Theron the scientist about sending a probe to visit a potential
+            Brown Dwarf (-89, 111)
+        '3':
+          locations-to-reach:
+          - Hub -81 45 111
+          reach-location-radii:
+          - 3
+          reach-location-names:
+          - PBS Nova Lab computer
+          objective-override:
+          - Learn more about Exoplanets with PBS Nova Labs! Click the computer in
+            the hub space station PBS Nova Lab to get the link.
+    rewards:
+      commands:
+      - lp user <player> parent add scientist
+      details-override:
+      - Well done! You are now a certified scientist, congratulations!
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom9:
+    name: Observation Tutorial
+    ask-message: Challenge objectives!
+    finish-message: §a§lWell done!
+    npc-giver-id: 78
+    stages:
+      ordered:
+        '1':
+          npc-ids-to-talk-to:
+          - 80
+          - 81
+          - 79
+          start-message: Welcome to the Observation Tutorial. There are &6&l9 &fpeople
+            to talk to in both areas, including me. Talk to everyone to complete your
+            training.
+          complete-message: Well done!
+        '2':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 3
+              data: {}
+          complete-message: Well done!
+          objective-override:
+          - Using the /observe command, make 3 descriptive observations before moving
+            on!
+        '3':
+          npc-ids-to-talk-to:
+          - 82
+          - 91
+          - 83
+          - 85
+          - 84
+          start-message: Now that you're acquainted with descriptive observations,
+            you can move on to more advanced observations in the next area!
+          complete-message: Well done!
+        '4':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 3
+              data: {}
+          complete-message: Well done!
+          objective-override:
+          - Using the /observe command, please make 3 comparative or inferential observations!
+    rewards:
+      commands:
+      - lp user <player> parent add observer
+      details-override:
+      - You've received the rank of Observer!
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+  custom11:
+    name: Explore [What-If] Earths
+    ask-message: Visit earth with no moon, then earth with a colder sun, then earth
+      tilted 90 degrees.
+    finish-message: Outstanding! Did you leave some scientific observations? You're
+      now cleared to visit Mynoa and the worlds upstairs!
+    npc-giver-id: 117
+    stages:
+      ordered:
+        '1':
+          npc-ids-to-talk-to:
+          - 95
+          start-message: Hit the button to follow the lights to visit the first wing
+          complete-message: Alright, now go visit regular old earth for comparison
+          objective-override:
+          - '&a(1/6)&7Find the [What-If] Guide in the [No Moon] section. Hit the button
+            to follow the lights to visit the first wing.'
+        '2':
+          npc-ids-to-talk-to:
+          - 106
+          start-message: Take a look at the world around you - what do you see?
+          complete-message: Excellent. Now you're ready to check out earth with no
+            moon.
+          objective-override:
+          - '&a(2/6)&7Find Neil Comins on the regular (control) version of earth.
+            Take a look at the world around you - what do you see?'
+        '3':
+          npc-ids-to-talk-to:
+          - 108
+          start-message: Visit Carl at the Travel Authority outpost
+          complete-message: Did you make your observation yet? Keep it up and then
+            return to the space station to find earth with a colder sun next.
+          objective-override:
+          - '&a(3/6)&7Find Carl first and then Tanya at the Travel Authority on Earth
+            with No Moon. You will need to make an observation.'
+        '4':
+          locations-to-reach:
+          - ColderStrip -152.0 67.0 4.0
+          reach-location-radii:
+          - 3
+          reach-location-names:
+          - Dr. Jorge Perez-Gallego (by desert edge)
+          start-message: After you talk to Tanya about observing Earth with no moon
+            look for Jorge on Earth with a colder sun. He is behind the ship by the
+            desert edge.
+          complete-message: Almost done, you just need to visit earth tilted 90 degrees
+          objective-override:
+          - '&a(4/6)&7After you talk to Tanya about observing Earth with no moon look
+            for Jorge on Earth with a colder sun. He is behind the ship by the desert
+            edge.'
+          - Jorge is located at (-151, 4 colder sun habitable strip)
+        '5':
+          locations-to-reach:
+          - TiltedWarm 190.0 83.0 174.0
+          reach-location-radii:
+          - 6
+          reach-location-names:
+          - Scientist on earth tilted 90 degrees
+          start-message: Look at all the growth and life on this planet!
+          complete-message: Whoa, you ready to travel in time??
+          objective-override:
+          - '&a(5/6)&7Look at all the growth and life on this planet! Zoom around
+            earth with a colder sun and make some observations. Then find the Clara
+            Sousa-Silva on earth tilted 90 degrees and TRAVEL THROUGH TIME!'
+          - Clara is located at (190, 174 tilted earth warm)
+        '6':
+          locations-to-reach:
+          - Hub -56.0 36.0 98.0
+          reach-location-radii:
+          - 6
+          reach-location-names:
+          - Once you have traveled through time and made observations return to Dr.
+            Ginger at the space station hub.
+          objective-override:
+          - '&a(6/6)&7Once you have traveled through time to make observations on
+            earth tilted 90 degrees return to Dr. Ginger at the space station hub.'
+          - Located at (-56, 98 space station)
+    rewards:
+      commands:
+      - lp user <player> parent add explorer
+      details-override:
+      - What superb naturalist skills, thanks for helping us better understand how
+        conditions vary between versions of earth. We have promoted you to the Explorer
+        role!
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: false
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom12:
+    name: Observe with the Wind
+    ask-message: Make at least one observation noting how earth with no moon is different
+      by using the /observe command
+    finish-message: Got it. You're now a qualified observer!
+    npc-giver-id: 109
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          objective-override:
+          - '&7Make at least one observation noting how earth with no moon is different
+            by using the /observe command.'
+    rewards:
+      commands:
+      - lp user <player> parent add observer
+      details-override:
+      - You've received the rank of Observer!
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom13:
+    name: On the edge
+    ask-message: Make one observation with /observe on each side of earth with a colder
+      sun - start by going west towards the desert
+    finish-message: Good.
+    npc-giver-id: 114
+    region: strip-hot
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 3
+              data: {}
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom14:
+    name: Time traveler
+    ask-message: Make one observation with /observe on each side of the earth tilted
+      at 90 degrees
+    finish-message: Great!
+    npc-giver-id: 154
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          objective-override:
+          - '&7This ''what-if'' earth is pretty crazy - the sun loops around the sky
+            for half the year then it goes below the horizon. What else do you notice
+            about the world?'
+          - '&7What do you think happens to the animals? Use &3/observe &7to state
+            a hypothesis.'
+        '2':
+          locations-to-reach:
+          - TiltedWarm 122.0 72.0 110.0
+          reach-location-radii:
+          - 8
+          reach-location-names:
+          - summer rabits (122, 110)
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Find the rabbits and make an observation on &aTilted Earth&r
+            in summer
+          complete-message: Good job!
+          objective-override:
+          - '&7Take a look at the wildlife. Use your map to look for the rabbits (122,
+            110) in the grass.'
+          - '&7Remember to record your observations with &3/observe!'
+        '3':
+          locations-to-reach:
+          - TiltedWarm 352.0 71.0 48.0
+          reach-location-radii:
+          - 8
+          reach-location-names:
+          - summer bears (352, 48)
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Find the bears and make an observation on &aTilted Earth's&r
+            jungle island
+          complete-message: Good job!
+          objective-override:
+          - '&7Take a look at the wildlife. Use your map to look for the bears (352,
+            48) on the coast.'
+          - '&7Remember to record your observations with &3/observe!'
+        '4':
+          locations-to-reach:
+          - TiltedFrozen 331.0 72.0 -248.0
+          reach-location-radii:
+          - 8
+          reach-location-names:
+          - winter rabits (331, -248)
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Find the rabbits and make an observation on &aTilted Earth's&r
+            frozen season
+          complete-message: Nice!
+          objective-override:
+          - '&7Now see what the rabbits do 6 months in the future! Go through the
+            portal to travel through time and use your map to find the rabbits (331,
+            -248) when the world is &1frozen.'
+          - '&7Remember to record what you see with &3/observe!'
+        '5':
+          locations-to-reach:
+          - TiltedFrozen 346.0 67.0 -98.0
+          reach-location-radii:
+          - 8
+          reach-location-names:
+          - winter bears (346, -98)
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Find the bears and make an observation on &aTilted Earth's&r
+            frozen season
+          complete-message: Nice!
+          objective-override:
+          - '&7Now see what the bears when the world is frozen. Use your map to find
+            the bears (346, -98).'
+          - '&7Remember to record what you see with &3/observe!'
+        '6':
+          locations-to-reach:
+          - TiltedMelting 360.0 68.0 -74.0
+          reach-location-radii:
+          - 8
+          reach-location-names:
+          - spring rabits (360, -74)
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Find the rabbits and make an observation on &aTilted Earth's&r
+            thawing season
+          complete-message: Great!
+          objective-override:
+          - '&7Last, can see what the animals are doing in 3 months when the snow
+            and ice are melting? Travel through time (go through the portal) to find
+            the rabbits (360, -74) again.'
+          - '&7Remember to write down what you &3/observe!'
+        '7':
+          locations-to-reach:
+          - TiltedMelting 216.0 63.0 -81.0
+          reach-location-radii:
+          - 8
+          reach-location-names:
+          - spring bears (216, -81)
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Find the bears and make an observation on &aTilted Earth's&r
+            thawing season
+          complete-message: Great!
+          objective-override:
+          - '&7Okay now look for those bears (216, -81) again.'
+          - '&7Remember to write down what you &3/observe!'
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom16:
+    name: Train for the Rocket!
+    ask-message: Train up by talking to NPCs for as long as you like, then launch off to the moon!
+    finish-message: Stupendous. Ready to launch?
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - RocketLaunch -1616.0 78.0 2911.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - rocket elevator
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom15:
+    name: Ice on Fire!
+    ask-message: Measure the &a/gravity &fand program the thrust regulator on the
+      IR sensor by right clicking on it and then typing it into the chat.
+    finish-message: Awesome! Now let's see how hot this baby is!
+    npc-giver-id: 146
+    stages:
+      ordered:
+        '1':
+          objective-override:
+          - '&7Measure the &a/gravity &7and program the thrust regulator on the IR
+            sensor by right clicking on it and then typing it into the chat.'
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom18:
+    name: Seas of Lava?
+    ask-message: The interior of this planet is very unstable, which makes for a strange
+      magnetosphere and erratic radiation. Capture it with §a/radiation§f, then right-click
+      on the probe and enter the result in to the chat.
+    finish-message: Well that was surprising, thanks!
+    npc-giver-id: 145
+    stages:
+      ordered:
+        '1':
+          objective-override:
+          - '&7The interior of this planet is very unstable, which makes for a strange
+            magnetosphere and erratic radiation. Capture it with &a/radiation&7, then
+            right-click on the probe and enter the result in to the chat.'
+        '2':
+          npc-ids-to-talk-to:
+          - 246
+          start-message: Talk to Engineer Saige on the Cold Side of Cancri
+          complete-message: Lauch the Survey Drone to help with research!
+          objective-override:
+          - Return to the front of the ship and you will be taken to the cold side
+            of Cancri, then talk to Engineer Saige at (-35,38).
+        '3':
+          use-block-names:
+          - stone_button
+          use-block-amounts:
+          - 1
+          use-block-durability:
+          - 0
+          start-message: Engineer Saige would like you to lauch a survey drone for
+            her!
+          complete-message: Excellent! Talk to researcher Nate
+          objective-override:
+          - The survey drone will take help you take measurements of the cold side
+            of Cancri! Launch the survey drone at (-35,8)
+        '4':
+          npc-ids-to-talk-to:
+          - 243
+          complete-message: Help Researcher Nate take measurements!
+          objective-override:
+          - Researcher Nate is comparing the cold side of Cacnri to the hot side of
+            Cancri. Talk to Researcher Nate at (-40,5)
+        '5':
+          locations-to-reach:
+          - CancriCold -14.0 67.0 14.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Cancri Cold Airlock
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: temperature
+          start-message: Go outside through the airlock and take a temperature reading!
+          complete-message: Great Job! One more measurement, use /temperature.
+          objective-override:
+          - The heat sheilding of the station is blocks the signal from the survey
+            drone. You need to go through the airlock at (-19,17) then use /temperature.
+        '6':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: atmosphere
+          start-message: Take one more reading for Nate! Use /atmosphere
+          complete-message: Head to Scientist Kobey at (23,14) to help him study the
+            thermal vents
+          objective-override:
+          - Nate is looking to see if the atmosphere changes between the two sized
+            of Cancri. Take one more measurement for Researcher Nate, use /atmosphere!
+        '7':
+          npc-ids-to-talk-to:
+          - 252
+          start-message: Help Scientist Kobey study the thermal vents!
+          complete-message: Use /atmosphere to see what gasses are coming from the
+            thermal vents
+          objective-override:
+          - Scientist Kobey is trying to figure out what the clouds in the sky are
+            made of. Travel to Scientist Kobey at (23,14)
+        '8':
+          locations-to-reach:
+          - CancriCold 36.0 67.0 6.0
+          reach-location-radii:
+          - 10
+          reach-location-names:
+          - thermal vents
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: atmosphere
+          start-message: Scientist Kobey needs your help!
+          complete-message: Thank you for your help investigating the Cold Side of
+            Cancri!
+          objective-override:
+          - Scientist Kobey needs to know what gasses are coming from the thermal
+            vents, use /atmosphere at the location (36,7).
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom17:
+    name: Exoplanet Lab
+    ask-message: PBS Nova Labs challenges you
+    finish-message: Well done!
+    npc-giver-uuid: ce877638-5b41-46b1-a94b-a933f236ae5a
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - LunarCrater -218.0 74.0 29.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - right next to blue "i" information block
+          objective-override:
+          - Click on the blue "information" box (computer) to check out the PBS Nova
+            Exoplanet lab
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom19:
+    name: Alien Habitation
+    ask-message: Challenge objectives!
+    finish-message: Well done!
+    npc-giver-id: 163
+    stages:
+      ordered:
+        '1':
+          place-block-names:
+          - light_blue_terracotta
+          place-block-amounts:
+          - 1
+          place-block-durability:
+          - 0
+  custom20:
+    name: Pond Trap
+    ask-message: Investigate the surface liquid nearby
+    finish-message: Thanks for checking that out, we might be able to convert it to
+      fuel
+    npc-giver-id: 153
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Trappist -141.0 62.0 -56.0
+          - Trappist -3.0 62.0 124.0
+          reach-location-radii:
+          - 7
+          - 7
+          reach-location-names:
+          - Liquid Sample 1
+          - Liquid Sample 2
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 2
+              data:
+                Science Tool: atmosphere
+          objective-override:
+          - '&7There are several planets in the habitable zone of TRAPPIST-1! Unfortunately
+            they do not have much liquid water on their surfaces due to the elevated
+            levels of high-energy radiation emitted by the host star.'
+          - '&7What do you think those pools of liquid could be? Go investigate to
+            find out! Use &a/atmosphere &7in each pool (-141, -48 and -9, 118) to
+            determine it.'
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom21:
+    name: Collect a Sample
+    ask-message: Collect a samples for testing.
+    finish-message: Great work
+    npc-giver-id: 186
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Kepler 167.0 63.0 -7.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Waters edge observation
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: atmosphere
+          objective-override:
+          - We would like to find out more about how the plant life here differs from
+            that of earth. Go find the scientist by the water to learn more.
+        '2':
+          use-block-names:
+          - CRIMSON_BUTTON
+          use-block-amounts:
+          - 1
+          use-block-durability:
+          - 0
+          locations-to-reach:
+          - Kepler 195.0 77.0 69.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Waters edge
+          objective-override:
+          - Our robot has been analyzing the flora for a while, go pick up its sample
+            and bring it back to the science team at the bioresearch lab.
+        '3':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3700
+            type: CRIMSON_ROOTS
+          npc-delivery-ids:
+          - 185
+          delivery-messages:
+          - Thanks, give me a second to analyze this...
+          complete-message: It seems the plants' photosynthesis was affected by the
+            red light emitted by the star, causing them to be red.
+          objective-override:
+          - It seems the photosynthesis was affected by the red light emitted by the
+            star, causing them to be red. Please take your samples back to the bioresearch
+            lab (269, -86)
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom23:
+    name: That's no Moon
+    ask-message: Visit Mynoa, a mysterious world with a big object in the sky!
+    finish-message: Thanks for checking it out!
+    npc-giver-uuid: 60a0e727-8619-4a26-bdf8-f4a355529487
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - MynoaMangrove 251.0 84.0 381.0
+          reach-location-radii:
+          - 4
+          reach-location-names:
+          - Reach the far side of Mynoa
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom24:
+    name: Reusable rockets
+    ask-message: Explore upstairs to find out what happens to rocket boosters after
+      launch
+    finish-message: Good thing we're working on being more sustainable in outer space
+      too!
+    npc-giver-id: 156
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - RocketLaunch -1612.0 84.0 2712.0
+          reach-location-radii:
+          - 3
+          reach-location-names:
+          - Payload oversight
+          objective-override:
+          - There's an engineer loading another more sustainable solution into the
+            reusable rocket over there - go find him at the top.
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom25:
+    name: Singing plants
+    ask-message: Are all of the environmental recycling systems working right?
+    finish-message: Good thing we released the auxillary air!
+    npc-giver-id: 123
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Hub -81.0 44.0 78.0
+          reach-location-radii:
+          - 3
+          reach-location-names:
+          - Biolab
+          objective-override:
+          - Let the scientist in the biolab on level 2 know that they need to release
+            the oxygen reserves (-81, 78)
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom26:
+    name: Brown Dwarf or Planet
+    ask-message: Check the composition of the /atmosphere and then make an observation!
+    finish-message: Well done!
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: atmosphere
+          start-message: Use /atmosphere
+          complete-message: Good work! These readings match what we thought; that
+            this object is a Brown Dwarf!
+          objective-override:
+          - After many years of travel our probe has finally reached a special discovery
+            that we're ready to investigate.
+          - We suspect we have found what we call a Brown Dwarf, a truly colossal
+            substellar object with a mass approximately 37 times that of Jupiter!
+            As big as it is that we do not believe it is not massive enough to sustain
+            nuclear fusion in its core, unlike a typical main-sequence star.
+          - So we are going to send a probe in to investigate and you get to be the
+            pilot! Go through the portal to merge with the VR control interface for
+            the probe. Check the composition of the planetary body using /atmosphere
+        '2':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Go ahead and make an observation about what you've noticed
+          objective-override:
+          - Go ahead and make an observation about what you've noticed
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom27:
+    name: Seeing Double
+    ask-message: Ready go
+    finish-message: Well done! Now go across the bridge to see how low tide changes
+      the environment.
+    npc-giver-id: 198
+    stages:
+      ordered:
+        '1':
+          npc-ids-to-talk-to:
+          - 199
+          start-message: Go around the back of the building and talk to the person
+            at the dock to learn more about the tides here.
+          objective-override:
+          - Find Tobias back by the docks (86, 108) and take a look at the tides
+        '2':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: Tides
+          start-message: Use &5/tides &7to learn the difference between the tides
+            here and the tides on Earth.
+          objective-override:
+          - Measure the tides using &5/tides
+        '3':
+          locations-to-reach:
+          - TwoMoons 80.0 63.0 14.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Worker by the time travel portal
+          start-message: Go find the construction worker and travel into the future
+          objective-override:
+          - Go find the construction worker (79, 16) and travel into the future
+        '4':
+          locations-to-reach:
+          - TwoMoonsLow 71.0 65.0 29.0
+          reach-location-radii:
+          - 10
+          reach-location-names:
+          - '3'
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Explore earth with Two Moons later in the day, note the tides!
+          objective-override:
+          - Explore earth with Two Moons later in the day, note the tides!
+          - Make sure to make an observation
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom28:
+    name: Wanna Knowa Mynoa?
+    ask-message: Mynoa awaits....
+    finish-message: Stupendous! Keep looking around and make some more observations
+      or return to the ship and check out the other side of Mynoa!
+    npc-giver-id: 203
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: temperature
+          start-message: Welcome to Mynoa! It feels a little...different in the shadow
+            of that gas giant, Tyran. Why don't you test out the temperature to see
+            if that's the problem?
+          complete-message: Great! Now head back to the Mysterious Mynoan. He seems
+            to want you to make some kind of observation.
+          objective-override:
+          - Test out the temperature on Mynoa!
+        '2':
+          npc-ids-to-talk-to:
+          - 203
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          complete-message: 'Mysterious Mynoan: Can you please tell me why it is so
+            hot here by using /observe?'
+          objective-override:
+          - Observe why it is so hot on Mynoa!
+        '3':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: magnetic_field
+          complete-message: 'Seems like the planet is pretty active, you see those volcanoes?'
+          objective-override:
+          - 'Check the /tectonic activity'
+        '4':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: What might happen due to the magnetic field being so strong?
+            Use /observe to let the Mynoan know.
+          objective-override:
+          - Let the Mynoan know why the magnetic field here is strong using /observe!
+    rewards:
+      items:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3700
+        type: GOLD_INGOT
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"text":"Mynoan Ore"}],"text":""}'
+      quest-points: 2
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom29:
+    name: Solis Defuit
+    ask-message: So dark...
+    finish-message: Great work! It seems the Shadowy Mynoan Creature wants you to
+      head over halfway across the planet, turn around and go back on the rocket!
+    npc-giver-id: 204
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: What an interesting place you've landed in. As the Shadowy
+            Mynoan Creature looks at you, you feel that you must observe why it's
+            so dark here.
+          complete-message: Well-observed!
+          objective-override:
+          - Observe why it is so dark here using /observe.
+        '2':
+          npc-ids-to-talk-to:
+          - 204
+          start-message: The creature seems...satisfied? Talk to him in order to figure
+            it out.
+        '3':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: temperature
+          start-message: 'Shadowy Mynoan Creature: Rrrrrrrgghhhhhh...temperature......'
+          objective-override:
+          - Measure the temperature here.
+    rewards:
+      items:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3700
+        type: SOUL_LANTERN
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"text":"Mynoan Lantern"}],"text":""}'
+      quest-points: 2
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom30:
+    name: Baseline (optional)
+    ask-message: Let's get some baseline measures of important astronomy-related variables
+    finish-message: Well done - have you written them down for comparison later?
+    npc-giver-id: 106
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: Atmosphere
+        '2':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: Gravity
+        '3':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: magnetic_field
+        '4':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 2
+              data: {}
+          objective-override:
+          - Last make an observation about the sun and the moon each. We will compare
+            to them later.
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-dungeonsxl-plugin: false
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom31:
+    name: Mynoa Museum Mania!
+    ask-message: You've arrived at one of the only settlements on Mynoa! Check out
+      the model in this museum!
+    finish-message: Great job! You have finished the Mynoa questline. Make sure to
+      explore around a little more, as there could be more you have missed.
+    npc-giver-uuid: 43a138ef-796d-443b-97ac-632955ab6364
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - MynoaMangrove 274.0 89.0 392.0
+          reach-location-radii:
+          - 3
+          reach-location-names:
+          - 'Location #1'
+          start-message: The museum might help you solve the mystery...
+          complete-message: Great!
+          objective-override:
+          - Go to the balcony inside the museum
+          - Look in all the museum rooms to help you figure out parts of the mystery
+        '2':
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 1
+              data: {}
+          start-message: Now, make an observation about the model that is in the museum.
+          complete-message: Wonderful!
+          objective-override:
+          - Now, make an observation about the model that is in the museum
+        '3':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: Tides
+          start-message: Did you check out the tidal variance levels?
+          objective-override:
+          - Looks like the water goes up and down a lot, look at the tides!
+        '4':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: gravity
+          start-message: Is the gravity different on different sides of Mynoa?
+          objective-override:
+          - Is the gravity different on different sides of Mynoa?
+        '5':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: radius
+          start-message: Is this the same size earth as usual?
+          complete-message: Fantastic!
+          objective-override:
+          - Confirm the size of this earth with /radius
+    rewards:
+      items:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3700
+        type: PLAYER_HEAD
+        meta:
+          ==: ItemMeta
+          meta-type: SKULL
+          display-name: '{"extra":[{"text":"Mini Mynoa"}],"text":""}'
+          lore:
+          - '{"extra":[{"text":"A model of Mynoa, obtained as a reward for completing
+            \"Mynoa Museum Mania!\""}],"text":""}'
+          skull-owner:
+            ==: PlayerProfile
+            uniqueId: 6bd0bfce-e424-484d-a0ba-f4c442c773e4
+            properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmUyY2M0MjAxNWU2Njc4ZjhmZDQ5Y2NjMDFmYmY3ODdmMWJhMmMzMmJjZjU1OWEwMTUzMzJmYzVkYjUwIn19fQ==
+      quest-points: 3
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom32:
+    name: What's the Time
+    ask-message: The length of our days differs from yours. Use /rotational_period
+      to see the difference!
+    finish-message: Wow! Why do you think there is such a difference?
+    npc-giver-id: 197
+    stages:
+      ordered:
+        '1':
+          custom-objectives:
+            custom1:
+              name: Science Tool Objective
+              count: 1
+              data:
+                Science Tool: rotational_period
+          start-message: Find out how long the day is! Try typing &5/rotational_period
+            to see!
+          objective-override:
+          - out how long the day is! Try typing &5/rotational_period &7to see!
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom34:
+    name: Measuring Migrations
+    ask-message: Interested in animals? Do this quest!
+    finish-message: I'm so glad we don't have to move like they do - solid work mate!
+    npc-giver-id: 216
+    stages:
+      ordered:
+        '1':
+          npc-ids-to-talk-to:
+          - 206
+          - 208
+          objective-override:
+          - '&7Did you know planetary conditions impact the lives of animals too?
+            I''m recording how the sun cycles change the lives of different species,
+            want to help? The research tower is open during summer for volunteers.'
+        '2':
+          locations-to-reach:
+          - TiltedWarm 278.0 187.0 345.0
+          - TiltedWarm 213.0 62.0 -83.0
+          reach-location-radii:
+          - 4
+          - 4
+          reach-location-names:
+          - shore inlet
+          - mountain roost
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 2
+              data: {}
+          objective-override:
+          - '&7Help the biologists out - can you find some migrating birds and amphibians?
+            HINT: think about where they''d rest and look at your map. Use &3/observe
+            &7to let us know'
+        '3':
+          locations-to-reach:
+          - TiltedFrozen 418.0 -1.0 -823.0
+          reach-location-radii:
+          - 15
+          reach-location-names:
+          - deep sea heat vent
+          custom-objectives:
+            custom1:
+              name: Observation Objective
+              count: 2
+              data: {}
+          objective-override:
+          - '&7Can you find the birds anywhere during the winter? If not note that
+            they''re gone. What about those amphibians? Are they frozen or hibernating
+            underwater? Use &3/observe'
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom35:
+    name: Cave Life
+    ask-message: How do humans live on a tide-locked planet?
+    finish-message: Whoa, pretty glad earth rotates right?
+    npc-giver-id: 196
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - ColderHot -84.0 44.0 -82.0
+          - ColderCold -75.0 51.0 -39.0
+          reach-location-radii:
+          - 20
+          - 15
+          reach-location-names:
+          - Hot side cave research lab
+          - Cold side habitation and power generator
+          objective-override:
+          - '&7How do you think humans live on a tide-locked earth like this? Explore
+            the caves on the hot and cold sides to learn more.'
+  custom36:
+    name: Lunar Loop
+    ask-message: Explore Earth with Two Moons
+    finish-message: Wow, glad we just have one huh?
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - TwoMoons -9.0 66.0 97.0
+          - TwoMoonsLow -10.0 66.0 98.0
+          - TwoMoonsLluna 65.0 86.0 80.0
+          reach-location-radii:
+          - 12
+          - 12
+          - 6
+          reach-location-names:
+          - Museum at high tide
+          - Museum at low tide
+          - Volcanic moon of Lluna
+          objective-override:
+          - '&7See how the moons change - visit the museum at low and high tide and
+            explore Lluna in VR'
+  custom37:
+    name: planetarium user
+    ask-message: Welcome new recruit, please let us know how you found us
+    finish-message: Thank you
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Hub -75.0 25.0 100.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Planetarium Elevator
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+  custom38:
+    name: nova user
+    ask-message: Welcome new recruit, please let us know how you found us
+    finish-message: Thank you
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Hub -75.0 25.0 96.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Nova Lab user elevator
+          objective-override:
+          - If you found WHIMC from the PBS Nova Exoplanet lab take that elevator
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom39:
+    name: camp user
+    ask-message: Welcome new recruit, please let us know how you found us
+    finish-message: Thank you
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Hub -82.0 25.0 93.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Camp User elevator
+          objective-override:
+          - If you found WHIMC from a summer camp take that elevator
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom40:
+    name: other user
+    ask-message: Welcome new recruit, please let us know how you found us
+    finish-message: Thank you
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - Hub -82.0 25.0 103.0
+          reach-location-radii:
+          - 2
+          reach-location-names:
+          - Other User elevator
+          objective-override:
+          - If you found WHIMC from some OTHER place take that elevator
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  '000001':
+    name: And what do you do?
+    ask-message: Learn something from as many characters as possible!
+    finish-message: Well done!
+    npc-giver-uuid: dc71906b-a2fa-435e-810b-1748523c72fc
+    stages:
+      ordered:
+        '1':
+          npc-uuids-to-talk-to:
+          - caff0816-c6a4-4641-bb35-76d3f849ad4a
+          - 7690e846-8dd7-45c8-a095-33f5b8672aea
+          - 2469e581-8d1c-4378-b360-75a8703bdb5b
+          - d35e6c6f-d49b-47fa-9fd0-1d9d808ba6a7
+          - dc71906b-a2fa-435e-810b-1748523c72fc
+          - 2748c778-ca66-4e30-9078-4b97e3d71e5e
+          - f6e3395c-615c-40b6-860e-e1f538b16414
+          - 35f8f1bb-541b-4ba2-a512-9e3452835383
+          - a46f062b-b173-49f0-8a2c-dc7d6540312f
+          - c147a916-d8d1-4e11-93c7-74657606a6ba
+          - 69b7c1cb-dfb5-4887-bfcb-8e5fc97caa02
+          - 5f5ecc5c-3263-42db-844b-ecf269e0c8fc
+          - d368c369-46ca-4342-b730-9cae7391d77c
+          - 79387686-3a00-4455-8b46-3899217a8777
+          - aab6c4d3-12d7-41e7-bcae-601071d94d94
+          - b76b76d6-0c13-4adb-93d0-98718fc5e991
+          - 6287a046-c946-4b31-b938-3824a96937a0
+          - a90cc88f-d041-4d42-95e9-8611fe414f86
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: false
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 150.0
+      handle-offline-players: false
+      ignore-block-replace: true

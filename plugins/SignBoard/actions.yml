@@ -1,0 +1,39 @@
+# The actions file
+actions:
+  entities:
+    b04420ca-77a2-2351-aac4-fa3f248e5572:
+      show_board: true
+      nametag: hide
+      give_book: false
+    f8e603f0-a34f-2dcb-987c-217d9a52a793:
+      show_board: true
+      nametag: ignore
+      give_book: false
+    9ba7eb27-fad4-218a-aec9-7b346f53ee03:
+      show_board: true
+      nametag: hide
+      give_book: false
+    a7e41ff0-5ea0-2370-9a0e-4133988e0c30:
+      show_board: true
+      nametag: hide
+      give_book: false
+    17a3b03d-819c-2217-92b8-157ee362b7bf:
+      show_board: true
+      nametag: ignore
+      give_book: false
+    758cd27e-f6a3-29bf-a934-e886021af601:
+      show_board: true
+      nametag: ignore
+      give_book: false
+    639b5541-f6cd-23c0-9eaa-be475cd05ee6:
+      show_board: true
+      nametag: ignore
+      give_book: false
+    f340b998-3c70-209b-845a-e800d7515ced:
+      show_board: true
+      nametag: ignore
+      give_book: false
+    72d0fd6e-2de7-2b0e-a9ec-c85cefaebd0f:
+      show_board: true
+      nametag: ignore
+      give_book: false

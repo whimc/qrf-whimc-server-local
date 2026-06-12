@@ -1,0 +1,14 @@
+location: MynoaClose:1322.807:66.663:934.539
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ^
+    height: 0.3
+  - content: Look up!
+    height: 0.3
+  actions: {}

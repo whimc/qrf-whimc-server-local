@@ -1,0 +1,28 @@
+{
+  "uniqueId": "792f2582-ff76-4fc3-8e1c-0e7986c21ec9",
+  "location": {
+    "x": -11,
+    "y": 72,
+    "z": 175,
+    "dimension": "LunarCrater"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "There's no air on the surface of the moon! EV suits like these provide oxygen, water, heat, radiation shielding, waste management and more. Put one on and go hop around like a bunny!"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

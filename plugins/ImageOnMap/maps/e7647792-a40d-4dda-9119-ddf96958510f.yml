@@ -1,0 +1,559 @@
+PlayerMapStore:
+  mapList:
+  - name: suit-up
+    mapID: 246
+    id: suit-up
+    type: SINGLE
+  - name: airlock
+    mapID: 247
+    id: airlock
+    type: SINGLE
+  - columns: 5
+    name: big-nsf
+    id: big-nsf
+    type: POSTER
+    rows: 5
+    mapsIDs:
+    - 348
+    - 349
+    - 350
+    - 351
+    - 352
+    - 353
+    - 354
+    - 355
+    - 356
+    - 357
+    - 358
+    - 359
+    - 360
+    - 361
+    - 362
+    - 363
+    - 364
+    - 365
+    - 366
+    - 367
+    - 368
+    - 369
+    - 370
+    - 371
+    - 372
+  - name: PBS-logo
+    mapID: 373
+    id: PBS-logo
+    type: SINGLE
+  - columns: 3
+    name: nasa-tv
+    id: nasa-tv
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 374
+    - 375
+    - 376
+    - 377
+    - 378
+    - 379
+  - columns: 2
+    name: nsf
+    id: nsf
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 380
+    - 381
+    - 382
+    - 383
+  - columns: 5
+    name: VRzone
+    id: VRzone
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 384
+    - 385
+    - 386
+    - 387
+    - 388
+    - 389
+    - 390
+    - 391
+    - 392
+    - 393
+  - columns: 2
+    name: roverselfie
+    id: roverselfie
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 394
+    - 395
+    - 396
+    - 397
+  - columns: 3
+    name: asteroidminer
+    id: asteroidminer
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 398
+    - 399
+    - 400
+    - 401
+    - 402
+    - 403
+  - columns: 1
+    name: rocketupdecor
+    id: rocketupdecor
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 404
+    - 405
+  - columns: 6
+    name: spaceelevator
+    id: spaceelevator
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 406
+    - 407
+    - 408
+    - 409
+    - 410
+    - 411
+    - 412
+    - 413
+    - 414
+    - 415
+    - 416
+    - 417
+  - columns: 2
+    name: Material Science
+    id: Material Science
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 418
+    - 419
+  - columns: 3
+    name: Rover Drop
+    id: Rover Drop
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 420
+    - 421
+    - 422
+    - 423
+    - 424
+    - 425
+  - columns: 5
+    name: BIG NSF
+    id: BIG NSF
+    type: POSTER
+    rows: 5
+    mapsIDs:
+    - 426
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    - 432
+    - 433
+    - 434
+    - 435
+    - 436
+    - 437
+    - 438
+    - 439
+    - 440
+    - 441
+    - 442
+    - 443
+    - 444
+    - 445
+    - 446
+    - 447
+    - 448
+    - 449
+    - 450
+  - name: NSF blank
+    mapID: 451
+    id: NSF blank
+    type: SINGLE
+  - name: FISKE
+    mapID: 452
+    id: FISKE
+    type: SINGLE
+  - name: UIUC
+    mapID: 453
+    id: UIUC
+    type: SINGLE
+  - columns: 2
+    name: WHIMC Title Map
+    id: WHIMC Title Map
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 455
+    - 456
+    - 457
+    - 458
+  - name: Dome Access
+    mapID: 459
+    id: Dome Access
+    type: SINGLE
+  - name: University of Maine
+    mapID: 460
+    id: University of Maine
+    type: SINGLE
+  - name: UNCC
+    mapID: 461
+    id: UNCC
+    type: SINGLE
+  - name: PBS Nova Labs
+    mapID: 462
+    id: PBS Nova Labs
+    type: SINGLE
+  - name: NSF
+    mapID: 464
+    id: NSF
+    type: SINGLE
+  - name: Radial Velecoity
+    mapID: 475
+    id: Radial Velecoity
+    type: SINGLE
+  - name: Data Transit
+    mapID: 476
+    id: Data Transit
+    type: SINGLE
+  - name: Atmosphere Color
+    mapID: 477
+    id: Atmosphere Color
+    type: SINGLE
+  - name: stardeck
+    mapID: 478
+    id: stardeck-1
+    type: SINGLE
+  - columns: 2
+    name: Exo List
+    id: Exo List
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 479
+    - 480
+  - name: pbs-videos
+    mapID: 481
+    id: pbs-videos
+    type: SINGLE
+  - name: aliens1
+    mapID: 482
+    id: aliens1
+    type: SINGLE
+  - name: aliens2
+    mapID: 483
+    id: aliens2
+    type: SINGLE
+  - name: hub-earth-moon
+    mapID: 485
+    id: hub-earth-moon
+    type: SINGLE
+  - name: hub-colder-sun
+    mapID: 486
+    id: hub-colder-sun
+    type: SINGLE
+  - name: hub-tilted-earth
+    mapID: 487
+    id: hub-tilted-earth
+    type: SINGLE
+  - columns: 2
+    name: hub-m1-2x2
+    id: hub-m1-2x2
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 489
+    - 490
+    - 491
+    - 492
+  - columns: 2
+    name: hub-m2-2x2
+    id: hub-m2-2x2
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 493
+    - 494
+    - 495
+    - 496
+  - columns: 2
+    name: hub-m3-2x2
+    id: hub-m3-2x2
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 497
+    - 498
+    - 499
+    - 500
+  - columns: 2
+    name: hub-finished-2-2
+    id: hub-finished-2-2
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 501
+    - 502
+    - 503
+    - 504
+  - columns: 2
+    name: making-mars
+    id: making-mars
+    type: POSTER
+    rows: 3
+    mapsIDs:
+    - 529
+    - 530
+    - 531
+    - 532
+    - 533
+    - 534
+  - columns: 2
+    name: Neil Books
+    id: Neil Books
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 536
+    - 537
+    - 538
+    - 539
+  - columns: 3
+    name: worldpainter
+    id: worldpainter
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 540
+    - 541
+    - 542
+    - 543
+    - 544
+    - 545
+  - columns: 2
+    name: pbs nova lab adv
+    id: pbs nova lab adv
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 546
+    - 547
+  - columns: 2
+    name: map downloads
+    id: map downloads
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 548
+    - 549
+  - columns: 3
+    name: mars-EE
+    id: mars-EE
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 550
+    - 551
+    - 552
+    - 553
+    - 554
+    - 555
+  - columns: 2
+    name: NASA-exos
+    id: NASA-exos
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 556
+    - 557
+  - columns: 3
+    name: 23-earth-tilt
+    id: 23-earth-tilt
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 572
+    - 573
+    - 574
+    - 575
+    - 576
+    - 577
+  - columns: 3
+    name: 90-earth-tilt
+    id: 90-earth-tilt
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 578
+    - 579
+    - 580
+    - 581
+    - 582
+    - 583
+  - columns: 3
+    name: DO-NOT-USE
+    id: DO-NOT-USE
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 600
+    - 601
+    - 602
+  - columns: 6
+    name: rover-feed
+    id: rover-feed
+    type: POSTER
+    rows: 3
+    mapsIDs:
+    - 604
+    - 605
+    - 606
+    - 607
+    - 608
+    - 609
+    - 610
+    - 611
+    - 612
+    - 613
+    - 614
+    - 615
+    - 616
+    - 617
+    - 618
+    - 619
+    - 620
+    - 621
+  - columns: 2
+    name: habitstrip
+    id: habitstrip
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 623
+    - 624
+    - 625
+    - 626
+  - columns: 3
+    name: TideLock
+    id: TideLock
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 627
+    - 628
+    - 629
+    - 630
+    - 631
+    - 632
+  - columns: 3
+    name: NoMoon
+    id: NoMoon
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 633
+    - 634
+    - 635
+    - 636
+    - 637
+    - 638
+  - columns: 3
+    name: TiltedEarth
+    id: TiltedEarth
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 639
+    - 640
+    - 641
+    - 642
+    - 643
+    - 644
+  - columns: 3
+    name: ColderSun
+    id: ColderSun
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 645
+    - 646
+    - 647
+    - 648
+    - 649
+    - 650
+  - columns: 2
+    name: moon rise
+    id: moon rise
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 651
+    - 652
+    - 653
+    - 654
+  - columns: 3
+    name: Neilvideo-colder
+    id: Neilvideo-colder
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 655
+    - 656
+    - 657
+    - 658
+    - 659
+    - 660
+  - columns: 3
+    name: neilvideo-nomoon
+    id: neilvideo-nomoon
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 661
+    - 662
+    - 663
+    - 664
+    - 665
+    - 666
+  - columns: 3
+    name: neilvideo-tilted
+    id: neilvideo-tilted
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 667
+    - 668
+    - 669
+    - 670
+    - 671
+    - 672
+  - columns: 2
+    name: station map NEW
+    id: station map NEW
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 677
+    - 678
+    - 679
+    - 680
+  - name: lunar map label
+    mapID: 708
+    id: lunar map label
+    type: SINGLE
+playerPosterStore:
+  posterList: []

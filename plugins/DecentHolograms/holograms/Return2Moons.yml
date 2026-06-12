@@ -1,0 +1,12 @@
+location: TwoMoonsLluna:68.971:88.539:78.531
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Return to Two Moons
+    height: 0.3
+  actions: {}

@@ -1,0 +1,209 @@
+debug: true
+default-language: en
+disable-metrics: false
+# Whether or not resourcepack file hashes should be generated on startup:
+autogeneratehashes: true
+# Whether to append the pack hash to the end of the URL of the pack like url#hash.
+# This is necessary to work around a Vanilla bug which prevents changed packs from being downloaded
+# properly again: https://bugs.mojang.com/browse/MC-164316
+append-hash-to-url: true
+# Whether /usepack should apply packs temporary or permanent when run without any argument:
+usepack-is-temporary: true
+# Whether /usepack will remove any packs that were automatically applied on 1.20.3+ to restore pre-1.20.3 single-pack behaviour
+selected-packs-remove-existing: false
+# Whether packs that a player has stored will override a matched assignments
+stored-packs-override-assignments: false
+# When manually setting a permanent pack then it will be reset if the user disconnects in under x amount of seconds.
+# 0 or anything below will disable this functionality
+permanent-pack-remove-time: 3
+# Whether to hook into authentication plugins
+# Currently supported: AuthMe, OpeNLogin and nLogin
+use-auth-plugin: false
+empty:
+  url: https://uofi.box.com/shared/static/7baaf9l46an9sr6s3gaqziufv2th58ic.zip
+  uuid: 090dabda-d0c9-3a8f-9b33-f4676d05440e
+  hash: 0b90a5252a6bbad73663da6cf531b7f0e7130285
+worlds:
+  Maryville:
+    pack: barrelbot
+    send-delay: 3
+  Hub:
+    pack: galaxy
+    send-delay: 60
+  NoMoon:
+    pack: no_moon
+    send-delay: 3
+  ColderHot:
+    pack: cold_sun
+    send-delay: 3
+  ColderStrip:
+    pack: cold_sun
+    send-delay: 3
+  ColderCold:
+    pack: cold_sun
+    send-delay: 3
+  LunarCrater:
+    pack: lunarcrater
+    send-delay: 3
+  TiltedWarm:
+    pack: tiltedwarm
+    send-delay: 3
+  TiltedMelting:
+    pack: tiltedmelting
+    send-delay: 3
+  TiltedFrozen:
+    pack: tiltedfrozen
+    send-delay: 3
+  MynoaMangrove:
+    pack: mynoa_mangrove
+    send-delay: 3
+  MynoaHalf:
+    pack: mynoa_clouds
+    send-delay: 3
+  MynoaClose:
+    pack: mynoa_night
+    send-delay: 3
+  Icarus:
+    pack: icarus
+    send-delay: 3
+  Cancri:
+    pack: galaxy
+    send-delay: 3
+  CancriCold:
+    pack: galaxy
+    send-delay: 3
+  TwoMoons:
+    pack: twomoons
+    send-delay: 3
+  TwoMoonsLow:
+    pack: twomoons
+    send-delay: 3
+  TwoMoonsLluna:
+    pack: galaxy
+    send-delay: 3
+  ETLife:
+    pack: galaxy
+    send-delay: 3
+  Supercluster:
+    pack: galaxy
+    send-delay: 3
+  Pillars:
+    pack: galaxy
+    send-delay: 3
+  SolarSystem:
+    pack: galaxy
+    send-delay: 3
+  Universe:
+    pack: galaxy
+    send-delay: 3
+  Quasar:
+    pack: galaxy
+    send-delay: 3
+  NeutronStar:
+    pack: galaxy
+    send-delay: 3
+  BlackHole:
+    pack: galaxy
+    send-delay: 3
+  Sagittarius:
+    pack: galaxy
+    send-delay: 3
+packs:
+  barrelbot:
+    url: https://uofi.box.com/shared/static/4v0eh2x9kxwfyhl3h82djlmq2881pzz6.zip
+    uuid: fbc51837-8ba6-3abe-919e-d5fa2f4c6cd3
+    hash: 1ceba460adb28261d187f96e87afd29a5bba1720
+    format: 9
+    restricted: false
+    permission: worldresourcepacks.pack.barrelbot
+  no_moon:
+    url: https://uofi.box.com/shared/static/pmfapq2igcuae26p7opuiq2w3bswym4q.zip
+    uuid: 1d349325-38d2-341d-9b00-0623fc52dada
+    hash: 9fffed51b736221c35caddb19292f672fe8ca9bc
+    format: 75
+    restricted: false
+    permission: worldresourcepacks.pack.nomoon
+  cold_sun:
+    url: https://uofi.box.com/shared/static/la46yofhvdztvwq3fg1aga5wlh6180ff.zip
+    uuid: 6e220ad0-f56d-3bfb-bd25-7f8f1199fa7d
+    hash: fc73881813ee5f646e0a091a377d7bb18d6d2081
+    format: 75
+    restricted: false
+    permission: worldresourcepacks.pack.coldsun
+  lunarcrater:
+    url: https://uofi.box.com/shared/static/irh283n5pm401vej10i1077zw1d80qna.zip
+    uuid: f08ef942-3d93-3e2a-a2b1-2301ac90d587
+    hash: 8fe1ed81130cbbb2e015f98a2117a45b784eac25
+    format: 75
+    restricted: false
+    permission: worldresourcepacks.pack.lunarcrater
+  noclouds:
+    url: https://uofi.box.com/shared/static/tebt1j5x4ulcs5lsfic7iht2783ec5pq.zip
+    uuid: 6a3ddfd5-65d1-30f6-b433-a6f649520177
+    hash: 58a02491015cc4fadc3dde2a689272ed74350047
+    format: 75
+    restricted: false
+    permission: worldresourcepacks.pack.noclouds
+  twomoons:
+    url: https://uofi.box.com/shared/static/eh3jo2acwcymu4fkj6vtwvoahnsv0ciz.zip
+    uuid: 8e5c7a70-fdb5-3e6a-87f3-324ff54d9a3e
+    hash: d853f5b4c5fd00a2c297369c69a6ae7152d3059c
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.twomoons
+  galaxy:
+    url: https://uofi.box.com/shared/static/tak7x7pr27gb6b06qoajpdioyut4p60s.zip
+    uuid: 518aa961-45c9-3def-9b0e-2c62e3e50de7
+    hash: ed1749feaf321316f5332d33ab9e38b0cc6d5bd6
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.galaxy
+  tiltedwarm:
+    url: https://uofi.box.com/shared/static/tantjixksn8vbzpt3vtqzqp3wvbl8u3j.zip
+    uuid: 0a971bc5-94b9-3784-bae0-24f784758505
+    hash: 865a7460306c691ea793aa1997bb20fd7583a312
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.tilted
+  tiltedmelting:
+    url: https://uofi.box.com/shared/static/wo4vex6e8jx73k8kep3egyzld05xst34.zip
+    uuid: beb7abfc-d1cf-3df9-be28-a7269e3cb9b8
+    hash: d86b8161506bfcc6114b9b3e8fd21fb7b37544b8
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.tilted
+  tiltedfrozen:
+    url: https://uofi.box.com/shared/static/i2w3rc8dq1qvmbbwk1pktwzg4mlp9rg7.zip
+    uuid: cdda3db0-cdb2-344f-8e9b-a557a662b72d
+    hash: f107e4bbd39a66dbf6229a39a0165fb841489cd3
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.tilted
+  mynoa_night:
+    url: https://uofi.box.com/shared/static/pt83faem5so2nrfp86tavqnkrjgf8x0p.zip
+    uuid: 3107b9eb-1470-3c34-9dba-fa99fb5956a9
+    hash: ed1749feaf321316f5332d33ab9e38b0cc6d5bd6
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.mynoa
+  mynoa_clouds:
+    url: https://uofi.box.com/shared/static/wlgxth7xt86m9kbstnrs2ox79mwaum0u.zip
+    uuid: 37981995-5890-34e5-9e85-351f53112d0d
+    hash: 06ee4e2a2e8063a54377c87c22d5702e934782bc
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.mynoa
+  mynoa_mangrove:
+    url: https://uofi.box.com/shared/static/hvnng8vk7v64zjx0acodzk92a7by9ge7.zip
+    uuid: f090e480-7b29-3c94-97c8-eb07bf32c7e2
+    hash: 45fa15f68aea71c2ee16ad8c0541c144c188eecb
+    format: 75
+    restricted: false
+    permission: resourcepacksplugin.pack.mynoa
+  icarus:
+    url: https://uofi.box.com/shared/static/dl42zejkbvchmmklqpnmobjmwmduslvn.zip
+    uuid: 2f6d673a-027b-3fc6-8d0e-f13e1deba4ea
+    hash: 8ab30603faed13fdbc6756701808d7871c60e20e
+    format: 8
+    restricted: false
+    permission: resourcepacksplugin.pack.icarus

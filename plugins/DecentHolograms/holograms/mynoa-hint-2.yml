@@ -1,0 +1,12 @@
+location: MynoaMangrove:315.164:78.490:322.077
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: How much daylight is there to grow crops?
+    height: 0.3
+  actions: {}

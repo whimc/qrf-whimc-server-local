@@ -1,0 +1,10 @@
+# The entities file
+entities:
+  b04420ca-77a2-2351-aac4-fa3f248e5572: '[Jorge-Earth] EarthControl -7 0 1684024251257'
+  f8e603f0-a34f-2dcb-987c-217d9a52a793: '[Hub-Quests] Hub -4 6 1679173606415'
+  9ba7eb27-fad4-218a-aec9-7b346f53ee03: '[hub-shuttle] Hub -6 13 1668394664917'
+  a7e41ff0-5ea0-2370-9a0e-4133988e0c30: '[What-If-Guide] Hub -5 9 1675371327163'
+  17a3b03d-819c-2217-92b8-157ee362b7bf: '[Kepler] Kepler 17 -3 1668031861129'
+  758cd27e-f6a3-29bf-a934-e886021af601: '[Info] TwoMoons -1 5 1667419335553'
+  f340b998-3c70-209b-845a-e800d7515ced: '[Volcanoes] TwoMoonsLluna 4 4 1675374328834'
+  72d0fd6e-2de7-2b0e-a9ec-c85cefaebd0f: '[gliese] Gliese 0 2 1668033182880'

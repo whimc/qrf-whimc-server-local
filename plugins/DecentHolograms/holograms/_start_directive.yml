@@ -1,0 +1,16 @@
+location: LunarCrater:-23.096:72.200:204.433
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: 'Mission:'
+    height: 0.3
+  - content: 1. Talk to Roger
+    height: 0.3
+  - content: 2. Suit up!
+    height: 0.3
+  actions: {}

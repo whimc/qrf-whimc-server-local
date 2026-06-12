@@ -1,0 +1,16 @@
+location: LunarCrater:53.500:16.749:-13.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&eSubmit data here!'
+    height: 0.3
+  - content: Data Entry
+    height: 0.3
+  - content: Computer
+    height: 0.3
+  actions: {}

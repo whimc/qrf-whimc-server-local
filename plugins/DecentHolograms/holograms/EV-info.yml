@@ -1,0 +1,12 @@
+location: LunarCrater:-10.500:73.000:175.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: info
+    height: 0.3
+  actions: {}

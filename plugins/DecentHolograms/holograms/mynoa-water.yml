@@ -1,0 +1,14 @@
+location: MynoaMangrove:307.636:71.541:173.181
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Looks like this loading dock goes up and down!
+    height: 0.3
+  - content: Wait why are there trees submerged?
+    height: 0.3
+  actions: {}

@@ -1,0 +1,12 @@
+location: EarthControl:370.300:81.317:-223.953
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Finish
+    height: 0.3
+  actions: {}

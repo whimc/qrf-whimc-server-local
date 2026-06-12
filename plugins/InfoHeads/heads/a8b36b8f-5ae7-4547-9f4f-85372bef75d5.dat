@@ -1,0 +1,34 @@
+{
+  "uniqueId": "a8b36b8f-5ae7-4547-9f4f-85372bef75d5",
+  "location": {
+    "x": -51,
+    "y": 39,
+    "z": 52,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "Learn more about how earth tilted 90 degrees works."
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"https://youtu.be/llyjZCpTHxk\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/llyjZCpTHxk\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

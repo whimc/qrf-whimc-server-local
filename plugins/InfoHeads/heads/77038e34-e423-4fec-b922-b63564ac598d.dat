@@ -1,0 +1,34 @@
+{
+  "uniqueId": "77038e34-e423-4fec-b922-b63564ac598d",
+  "location": {
+    "x": 39,
+    "y": 134,
+    "z": 17,
+    "dimension": "BrownDwarf"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "This is CW-W89Ab, a suspected Brown Dwarf."
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.PlayerCommandElement",
+      "data": {
+        "command": "quests take Brown Dwarf or Planet"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

@@ -1,0 +1,34 @@
+{
+  "uniqueId": "d4fe62f4-3fe6-4d75-94e6-47bb1fe75fc5",
+  "location": {
+    "x": -1560,
+    "y": 68,
+    "z": 2715,
+    "dimension": "RocketLaunch"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "Lots of folks helped us to make this server possible!"
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"Check out everyone who contributed at WHIMC.education.illinois.edu/attribution\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://WHIMC.education.illinois.edu/attribution\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

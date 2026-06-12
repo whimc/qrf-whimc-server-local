@@ -1,0 +1,14 @@
+location: MynoaClose:1321.664:67.483:893.817
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Travel half-way
+    height: 0.3
+  - content: around the planet
+    height: 0.3
+  actions: {}

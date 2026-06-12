@@ -1,0 +1,12 @@
+location: MynoaMangrove:325.925:87.415:337.714
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: The windsock is limp...
+    height: 0.3
+  actions: {}

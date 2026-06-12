@@ -1,0 +1,114 @@
+# This is the InfoHeads messages file.
+# In this file you can always use color codes (&) and HEX codes (&#000000)
+# 
+# This file is auto-updated from an internal class of the plugin.
+# Please DO NOT remove any config field, it will cause errors.
+cooldown: '&cYou are currently on cooldown for this for @days days, @hours hours,
+  @minutes minutes and @seconds seconds.'
+oneTime: '&cThis item can be used once.'
+PREFIX: '§7[§aInfoHeads§7] '
+APPEND_MESSAGE_TITLE: §bAppend Message
+APPEND_MESSAGE_LORE:
+- §7Click to append a message
+- §7to the InfoHead
+APPEND_PLAYER_COMMAND_TITLE: §bAppend Player Command
+APPEND_CONSOLE_COMMAND_TITLE: §bAppend Console Command
+APPEND_COMMAND_LORE:
+- §7Click to append a command
+- §7to the InfoHead
+APPEND_DELAY_TITLE: §bAppend Delay
+APPEND_DELAY_LORE:
+- §7Click to append delay to
+- §7the next action
+SET_LOCATION_TITLE: §bSet Location of InfoHead
+SET_LOCATION_LORE:
+- §7Click to set the location
+- §7of the infohead!
+COMPLETE_ITEM_TITLE: §bClick to complete
+COMPLETE_ITEM_LORE:
+- §7Click to complete the cooldown
+- §7creation process
+CLOSE_WIZARD_TITLE: §bClose Wizard
+CLOSE_WIZARD_LORE:
+- §7Click to close the
+- §7infoheads editor wizard menu
+EDIT_GUI_TITLE: §bEdit the InfoHead
+EDIT_GUI_LORE:
+- §7* Edit the ordering
+- §7* Delete Elements
+- ''
+- '§bPro Tip: §7You can still edit infoheads'
+- §7once they're created.
+EDIT_NAME_TITLE: §bEdit the name
+EDIT_NAME_LORE:
+- §7* Edit the name of the head
+- §7* This is useful for the list command
+ONCE_ITEM_TITLE: §bOne Time Item
+ONCE_ITEM_LORE:
+- §7Click to §benable§7 the one time item
+- §7for when a player can use
+- §7the infoheads once
+ONCE_ITEM_LORE_ON:
+- §7Click to §bdisable§7 the one time item
+- §7for when a player can use
+- §7the infoheads once
+COOLDOWN_ITEM_TITLE: §bCooldown delay
+COOLDOWN_ITEM_LORE:
+- §7Click to set the cooldown
+- §7for when a player can use
+- §7the infoheads again after clicking it
+PARTICLE_ITEM_TITLE: §bParticles
+PARTICLE_GUI_LORE:
+- §7Left click to set the particle effect
+- §7for this infohead!
+- §7Right click to remove a particle.
+PARTICLE_ITEM_LORE:
+- §7Click to set the particle effect
+- §7for this infohead!
+PLAYER_PERMISSION_TITLE: §bGive Player Temp Permission
+PLAYER_PERMISSION_LORE:
+- §7Gives a player a temporary permission
+- §7when the element is iterated over
+- ''
+- '§cWarning: Permissions are removed after all'
+- §celements have been executed.
+INPUT_CONVERSATION: Input your Value
+NO_INFOHEAD_AT_LOC: '@prefix§cNo infohead at this location!'
+INFOHEAD_REMOVED: '@prefix§fInfohead has been removed'
+PLACE_INFOHEAD: '@prefix§fPlace your InfoHead'
+ALREADY_INFOHEAD: '@prefix§cYou are already looking at an infohead'
+SET_PERMISSION_TITLE: §bSet permission of Infohead
+SET_PERMISSION_LORE:
+- §7Click to set the
+- §7permission to use
+PLACEHOLDER_TITLE: §bList of placeholders
+PLACEHOLDER_LORE:
+- §7- {player-name}
+- §7- {player-x}
+- §7- {player-z}
+- §7- {block-x}
+- §7- {block-y}
+- §7- {block-z}
+- ''
+- '§bPro Tip: Download PlaceHolderAPI for'
+- §bmore placeholders!
+EDIT_ITEM_TITLE: §b@type
+EDIT_ITEM_LORE:
+- '&8@id'
+- '§7Contents: §b@contents'
+- §cRight Click to Delete this Element!
+- §cLeft Click to Move the Order!
+NEXT_PAGE: §bNext page
+PREV_PAGE: §bPrev page
+BACK: §b<<< Back to main menu
+PARTICLES_GUI_TITLE: Particle Selector
+COOLDOWN_NUM_INC_TITLE: '&a+1'
+COOLDOWN_NUM_INC_LORE:
+- '&7Click to increase the cooldown'
+- '&7duration.'
+COOLDOWN_NUM_DEC_TITLE: §c-1
+COOLDOWN_NUM_DEC_LORE:
+- '&7Click to decrease the cooldown'
+- '&7duration'
+NO_PERMISSION: '@prefix§cNo permission :('
+RELOAD: '@prefix§fPlugin reloaded'

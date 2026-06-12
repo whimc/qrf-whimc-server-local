@@ -1,0 +1,180 @@
+# ============================================================
+# RUNTIME NOISE - changes on every server start/stop
+# ============================================================
+usercache.json
+version_history.json
+map-color-cache.dat
+map-color-cache.dat.old
+logs/
+crash-reports/
+*.log
+hs_err_pid*
+replay_pid*
+.console_history
+
+# Paper auto-downloaded server libraries (Maven deps, never commit)
+libraries/
+
+# Paper cache directory
+cache/
+
+# Server JARs (Paper auto-downloads; never commit)
+paper-*.jar
+versions/
+
+# World lock and backup files
+**/session.lock
+**/level.dat_old
+**/level.dat_old.gz
+
+# ============================================================
+# PLAYER DATA - never commit (per-player, constantly changing)
+# ============================================================
+**/playerdata/
+**/advancements/
+**/stats/
+
+# ============================================================
+# PLUGIN DATABASES
+# (these are regenerated or managed separately)
+# ============================================================
+plugins/CoreProtect/database.db
+plugins/Journey/journey.db
+plugins/LuckPerms/luckperms-*.mv.db
+plugins/LuckPerms/editor-keystore.json
+plugins/WorldGuard/cache/
+**/SurveyPlus/surveyData.sqlite
+
+# ============================================================
+# PLUGIN CACHES & GENERATED FILES
+# ============================================================
+
+# Essentials - UUID/player caches (regenerated automatically)
+plugins/Essentials/userdata/
+plugins/Essentials/usermap.bin
+plugins/Essentials/uuids.bin
+plugins/Essentials/usermap.csv
+
+# Citizens - downloaded skin cache
+plugins/Citizens/skins/
+
+# Quests - per-player quest progress
+plugins/Quests/data/
+
+# LuckPerms - auto-downloaded language files
+plugins/LuckPerms/translations/
+
+# Multiverse - auto-generated world backup files
+plugins/Multiverse-Core/worlds.yml.old.*
+
+# Paper - remapped plugin JAR cache (auto-generated at startup)
+plugins/.paper-remapped/
+
+# Plugin-downloaded library caches (JARs fetched at startup, never commit)
+plugins/*/lib/
+plugins/*/libs/
+
+# FastAsyncWorldEdit - extracted texture cache and all session files
+plugins/FastAsyncWorldEdit/textures/
+plugins/FastAsyncWorldEdit/sessions/
+
+# HeadDatabase - auto-downloaded language files
+plugins/HeadDatabase/texts/
+
+# ProtocolLib - runtime update-check timestamp
+plugins/ProtocolLib/lastupdate
+
+# Quests - auto-downloaded language files
+plugins/Quests/lang/
+
+# Spark profiler - temp profile files
+plugins/spark/tmp/
+
+# SignBoard - backup/version directories
+plugins/SignBoard/LastOKFiles/
+plugins/SignBoard/version_*_backup/
+
+# ============================================================
+# CONFIG FILES WITH CREDENTIALS
+# Remove this entire section for the PRIVATE (live) repo
+# so that real configs are tracked there.
+# ============================================================
+server.properties
+plugins/CoreProtect/config.yml
+plugins/Journey/config.yml
+plugins/Quests/config.yml
+plugins/WHIMC-Container-Tracker/config.yml
+plugins/WHIMC-Habitat-Assesser/config.yml
+plugins/WHIMC-Observations/config.yml
+plugins/WHIMC-OverworldAgent/config.yml
+plugins/WHIMC-Photographer/config.yml
+plugins/WHIMC-PositionTracker/config.yml
+plugins/WHIMC-QRF-Agent/config.yml
+plugins/WHIMC-ScienceTools/config.yml
+plugins/WHIMC-StudentFeedback/config.yml
+plugins/WorldGuard/config.yml
+
+# ============================================================
+# WORLD DATA - runtime/auto-generated per-session files
+# ============================================================
+
+# Map item images (thousands of files, fully runtime)
+**/data/map_*.dat
+
+# Distant Horizons / LOD renderer cache
+**/data/lod/
+
+# Paper region backup files (*.mca.<numeric>.backup)
+*.backup
+
+# Runtime dat files
+**/forcedchunks.dat
+**/data/scoreboard.dat
+**/data/idcounts.dat
+**/data/villages*.dat
+**/data/capabilities.dat
+**/data/random_sequences.dat
+
+# Raid tracking dat files (raids.dat, raids_end.dat, raids_nether.dat)
+**/data/raids*.dat
+
+# Vanilla structure index files (auto-regenerated)
+**/data/*_index.dat
+**/data/Mineshaft*.dat
+**/data/Village*.dat
+**/data/Monument*.dat
+**/data/Mansion*.dat
+**/data/Temple*.dat
+**/data/Stronghold*.dat
+**/data/Fortress*.dat
+**/data/EndCity*.dat
+
+# Fabric/mod compatibility registry (runtime)
+**/data/fabricDynamicRegistry.dat
+
+# Old/backup level.dat variants (keep only level.dat and level.dat_old)
+worlds/*/level[0-9]*.dat
+worlds/*/level.dat_mcr
+worlds/*/level.datBACKUP
+
+# MCEdit waypoints
+mcedit_waypoints.dat
+
+# Forge server config (modded worlds like Sagittarius)
+worlds/*/serverconfig/
+
+# ============================================================
+# OS & BUILD ARTIFACTS
+# ============================================================
+**/.DS_Store
+*.class
+.mtj.tmp/
+
+# ============================================================
+# NOTE: Citizens saves.yml is intentionally NOT ignored.
+# It stores NPC configs (positions, traits, equipment) but
+# also runtime state like facing direction. This means it will
+# show as "changed" after almost every server session.
+# Best practice: only stage saves.yml when you've deliberately
+# changed NPC configurations, not on routine commits.
+# ============================================================

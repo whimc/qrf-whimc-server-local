@@ -1,0 +1,28 @@
+{
+  "uniqueId": "eb336c02-be85-4929-89ed-986a1f14a8cc",
+  "location": {
+    "x": -69,
+    "y": 38,
+    "z": 120,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.PlayerCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"https://whimcproject.web.illinois.edu/education-research\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://whimcproject.web.illinois.edu/education-research\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

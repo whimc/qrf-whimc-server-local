@@ -1,0 +1,12 @@
+location: RocketLaunch:-1534.159:74.200:2752.293
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: wrong way!
+    height: 0.3
+  actions: {}

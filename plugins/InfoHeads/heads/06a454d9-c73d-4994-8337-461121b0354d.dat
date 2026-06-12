@@ -1,0 +1,28 @@
+{
+  "uniqueId": "06a454d9-c73d-4994-8337-461121b0354d",
+  "location": {
+    "x": -132,
+    "y": 36,
+    "z": 119,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "mvtp {player-name} quasar"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

@@ -1,0 +1,14 @@
+location: MynoaHalf:42.513:101.589:188.608
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Travel to the
+    height: 0.3
+  - content: far side of Mynoa
+    height: 0.3
+  actions: {}

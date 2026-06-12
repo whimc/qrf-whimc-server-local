@@ -1,0 +1,16 @@
+PlayerMapStore:
+  mapList:
+  - columns: 3
+    name: Map
+    id: Map
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 709
+    - 710
+    - 711
+    - 712
+    - 713
+    - 714
+playerPosterStore:
+  posterList: []

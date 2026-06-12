@@ -1,0 +1,28 @@
+{
+  "uniqueId": "67d55f62-ca5a-4a47-a509-2996b8ae3cca",
+  "location": {
+    "x": 47,
+    "y": 79,
+    "z": 66,
+    "dimension": "Cancri"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "sciencetools validate RADIATION {player-name} Cancri 47.0 79.0 66.0"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

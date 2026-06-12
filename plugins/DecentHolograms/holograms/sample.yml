@@ -1,0 +1,16 @@
+location: Kepler:197.338:83.231:67.558
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Turn on the machine to collect a sample
+    height: 0.3
+  - content: '|'
+    height: 0.3
+  - content: v
+    height: 0.3
+  actions: {}

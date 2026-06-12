@@ -1,0 +1,16 @@
+location: RocketLaunch:-1576.658:79.138:2745.747
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: manages space flights, usually
+    height: 0.3
+  - content: from the point of launch until
+    height: 0.3
+  - content: landing or the end of the mission
+    height: 0.3
+  actions: {}

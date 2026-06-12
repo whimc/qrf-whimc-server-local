@@ -1,0 +1,12 @@
+location: TiltedMelting:-1008.498:279.385:433.987
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: through
+    height: 0.3
+  actions: {}

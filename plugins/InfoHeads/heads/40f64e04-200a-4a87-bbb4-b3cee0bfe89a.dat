@@ -1,0 +1,34 @@
+{
+  "uniqueId": "40f64e04-200a-4a87-bbb4-b3cee0bfe89a",
+  "location": {
+    "x": -50,
+    "y": 38,
+    "z": 113,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "Mynoa is Earth as a Moon, orbiting the massive Tyran!!"
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.PlayerCommandElement",
+      "data": {
+        "command": "quests take That's No Moon"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

@@ -1,0 +1,9 @@
+players:
+  f1f439a8-99ff-4e10-b972-a46880125785:
+    selection: true
+    clipboard: false
+  b24ec989-c2a6-4180-b085-c079fba70ad2:
+    selection: true
+  0cb829bb-9abc-4906-b750-640f3158c549:
+    selection: false
+    clipboard: true

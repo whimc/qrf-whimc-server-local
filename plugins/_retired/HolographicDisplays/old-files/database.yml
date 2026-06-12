@@ -1,0 +1,619 @@
+materials_lab:
+  location: LunarCrater, 20.338, 19.000, -8.518
+  lines:
+  - '&c&lMaterials Laboratory'
+biodome:
+  location: LunarCrater, 6.681, 19.000, -8.473
+  lines:
+  - '&a&lBiodome'
+living_quarters:
+  location: LunarCrater, 13.456, 19.000, -15.557
+  lines:
+  - '&e&lLiving Quarters'
+PressureStation:
+  location: LunarCrater, 35.700, 24.632, 31.009
+  lines:
+  - '&3&lNew Construction'
+TemperatureStation:
+  location: LunarCrater, 58.643, 42.200, 93.528
+  lines:
+  - '&c&lIce Storage & Seismological Probe'
+OutdoorAirlock:
+  location: LunarCrater, 13.542, 24.200, 9.700
+  lines:
+  - '&1&lOutdoor Access'
+StartHere:
+  location: LunarCrater, -16.004, 75.022, 182.680
+  lines:
+  - '&b&lBegin Here!'
+MessHall:
+  location: LunarCrater, 21.500, 22.185, -67.500
+  lines:
+  - '&b&lMess Hall'
+Exercise:
+  location: LunarCrater, 3.293, 22.422, -48.967
+  lines:
+  - '&6&lExercise Area'
+EAirlock:
+  location: LunarCrater, 26.700, 24.098, 4.700
+  lines:
+  - '&1&lIndustrial Airlock'
+Launch:
+  location: LunarCrater, 177.487, 55.913, -149.700
+  lines:
+  - '&b&lRocket Elevator'
+NoMoon:
+  location: Hub, -1810.259, 134.274, 534.104
+  lines:
+  - '&6&lNo Moon'
+Earth:
+  location: Hub, -1810.475, 134.274, 545.030
+  lines:
+  - '&2&lEarth'
+Tilted:
+  location: Hub, -1793.137, 134.642, 544.840
+  lines:
+  - '&4&lTilted Earth'
+Colder:
+  location: Hub, -1792.616, 134.837, 533.806
+  lines:
+  - '&b&lColder Sun'
+EAAM:
+  location: Hub, -1801.390, 133.361, 518.300
+  lines:
+  - '&f&lEarth as a Moon'
+1stJoin:
+  location: Hub, -1801.523, 129.715, 559.700
+  lines:
+  - If this is your first time joining, please go into the portal below.
+direction-1:
+  location: RocketLaunch, -1572.644, 70.200, 2759.400
+  lines:
+  - ^
+  - To Mission Control
+direction-2:
+  location: RocketLaunch, -1572.359, 67.200, 2763.643
+  lines:
+  - To Rocket Launch
+  - v
+training:
+  location: RocketLaunch, -1542.385, 74.200, 2738.010
+  lines:
+  - training &
+  - testing
+temperature-hint:
+  location: LunarCrater, 87.892, 40.369, 127.848
+  lines:
+  - Type &a&l/temperature&f to measure
+  - the current temperature from your suit
+temperature-computer:
+  location: LunarCrater, 68.500, 40.614, 107.500
+  lines:
+  - '&eSubmit data here!'
+  - '&f'
+  - Data Entry
+  - Computer
+pressure-computer:
+  location: LunarCrater, 36.500, 28.933, 41.500
+  lines:
+  - '&eSubmit data here!'
+  - '&f'
+  - Data Entry
+  - Computer
+wind-computer:
+  location: LunarCrater, -29.500, 21.678, -25.500
+  lines:
+  - '&eSubmit data here!'
+  - '&f'
+  - Data Entry
+  - Computer
+oxygen-computer:
+  location: LunarCrater, 53.500, 16.749, -13.500
+  lines:
+  - '&eSubmit data here!'
+  - Data Entry
+  - Computer
+oxygen-hint:
+  location: LunarCrater, 46.099, 15.200, -15.876
+  lines:
+  - Type &a&l/oxygen&f to measure
+  - the current oxygen from your suit
+pressure-hint:
+  location: LunarCrater, 38.540, 23.000, 40.492
+  lines:
+  - Type &a&l/pressure&f to measure
+  - the current pressure from your suit
+base-entrance:
+  location: LunarCrater, 13.512, 25.200, 17.621
+  lines:
+  - Enter &e&lLunar Base LeGuin &r&fhere!
+construction-robot:
+  location: LunarCrater, 71.515, 48.200, -41.413
+  lines:
+  - Construction Robot
+warning_goback:
+  location: RocketLaunch, -1555.458, 68.200, 2692.537
+  lines:
+  - Go the other way!
+rocket_directive:
+  location: RocketLaunch, -1555.614, 68.200, 2719.423
+  lines:
+  - 'Your Mission:'
+  - 1. Explore
+  - 2. Get to the Rocket!
+_start_directive:
+  location: LunarCrater, -23.096, 72.200, 204.433
+  lines:
+  - 'Mission:'
+  - 1. Talk to Roger
+  - 2. Suit up!
+jump:
+  location: LunarCrater, -21.100, 71.700, 164.959
+  lines:
+  - Remember to jump!
+wrong-way:
+  location: RocketLaunch, -1534.159, 74.200, 2752.293
+  lines:
+  - wrong way!
+questhelp:
+  location: LunarCrater, -23.066, 75.126, 193.855
+  lines:
+  - People with &f&l(&e&l!&f&l)&r above their heads have quests for you!
+  - People with &f&l(&b&l?&f&l)&f above their heads are part of a quest.
+  - '&dRight-click &f people to &dtalk&f to them.'
+  - '&fYou may need to &dclick twice &fto accept quests.'
+directions:
+  location: LunarCrater, -22.432, 66.618, 147.670
+  lines:
+  - Head to the &eyellow door &fto enter
+  - '&e&lLunar Base LeGuin!'
+rocket-path:
+  location: RocketLaunch, -1599.419, 71.200, 2720.336
+  lines:
+  - '&uThis way to launch!'
+directions-3:
+  location: RocketLaunch, -1549.592, 68.200, 2789.072
+  lines:
+  - Wrong way! Go to the rocket
+ObsTutFinish:
+  location: EarthControl, 370.300, 81.317, -223.953
+  lines:
+  - Finish
+ObsTutProg:
+  location: EarthControl, 251.300, 81.694, 164.935
+  lines:
+  - Next area
+portal-label-earth:
+  location: Hub, -57.300, 40.239, 146.505
+  lines:
+  - Earth
+  - (unaltered)
+portal-label-nomoon:
+  location: Hub, -101.700, 40.609, 146.452
+  lines:
+  - No Moon
+portal-label-coldersun:
+  location: Hub, -132.700, 39.492, 98.482
+  lines:
+  - Colder Sun
+portal-label-tiltedearth:
+  location: Hub, -79.431, 39.266, 45.877
+  lines:
+  - Tilted Earth
+warningmessage:
+  location: EarthControl, 253.004, 80.116, 164.888
+  lines:
+  - Important! Make sure you've talked
+  - to &c&leveryone &fhere before continuing
+  - There are &6&l4 &fguides in this area
+  - Come back if you missed someone
+warningmessage2:
+  location: EarthControl, 372.434, 80.200, -223.995
+  lines:
+  - Important! Make sure you've talked
+  - to &c&leveryone &fhere before continuing.
+  - There are &6&l5 &fguides in this area.
+  - If you've talked to everyone,
+  - your quest should complete.
+ObsTutGoBack:
+  location: EarthControl, 394.968, 83.488, -217.300
+  lines:
+  - Go Back
+credits:
+  location: RocketLaunch, -1559.484, 69.010, 2715.663
+  lines:
+  - credits
+portal-label-moon:
+  location: Hub, -49.555, 38.200, 98.574
+  lines:
+  - Back to
+  - Moonbase
+startmsg:
+  location: Hub, -90.041, 53.700, 214.195
+  lines:
+  - '&6&lStart here!'
+elevator:
+  location: Hub, -53.844, 39.700, 91.013
+  lines:
+  - Elevator
+  - to floor &c&l2
+hub-elevator-dn:
+  location: Hub, -58.909, 48.200, 90.902
+  lines:
+  - Elevator
+  - to floor &c&l1
+lifesciences:
+  location: Hub, -66.827, 47.040, 86.191
+  lines:
+  - Life Sciences Lab
+pbsnovalab:
+  location: Hub, -66.964, 47.188, 110.994
+  lines:
+  - '&b&lPBS Nova Lab'
+trappist2hub:
+  location: Trappist, -16.092, 76.324, 10.005
+  lines:
+  - Return to
+  - space station
+gliese2hub:
+  location: Gliese, 2.514, 96.200, 29.508
+  lines:
+  - Return to
+  - space station
+hub2mars:
+  location: Hub, -67.298, 46.749, 91.447
+  lines:
+  - Mars
+  - (coming soon)
+hub2asteroids:
+  location: Hub, -55.445, 46.943, 105.379
+  lines:
+  - Asteroid
+  - Mining
+  - (coming soon)
+hub2build:
+  location: Hub, -105.199, 47.068, 98.439
+  lines:
+  - Habitat
+  - Construction
+  - (coming soon)
+CSunCold_info:
+  location: ColderSun_Cold, -95.500, 83.000, -4.500
+  lines:
+  - info
+CSunCold_back:
+  location: ColderSun_Cold, -98.702, 83.105, -5.163
+  lines:
+  - back to
+  - station
+CSunHot_back:
+  location: ColderSun_Hot, -109.993, 83.293, 12.933
+  lines:
+  - back to
+  - station
+CSunHot_info:
+  location: ColderSun_Hot, -106.500, 84.000, 13.500
+  lines:
+  - info
+CSunStrip_back:
+  location: ColderSun_HabitableStrip, -99.351, 79.664, 3.028
+  lines:
+  - back to
+  - station
+CSunStrip_info:
+  location: ColderSun_HabitableStrip, -96.500, 80.000, 3.500
+  lines:
+  - info
+nomoon_back:
+  location: NoMoon, -63.758, 81, -13.764
+  lines:
+  - back to
+  - station
+  - .
+  - did you
+  - make an
+  - observation?
+nomoon_info:
+  location: NoMoon, -60.500, 81.000, -13.500
+  lines:
+  - info
+tiltedjungle_back:
+  location: TiltedEarth_JungleIsland, -108.055, 68.851, 1.111
+  lines:
+  - back to
+  - station
+tiltedjungle_info:
+  location: TiltedEarth_JungleIsland, -108.500, 69.000, 4.500
+  lines:
+  - info
+tiltedmelting_back:
+  location: TiltedEarth_Frozen, -182.777, 93.038, -25.848
+  lines:
+  - back to
+  - station
+tiltedmelting_info:
+  location: TiltedEarth_Frozen, -179.500, 93.000, -25.500
+  lines:
+  - info
+tiltedfrozen_info:
+  location: TiltedEarth_Melting, -168.500, 92.000, -26.500
+  lines:
+  - info
+tiltedfrozen_back:
+  location: TiltedEarth_Melting, -171.894, 91.976, -27.117
+  lines:
+  - back to
+  - station
+mynoa-label:
+  location: Hub, -49.500, 39.000, 113.500
+  lines:
+  - Mynoa
+  - access
+EV-info:
+  location: LunarCrater, -10.500, 73.000, 175.500
+  lines:
+  - info
+reminder:
+  location: NoMoon, -33.385, 77.147, 2.870
+  lines:
+  - Remember to observe like a scientist!
+  - Try /wind to compare to earth
+warmer:
+  location: ColderSun_Cold, -80.484, 69.406, -50.469
+  lines:
+  - Is it warmer underground?
+  - Check with /temperature and make an observation
+temperature-earth:
+  location: EarthControl, -91.387, 81.388, 7.848
+  lines:
+  - Is it warm? Cold?
+  - Try /temperature to find out
+cancri-return:
+  location: Cancri, 47.469, 82.194, 42.300
+  lines:
+  - return to
+  - space station
+cancri-hint:
+  location: Cancri, 47.400, 82, 65.837
+  lines:
+  - Observe like a scientist!
+  - Use /radiation and right
+  - click to program the probe
+mynoa-half-way:
+  location: Mynoa_close, 1321.664, 67.483, 893.817
+  lines:
+  - Travel half-way
+  - around the planet
+mynoa-far-side:
+  location: Mynoa_half, -2320.405, 94.200, 648.543
+  lines:
+  - Travel to the
+  - far side of Mynoa
+trappist-hint:
+  location: Trappist, -33.562, 73.369, -0.915
+  lines:
+  - Wow! Look at that sky
+  - Try /radiation and see what you get
+buffer-button:
+  location: Mynoa_half, -2352.556, 208.673, 501.300
+  lines:
+  - Land
+  - 10s
+  - v
+mynoa2hub:
+  location: Mynoa_far, 23.604, 70.853, -487.300
+  lines:
+  - Return to
+  - Space Station
+mynoa-sky-hint:
+  location: Mynoa_half, -2339.254, 86.653, 631.694
+  lines:
+  - <= Look at Tyran in the sky!
+optional:
+  location: LunarCrater, 147.315, 55.200, -136.779
+  lines:
+  - (optional)
+  - Observation Training
+tilted-explain:
+  location: Hub, -68.026, 39.901, 50.470
+  lines:
+  - Tilted Earth
+  - visual explanation
+colder-explain:
+  location: Hub, -127.583, 40.200, 87.181
+  lines:
+  - Colder Sun
+  - visual explanation
+asteroid-distance:
+  location: Asteroids, 57.401, 116.088, 117.069
+  lines:
+  - This is what asteroids look like, right?
+  - Wrong! They're actually many miles apart from one another
+  - unlike the movies - press the button to advance
+asteroid2hub:
+  location: Asteroids, 261.500, 113.437, 375.467
+  lines:
+  - Back to
+  - Space Station
+hub2life:
+  location: Hub, -71.976, 47.528, 86.918
+  lines:
+  - Extraterrestrial
+  - Life
+  - (coming soon)
+ice-hint:
+  location: LunarCrater, 72.308, 39.415, 108.321
+  lines:
+  - Ice storage
+whimc-web-museum:
+  location: Hub, -68.500, 39.104, 120.500
+  lines:
+  - Education
+  - Resources
+tanya-hint:
+  location: NoMoon, -2.106, 76.533, 3.709
+  lines:
+  - Talk to Tanya ->
+soon:
+  location: Asteroids, 247.305, 117.900, 384.512
+  lines:
+  - Coming soon!
+nova-link:
+  location: LunarCrater, -217.636, 75.700, 29.514
+  lines:
+  - Play the
+  - Exoplanet
+  - Lab!
+marsback:
+  location: Mars, 717.152, 20.215, 43.672
+  lines:
+  - Back to
+  - Space Station
+exolink:
+  location: Hub, -80.387, 47.100, 110.300
+  lines:
+  - PBS Nova
+  - Exoplanet Lab
+life2hub:
+  location: ETLife, 18.638, 102.116, 40.146
+  lines:
+  - Back to
+  - space station
+station-back:
+  location: Kepler, 67.701, 78.530, 31.551
+  lines:
+  - Back to
+  - space station
+return-hint:
+  location: TiltedEarth_Melting, -150.823, 90.613, -26.105
+  lines:
+  - Remember to use science tools to observe!
+  - Done exploring? Return to the space station through the shuttle
+edge-hint:
+  location: ColderSun_HabitableStrip, -84.091, 77.646, 6.806
+  lines:
+  - Look for Jorge behind the ship next to the desert where the sun is setting
+  - All done exploring? Go back to the space station through the rocket you landed
+    in
+sample:
+  location: Kepler, 80.491, 68.783, -45.459
+  lines:
+  - Turn on the machine to collect a sample
+  - '|'
+  - v
+lookup:
+  location: Mynoa_close, 1322.439, 68.200, 905.048
+  lines:
+  - Look up!
+hint-helmet:
+  location: LunarCrater, -9.445, 72.956, 163.149
+  lines:
+  - 'Hint: Press F5 a few times'
+  - to see your helmet!
+CSGradient:
+  location: ColderSun_HabitableStrip, -92.614, 87.732, -15.505
+  lines:
+  - Remember to pay attention
+  - to the different gradients across the planet!
+airflowhint:
+  location: LunarCrater, -23.614, 23.868, -8.536
+  lines:
+  - type &a&l/airflow &fto
+  - measure air circulation
+RocketTP:
+  location: RocketLaunch, -1611.504, 57.200, 2719.321
+  lines:
+  - '&l&aTo Rocket'
+RocketTPadjacent:
+  location: RocketLaunch, -1613.545, 57.248, 2724.498
+  lines:
+  - '&l&aConstruction Facilities'
+mars2hub:
+  location: Mars, -417.566, 98.742, -225.387
+  lines:
+  - Back to
+  - Space Station
+NoMoon-tide-hint:
+  location: NoMoon, -235.461, 92.118, -218.527
+  lines:
+  - This water is pretty high above sea level!
+  - What's going on? Do tides impact lakes too?
+  - Try &e/tides &for &a/temperature
+trappist-hint-1:
+  location: Trappist, -2.840, 63.587, 124.139
+  lines:
+  - 'Hint: &e/atmosphere &fwill'
+  - measure liquid composition too
+  - but you need to stand in the pool
+trappist-hint-2:
+  location: Trappist, -142.945, 63.669, -57.047
+  lines:
+  - 'Hint: &e/atmosphere &fwill'
+  - measure liquid composition too
+  - but you need to stand in the pool
+twomoons-label:
+  location: Hub, -49.500, 39.000, 83.500
+  lines:
+  - Two Moons
+  - access
+TwoMoons-return:
+  location: TwoMoons, 46.597, 70.414, 88.020
+  lines:
+  - Back to
+  - Space Station
+TwoMoons-back:
+  location: TwoMoonsLow, 46.014, 71.116, 88.041
+  lines:
+  - Return to
+  - High Tide
+tide-low:
+  location: TwoMoonsLow, 86.435, 67.200, 56.549
+  lines:
+  - Low Tide
+tide-high:
+  location: TwoMoons, 86.402, 69.200, 56.530
+  lines:
+  - High Tide
+museum-hint:
+  location: Mynoa_far, -21.913, 73.944, -381.442
+  lines:
+  - Look here!
+luna-hint:
+  location: TwoMoons, -13.461, 69.786, 99.630
+  lines:
+  - ^
+  - Lluna
+kuu-hint:
+  location: TwoMoons, -2.616, 69.778, 99.486
+  lines:
+  - ^
+  - kuu
+earth-hint:
+  location: TwoMoons, -9.416, 68.015, 99.378
+  lines:
+  - ^
+  - earth
+Lluna:
+  location: TwoMoons, -18.700, 68.493, 99.376
+  lines:
+  - VR Demonstration of Lluna
+Return2Moons:
+  location: TwoMoonsLluna, 68.971, 88.539, 78.531
+  lines:
+  - Return to Two Moons
+station-back-2:
+  location: Kepler, 65.332, 78.533, 31.530
+  lines:
+  - Back to
+  - Space Station
+twomoons-tides-hint:
+  location: TwoMoonsLow, 71.285, 68.124, 30.060
+  lines:
+  - Look at the tides!
+  - make an observation about them
+hub2galaxy:
+  location: Hub, -104.500, 41.000, 50.500
+  lines:
+  - Galactic
+  - Origins
+  - v

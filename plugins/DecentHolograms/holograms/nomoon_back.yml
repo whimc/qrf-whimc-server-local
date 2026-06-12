@@ -1,0 +1,22 @@
+location: NoMoon:-63.758:81.000:-13.764
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: back to
+    height: 0.3
+  - content: station
+    height: 0.3
+  - content: .
+    height: 0.3
+  - content: did you
+    height: 0.3
+  - content: make an
+    height: 0.3
+  - content: observation?
+    height: 0.3
+  actions: {}

@@ -1,0 +1,28 @@
+{
+  "uniqueId": "235b56b7-bb64-4cfe-bc54-8561d0366e40",
+  "location": {
+    "x": -126,
+    "y": 36,
+    "z": 127,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "mvtp {player-name} Supercluster"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

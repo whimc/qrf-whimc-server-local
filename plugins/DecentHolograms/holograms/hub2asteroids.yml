@@ -1,0 +1,16 @@
+location: Hub:-55.445:46.943:105.379
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Asteroid
+    height: 0.3
+  - content: Mining
+    height: 0.3
+  - content: (coming soon)
+    height: 0.3
+  actions: {}

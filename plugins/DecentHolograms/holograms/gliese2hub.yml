@@ -1,0 +1,14 @@
+location: Gliese:2.514:96.200:29.508
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Return to
+    height: 0.3
+  - content: space station
+    height: 0.3
+  actions: {}

@@ -1,0 +1,14 @@
+location: LunarCrater:46.099:15.200:-15.876
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Type &a&l/oxygen&f to measure
+    height: 0.3
+  - content: the current oxygen from your suit
+    height: 0.3
+  actions: {}

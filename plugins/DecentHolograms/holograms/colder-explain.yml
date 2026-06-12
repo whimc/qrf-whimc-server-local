@@ -1,0 +1,14 @@
+location: Hub:-127.583:40.200:87.181
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Colder Sun
+    height: 0.3
+  - content: visual explanation
+    height: 0.3
+  actions: {}

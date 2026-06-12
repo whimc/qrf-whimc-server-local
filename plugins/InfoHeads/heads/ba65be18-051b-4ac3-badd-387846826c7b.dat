@@ -1,0 +1,28 @@
+{
+  "uniqueId": "ba65be18-051b-4ac3-badd-387846826c7b",
+  "location": {
+    "x": -218,
+    "y": 74,
+    "z": 29,
+    "dimension": "LunarCrater"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"https://www.pbs.org/wgbh/nova/labs/lab/exoplanet\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.pbs.org/wgbh/nova/labs/lab/exoplanet\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

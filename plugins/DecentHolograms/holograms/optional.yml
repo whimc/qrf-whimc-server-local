@@ -1,0 +1,14 @@
+location: LunarCrater:147.315:55.200:-136.779
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: (optional)
+    height: 0.3
+  - content: Observation Training
+    height: 0.3
+  actions: {}

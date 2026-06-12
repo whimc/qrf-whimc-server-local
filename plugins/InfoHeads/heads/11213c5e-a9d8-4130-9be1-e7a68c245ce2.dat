@@ -1,0 +1,28 @@
+{
+  "uniqueId": "11213c5e-a9d8-4130-9be1-e7a68c245ce2",
+  "location": {
+    "x": -81,
+    "y": 46,
+    "z": 110,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.PlayerCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"https://www.pbs.org/wgbh/nova/labs/lab/exoplanet\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.pbs.org/wgbh/nova/labs/lab/exoplanet\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

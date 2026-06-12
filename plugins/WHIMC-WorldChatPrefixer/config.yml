@@ -1,0 +1,4 @@
+format: '&8(&7$prefix$&8) &r$chat$'
+world-prefixes:
+  Hub: Hub Space Station
+  MynoaMangrove: Mynoa Mangrove

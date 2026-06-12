@@ -1,0 +1,14 @@
+location: TwoMoons:-2.616:69.778:99.486
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ^
+    height: 0.3
+  - content: kuu
+    height: 0.3
+  actions: {}

@@ -1,0 +1,28 @@
+{
+  "uniqueId": "5d43a868-3052-48f0-9c78-c49516ab91ff",
+  "location": {
+    "x": -101,
+    "y": 38,
+    "z": 78,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "There's a creeper out there, don't let it blow a hole in the side of the station!"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

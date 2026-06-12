@@ -1,0 +1,28 @@
+{
+  "uniqueId": "57aa72f5-f040-4976-915b-52b1fbc0d016",
+  "location": {
+    "x": -20,
+    "y": 75,
+    "z": 9,
+    "dimension": "Trappist"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "This is Trappist 1e, one of several earth-size exoplanets in the same system."
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

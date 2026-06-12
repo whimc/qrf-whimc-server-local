@@ -1,0 +1,12 @@
+location: CancriCold:31.633:68.572:7.556
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Check with /atmosphere
+    height: 0.3
+  actions: {}

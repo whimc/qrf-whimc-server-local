@@ -1,0 +1,14 @@
+location: TiltedMelting:-150.823:90.613:-26.105
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Remember to use science tools to observe!
+    height: 0.3
+  - content: Done exploring? Return to the space station through the shuttle
+    height: 0.3
+  actions: {}

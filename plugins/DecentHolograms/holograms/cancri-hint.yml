@@ -1,0 +1,16 @@
+location: Cancri:47.400:82.000:65.837
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Observe like a scientist!
+    height: 0.3
+  - content: Use /radiation and right
+    height: 0.3
+  - content: click to program the probe
+    height: 0.3
+  actions: {}

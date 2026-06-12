@@ -1,0 +1,28 @@
+{
+  "uniqueId": "5915aeef-770d-41b1-b651-0bb4cee4383f",
+  "location": {
+    "x": -123,
+    "y": 36,
+    "z": 122,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "mvtp {player-name} blackhole"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

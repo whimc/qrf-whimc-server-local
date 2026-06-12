@@ -1,0 +1,34 @@
+{
+  "uniqueId": "b1f5a2e7-8163-4eb4-992e-d9617b71cc46",
+  "location": {
+    "x": -50,
+    "y": 38,
+    "z": 83,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "Once you've visited all of the What-If earths you can see Earth with Two Moons!"
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.PlayerCommandElement",
+      "data": {
+        "command": "quests take Seeing Double"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

@@ -1,0 +1,14 @@
+location: Hub:-57.300:40.239:146.505
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Earth
+    height: 0.3
+  - content: (unaltered)
+    height: 0.3
+  actions: {}

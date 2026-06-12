@@ -1,0 +1,427 @@
+#   ___                                     _  _              ___     _
+#  / __|   _  _      _ _   __ __    ___    | || |            | _ \   | |    _  _     ___
+#  \__ \  | +| |    | '_|  \ V /   / -_)    \_, |            |  _/   | |   | +| |   (_-<
+#  |___/   \_,_|   _|_|_   _\_/_   \___|   _|__/            _|_|_   _|_|_   \_,_|   /__/_
+#_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_| """"| {======|_| """ |_|"""""|_|"""""|_|"""""|
+#"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'./o--000'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'
+#
+#       A survey solution for networks and single servers by MartenM
+#
+#"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'./o--000'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'
+#
+
+# The server name specified here in the config is used to target the featured survey option.
+# Server names don't have to be unique. This means that all servers in 1 group can carry the same name.
+server_name: GLOBAL
+
+# Database settings
+# Specify the used database here.
+# Possible options: "SQLite, mysql"
+database_option: "SQLite"
+mysql:
+  user: root
+  password: ''
+  port: 3306
+  host: localhost
+  database: mc
+SQLite:
+  file_name: surveyData
+
+# Webhook settings, used for displaying data.
+webhooks:
+  discord:
+    embed_color: '#fcba03'
+    display_open_results: true
+    display_open_results_max: 5
+    # Display type used for answers
+    # Choose between: PERCENTAGE, BLOCKS, VOTES
+    display_type_answers: BLOCKS
+    display_type_blocks_blocks: 10
+    display_type_block_string: ":yellow_square:"
+
+# Used to define the default language file for easy use.
+# Default is English.
+language: "English"
+
+# Featured settings
+featured:
+  # Timeout between the event and the presentation of the featured survey.
+  # (in minecraft ticks: 20 ticks = 1 second)
+  timeout: 20
+  # Show a featured survey on server join.
+  on_join: true
+
+# Interfaces for different survey types.
+interface:
+
+  # Universal sound settings
+  sounds:
+    # Configure sound settings, values like "none" "" will be ignored.
+    feature_popup: "ENTITY_CAT_AMBIENT 1 1.5"
+    next_question: "BLOCK_NOTE_BLOCK_XYLOPHONE 0.8 1"
+    toggle_answer: "BLOCK_STONE_BUTTON_CLICK_ON 0.7 3"
+    click: "BLOCK_STONE_BUTTON_CLICK_ON 1 3"
+    finish_survey: "ENTITY_PLAYER_LEVELUP 0.3 0.5"
+    error: "BLOCK_NOTE_BASS 1 0.5"
+
+  ######################################################################
+  #                                                                    #
+  #                      Chat interface settings                       #
+  #                                                                    #
+  ######################################################################
+  chat:
+    # General settings for this survey interface
+    settings:
+      chat_clear_rows: 20
+      spacing: "          "
+
+    # General UI settings
+    general:
+      hover_answer: "&eClick to answer&e: %option%"
+      header:
+        - "       &e&l%question%"
+        - " "
+      footer:
+        - " "
+
+    #
+    #  Start of per question specifications
+    #
+    open:
+      hint_message: "&e   Please type your answer in the chat!"
+    closed:
+      yes_option: "&7> &a&lYES"
+      no_option: "&7> &c&lNO"
+    select:
+      format: "&7> &f %option%"
+      # Footers can be overridden for each question type!
+      # The same holds for headers.
+      footer:
+        - "&7 Click an answer to proceed"
+    multiple:
+      format_selected: "&a&l✓&r &e %option%"
+      format_unselected: "&7● &e %option%"
+      # Footers can be overridden for each question type!
+      # The same holds for headers.
+      hover_selected: "&eClick to &cdeselect&e: %option%"
+      hover_unselected: "&eClick to &aselect&e: %option%"
+      hover_next: "&eClick to move to the next question"
+      next_question:
+        - " "
+        - "        > &a&lNext question&r <"
+    finish_screen:
+      text:
+        - "&aThanks for filling in this survey"
+        - "&aUsing your feedback we will make sure to improve our server in the future"
+        - " "
+        - "&7You have been given some rewards for finishing the survey"
+    featured_screen:
+      text:
+        - "      &6&lWe are hosting a survey!"
+        - " "
+        - "      &l%name%"
+        - "      &7%description%"
+        - " "
+        - "<START>"
+        - " "
+      start_text: "     &a&lStart survey"
+      start_hover: "&7Click to &astart &7the survey"
+
+  ######################################################################
+  #                                                                    #
+  #                      Book interface settings                       #
+  #                                                                    #
+  ######################################################################
+  book:
+    general:
+      # Adds a little space before answer entry.
+      answer_spacing: " "
+      hover_answer: "&eClick to answer&e: %option%"
+      header:
+        - "&lQuestion:"
+        - "%question%"
+        - " "
+        - " "
+    open:
+      hover_text: "&aClose the book"
+      content:
+        - "&lClose the book and type your answer in chat."
+      chat_content:
+        - " "
+        - "&7&e Type your answer in chat!"
+        - " "
+    closed:
+      yes_option: "&7> &2&lYES"
+      no_option: "&7> &4&lNO"
+    select:
+      format: "&7>&0 %option%"
+    multiple:
+      format_selected: "&2&l✓&r&0 %option%"
+      format_unselected: "&7● &0%option%"
+      hover_selected: "&7Click to &cdeselect&7: %option%"
+      hover_unselected: "&7Click to &aselect&7: %option%"
+      hover_next: "&7Click to move to the next question"
+      next_question:
+        - " "
+        - "  > &1&lNext question&r <"
+    finish_screen:
+      text:
+        - "&2&lThanks for filling in this survey"
+        - " "
+        - "&0Using your feedback we will make sure to improve our server in the future"
+        - " "
+        - "&0You have been given some rewards for finishing the survey."
+    featured_screen:
+      text:
+        - "&1&lWe are hosting a survey!"
+        - " "
+        - " &l%name%"
+        - " %description%"
+        - " "
+        - "    <START>"
+        - " "
+      start_text: "&2&lStart survey"
+      start_hover: "&7Click to &astart &7the survey"
+      # Use <CLOSE> to create a close button.
+      close_text: "&c&lClose"
+      close_hover: "&7Click to close this pop-up"
+
+  ######################################################################
+  #                                                                    #
+  #                      Inventory interface settings                  #
+  #                                                                    #
+  ######################################################################
+  inventory:
+    general:
+      size: 45
+      # Header items that display the question
+      # Placeholders: %username% %question%
+      extra_items:
+        q1:
+          material: ITEM_FRAME
+          slot: 12
+          name: "&7Question:"
+          lore:
+            - "%question%"
+        q2:
+          material: ITEM_FRAME
+          slot: 13
+          name: "&7Question:"
+          lore:
+            - "%question%"
+        q3:
+          material: ITEM_FRAME
+          slot: 14
+          name: "&7Question:"
+          lore:
+            - "%question%"
+      # Filler item. This is overwritten by all other items.
+      filler:
+        material: AIR
+        name: " "
+        lore: {}
+      # Distribution of answer items
+      distribution:
+        - 31
+        - 30 32
+        - 30 31 32
+        - 29 30 32 33
+        - 29 30 31 32 33
+        - 28 29 30 32 33 34
+
+    # Settings per question type
+    open:
+      material: WRITTEN_BOOK
+      name: "Open the chat and type your answer"
+      lore:
+        - " "
+        - "&7There is also an message in chat to help you answer :)"
+    closed:
+      yes_option:
+        material: LIME_CONCRETE
+        custom_model: 2
+        name: "&a&lYes"
+        lore:
+          - " "
+          - "&7Click to answer &ayes"
+      no_option:
+        material: RED_CONCRETE
+        name: "&c&lNo"
+        lore:
+          - " "
+          - "&7Click to answer &cno"
+    multiple:
+      selected:
+        material: YELLOW_CONCRETE
+        name: "&e%option%"
+        lore:
+          - " "
+          - "&7Click to &ede-select&7 %option%"
+      un_selected:
+        material: LIGHT_GRAY_CONCRETE
+        name: "&f%option%"
+        lore:
+          - " "
+          - "&7Click to &aselect&7 %option%"
+      next_question:
+        slot: 44
+        material: ARROW
+        name: "&aNext question"
+        lore:
+          - " "
+          - "&7Click to move to the next question"
+    select:
+      material: ORANGE_CONCRETE
+      name: "&f%option%"
+      lore:
+        - " "
+        - "&7Click to answer"
+    finished_screen:
+      general:
+        size: 36
+        name: "&lThanks for participating"
+      items:
+        thanks1:
+          slot: 21
+          material: "GOLD_INGOT"
+          name: "&6&lThanks for your help!"
+          lore:
+            - " "
+            - "&7With your feedback we can improve the server!"
+            - "&7You have been &6rewarded&7 for your participation."
+        thanks2:
+          slot: 22
+          material: "GOLD_BLOCK"
+          name: "&6&lThanks for your help!"
+          lore:
+            - " "
+            - "&7With your feedback we can improve the server!"
+            - "&7You have been &6rewarded&7 for your participation."
+        thanks3:
+          slot: 23
+          material: "GOLD_INGOT"
+          name: "&6&lThanks for your help!"
+          lore:
+            - " "
+            - "&7With your feedback we can improve the server!"
+            - "&7You have been &6rewarded&7 for your participation."
+    featured_screen:
+      general:
+        size: 36
+        name: "&lPlayer feedback: %survey_name%"
+      start_items:
+        start1:
+          slot: 30
+          material: "LIME_CONCRETE"
+          name: "&a&lStart survey"
+          lore:
+            - " "
+            - "&7Click here to start the survey"
+        start2:
+          slot: 31
+          material: "LIME_CONCRETE"
+          name: "&a&lStart survey"
+          lore:
+            - " "
+            - "&7Click here to start the survey"
+        start3:
+          slot: 32
+          material: "LIME_CONCRETE"
+          name: "&a&lStart survey"
+          lore:
+            - " "
+            - "&7Click here to start the survey"
+
+      extra_items:
+        extra1:
+          slot: 13
+          material: "DIAMOND"
+          name: "&l&bGive feedback & get epic rewards"
+          lore:
+            - " "
+            - "%survey_description%"
+            - " "
+            - "&7Answer the questions in the survey"
+            - "&7and receive &6rewards&7."
+
+
+######################################################################
+#                                                                    #
+#               Available survey interface settings                  #
+#                                                                    #
+######################################################################
+available_surveys:
+  # General settings like size and inventory name
+  general:
+    inventory_name: "&lAvailable surveys"
+    inventory_size: 45
+
+  # Settings about the items used to display available surveys.
+  survey_item:
+    material: "WRITABLE_BOOK"
+    name: "&6&l%survey_name%&r"
+    lore:
+      - " "
+      - "%survey_description%"
+      - " "
+      - "&7Click to start the survey"
+
+  # If no surveys are available this item will be shown instead.
+  none_available:
+    slot: 31
+    material: "BARRIER"
+    name: "&cNo survey available"
+    lore:
+      - " "
+      - "&7No new surveys are available!"
+      - "&7Please check back later."
+
+  # Distribution of surveys across the inventory.
+  distribution:
+    - 31
+    - 30 32
+    - 29 31 33
+    - 29 30 32 33
+    - 29 30 31 32 33
+
+  # Add any extra items here. These will be overwritten by the survey
+  # items if they are in the same slot.
+  extra_items:
+    hint_item:
+      slot: 13
+      material: "GOLDEN_APPLE"
+      name: "&a&lHelp us improve the server"
+      lore:
+        - " "
+        - "By answering surveys you"
+        - "give us useful feedback."
+        - " "
+        - "With that feedback we can"
+        - "make improvements to the server!"
+        - " "
+        - "&7Finishing a survey will give you rewards"
+    fancy_1:
+      slot: 12
+      material: "GOLD_NUGGET"
+      name: "&a&l>"
+    fancy_2:
+      slot: 14
+      material: "GOLD_NUGGET"
+      name: "&a&l<"
+
+######################################################################
+#                                                                    #
+#                         Survey reminders                           #
+#                                                                    #
+######################################################################
+survey_reminders:
+  # If this setting is set to false no reminders will be send
+  # even if in the database this setting is set to true.
+  enabled: true
+  # Rest of the settings for reminders is in the database.
+  messages:
+    - " "
+    - "    &6&lYou have an ongoing survey left open!"
+    - "    &eClick here to continue."
+    - " "
+  hover_text: "&7Click to &acontinue &7with the survey."

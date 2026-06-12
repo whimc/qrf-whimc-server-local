@@ -1,0 +1,9 @@
+spawns:
+  default:
+    world: 3c04240d-604b-438d-b2d9-78e715a0a514
+    x: -85.5
+    y: 26.0
+    z: 98.5
+    yaw: -89.55166625976562
+    pitch: 10.049702644348145
+    world-name: Hub

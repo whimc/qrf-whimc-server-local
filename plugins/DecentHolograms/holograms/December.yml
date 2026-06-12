@@ -1,0 +1,12 @@
+location: TiltedMelting:-1008.591:124.379:434.436
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: December
+    height: 0.3
+  actions: {}

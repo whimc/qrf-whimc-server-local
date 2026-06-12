@@ -1,0 +1,34 @@
+{
+  "uniqueId": "8ef6025c-5c08-4df2-9959-346a7b2de57c",
+  "location": {
+    "x": 53,
+    "y": 15,
+    "z": -14,
+    "dimension": "LunarCrater"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "test"
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "sciencetools validate OXYGEN {player-name} LunarCrater 44.0 14.0 -17.0"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

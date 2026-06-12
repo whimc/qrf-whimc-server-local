@@ -1,0 +1,34 @@
+{
+  "uniqueId": "7986e947-cdc4-448f-bd3a-238df413e599",
+  "location": {
+    "x": -99,
+    "y": 39,
+    "z": 151,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "Learn more about earth with no moon."
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"https://youtu.be/-shZS2ypc_c\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/-shZS2ypc_c\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

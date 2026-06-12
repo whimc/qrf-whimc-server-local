@@ -1,0 +1,28 @@
+{
+  "uniqueId": "c22c785c-3dc1-44fd-b684-ba8ce42de5d3",
+  "location": {
+    "x": -30,
+    "y": 20,
+    "z": -26,
+    "dimension": "LunarCrater"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "sciencetools validate AIRFLOW {player-name} LunarCrater -30.0 19.0 -25.0"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

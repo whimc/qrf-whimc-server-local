@@ -1,0 +1,16 @@
+location: Kepler:166.096:66.550:-9.378
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Take an &e/atmosphere
+    height: 0.3
+  - content: reading here
+    height: 0.3
+  - content: v
+    height: 0.3
+  actions: {}

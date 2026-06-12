@@ -1,0 +1,12 @@
+location: CancriCold:-18.635:93.414:31.872
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: airlock entry
+    height: 0.3
+  actions: {}

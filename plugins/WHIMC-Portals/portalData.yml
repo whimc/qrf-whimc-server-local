@@ -1,0 +1,2104 @@
+Portals:
+  earth:
+    world: Hub
+    pos1:
+      x: -1826
+      y: 128
+      z: 546
+    pos2:
+      x: -1826
+      y: 133
+      z: 543
+    destination: EarthControl
+  RocketMoon:
+    world: RocketLaunch
+    pos1:
+      x: -1603
+      y: 146
+      z: 2911
+    pos2:
+      x: -1603
+      y: 143
+      z: 2911
+    destination: MoonStart
+    filler: AIR
+  Hub_RocketLaunch:
+    world: Hub
+    pos1:
+      x: -1802
+      y: 128
+      z: 561
+    pos2:
+      x: -1802
+      y: 127
+      z: 561
+    destination: RocketLaunch
+    filler: WATER
+  EarthControlHub:
+    world: Hub
+    pos1:
+      x: -57
+      y: 41
+      z: 144
+    pos2:
+      x: -57
+      y: 37
+      z: 148
+    destination: EarthControl
+  NoMoonHub:
+    world: Hub
+    pos1:
+      x: -103
+      y: 41
+      z: 148
+    pos2:
+      x: -103
+      y: 37
+      z: 144
+    destination: NoMoon
+  Shuttle2Station:
+    world: Hub
+    pos1:
+      x: -73
+      y: 54
+      z: 212
+    pos2:
+      x: -69
+      y: 52
+      z: 212
+    destination: Hub
+  Shuttle2Rocket:
+    world: Hub
+    pos1:
+      x: -93
+      y: 54
+      z: 212
+    pos2:
+      x: -89
+      y: 52
+      z: 212
+    destination: RocketLaunch
+  Moon2Hub:
+    world: LunarCrater
+    pos1:
+      x: 176
+      y: 55
+      z: -151
+    pos2:
+      x: 178
+      y: 52
+      z: -151
+    destination: Hub
+  obstut_Start:
+    world: LunarCrater
+    pos1:
+      x: 155
+      y: 54
+      z: -127
+    pos2:
+      x: 152
+      y: 53
+      z: -127
+    destination: obstut_Start
+  obstut_End:
+    world: LunarCrater
+    pos1:
+      x: 157
+      y: 53
+      z: -127
+    pos2:
+      x: 160
+      y: 54
+      z: -127
+    destination: obstut_Start
+  rocket-elevator:
+    world: RocketLaunch
+    pos1:
+      x: -1613
+      y: 56
+      z: 2717
+    pos2:
+      x: -1611
+      y: 55
+      z: 2715
+    destination: rocket-elevator
+  obstut_towertp1:
+    world: EarthControl
+    pos1:
+      x: 259
+      y: 80
+      z: 154
+    pos2:
+      x: 262
+      y: 78
+      z: 154
+    destination: obstut_towertp1
+  obstut_towertp2:
+    world: EarthControl
+    pos1:
+      x: 262
+      y: 90
+      z: 152
+    pos2:
+      x: 259
+      y: 90
+      z: 153
+    destination: obstut_towertp2
+  obstut_towertp3:
+    world: EarthControl
+    pos1:
+      x: 378
+      y: 80
+      z: -235
+    pos2:
+      x: 381
+      y: 78
+      z: -235
+    destination: obstut_towertp3
+  obstut_towertp4:
+    world: EarthControl
+    pos1:
+      x: 380
+      y: 90
+      z: -238
+    pos2:
+      x: 379
+      y: 90
+      z: -235
+    destination: obstut_towertp4
+  obstut_exit:
+    world: EarthControl
+    pos1:
+      x: 369
+      y: 80
+      z: -223
+    pos2:
+      x: 369
+      y: 78
+      z: -226
+    destination: obstut_exit
+    permission: observer
+  obstut_next:
+    world: EarthControl
+    pos1:
+      x: 250
+      y: 80
+      z: 166
+    pos2:
+      x: 250
+      y: 78
+      z: 163
+    destination: obstut_next
+  obstut_goback:
+    world: EarthControl
+    pos1:
+      x: 396
+      y: 83
+      z: -217
+    pos2:
+      x: 393
+      y: 80
+      z: -217
+    destination: obstut_goback
+  TiltedWarm:
+    world: Hub
+    pos1:
+      x: -81
+      y: 38
+      z: 44
+    pos2:
+      x: -79
+      y: 40
+      z: 44
+    destination: TiltedWarm
+  ColderStrip:
+    world: Hub
+    pos1:
+      x: -134
+      y: 37
+      z: 99
+    pos2:
+      x: -134
+      y: 39
+      z: 97
+    destination: CSunStrip
+  hub2moon:
+    world: Hub
+    pos1:
+      x: -31
+      y: 36
+      z: 100
+    pos2:
+      x: -31
+      y: 39
+      z: 96
+    destination: MoonStart
+    filler: AIR
+  DomeFix:
+    world: LunarCrater
+    pos1:
+      x: 16
+      y: 20
+      z: -15
+    pos2:
+      x: 19
+      y: 18
+      z: -15
+    destination: DomeFix
+  return2dome:
+    world: LunarCrater
+    pos1:
+      x: 137
+      y: 55
+      z: -141
+    pos2:
+      x: 137
+      y: 53
+      z: -143
+    destination: return2dome
+  back2moon:
+    world: Hub
+    pos1:
+      x: -49
+      y: 36
+      z: 97
+    pos2:
+      x: -49
+      y: 40
+      z: 99
+    destination: back2moon
+  hub-elevator-up:
+    world: Hub
+    pos1:
+      x: -52
+      y: 37
+      z: 89
+    pos2:
+      x: -51
+      y: 39
+      z: 92
+    destination: hub-L2
+    filler: AIR
+  hub-elevator-dn:
+    world: Hub
+    pos1:
+      x: -57
+      y: 45
+      z: 89
+    pos2:
+      x: -56
+      y: 47
+      z: 92
+    destination: hub-L1
+    filler: AIR
+  trappist2hub:
+    world: Trappist
+    pos1:
+      x: -16
+      y: 76
+      z: 9
+    pos2:
+      x: -16
+      y: 78
+      z: 9
+    destination: novalab
+    filler: AIR
+  gliese2hub:
+    world: Gliese
+    pos1:
+      x: 1
+      y: 94
+      z: 30
+    pos2:
+      x: 3
+      y: 96
+      z: 28
+    destination: novalab
+  cancri2hub:
+    world: CancriCold
+    pos1:
+      x: -100
+      y: 65
+      z: 10
+    pos2:
+      x: -100
+      y: 67
+      z: 8
+    destination: novalab
+  hub2build:
+    world: Hub
+    pos1:
+      x: -107
+      y: 45
+      z: 96
+    pos2:
+      x: -107
+      y: 48
+      z: 100
+    permission: engineer
+  hub2mars:
+    world: Hub
+    pos1:
+      x: -69
+      y: 45
+      z: 92
+    pos2:
+      x: -69
+      y: 47
+      z: 90
+    destination: Mars
+    filler: END_GATEWAY
+  CSunHotReturn:
+    world: ColderHot
+    pos1:
+      x: -90
+      y: 75
+      z: 29
+    pos2:
+      x: -92
+      y: 77
+      z: 29
+    destination: csun-stripcatwalk-hot
+  CSunColdReturn:
+    world: ColderCold
+    pos1:
+      x: -78
+      y: 76
+      z: 13
+    pos2:
+      x: -80
+      y: 74
+      z: 13
+    destination: csun-stripcatwalk-cold
+  ColderSun2hub:
+    world: ColderStrip
+    pos1:
+      x: -101
+      y: 80
+      z: 3
+    pos2:
+      x: -101
+      y: 82
+      z: 3
+    destination: Hub
+    filler: AIR
+  nomoon2hub:
+    world: NoMoon
+    pos1:
+      x: -65
+      y: 81
+      z: -14
+    pos2:
+      x: -65
+      y: 83
+      z: -14
+    destination: Hub
+    filler: AIR
+  earthcontrol2hub:
+    world: EarthControl
+    pos1:
+      x: -116
+      y: 81
+      z: 7
+    pos2:
+      x: -116
+      y: 79
+      z: 9
+    destination: earthcontrol2hub
+  mynoa:
+    world: Hub
+    pos1:
+      x: -31
+      y: 39
+      z: 110
+    pos2:
+      x: -31
+      y: 36
+      z: 116
+    destination: mynoa
+    filler: AIR
+  hub2cancri:
+    world: Hub
+    pos1:
+      x: -79
+      y: 45
+      z: 125
+    pos2:
+      x: -81
+      y: 47
+      z: 125
+    destination: cancri
+  hub2gliese:
+    world: Hub
+    pos1:
+      x: -73
+      y: 45
+      z: 124
+    pos2:
+      x: -75
+      y: 47
+      z: 124
+    destination: gliese
+  hub2trappist:
+    world: Hub
+    pos1:
+      x: -85
+      y: 47
+      z: 124
+    pos2:
+      x: -87
+      y: 45
+      z: 124
+    destination: trappist
+  rocket-tower-elevator:
+    world: RocketLaunch
+    pos1:
+      x: -1614
+      y: 78
+      z: 2910
+    pos2:
+      x: -1613
+      y: 79
+      z: 2912
+    destination: rocket-tower-elevator-top
+    filler: AIR
+  mynoaclose2mynoahalf:
+    world: MynoaClose
+    pos1:
+      x: 1319
+      y: 65
+      z: 891
+    pos2:
+      x: 1323
+      y: 70
+      z: 891
+    destination: mynoaclose2mynoahalf
+    filler: AIR
+  mynoahalf2mynoamangrove:
+    world: MynoaHalf
+    pos1:
+      x: 43
+      y: 102
+      z: 190
+    pos2:
+      x: 45
+      y: 101
+      z: 186
+    destination: mynoamangrove
+    filler: AIR
+  mars2hub:
+    world: Mars
+    pos1:
+      x: -417
+      y: 97
+      z: -227
+    pos2:
+      x: -417
+      y: 99
+      z: -225
+    destination: hub-L2
+    filler: END_GATEWAY
+  hub2life:
+    world: Hub
+    pos1:
+      x: -72
+      y: 45
+      z: 88
+    pos2:
+      x: -73
+      y: 47
+      z: 88
+    destination: ETLife
+  life2hub:
+    world: ETLife
+    pos1:
+      x: 19
+      y: 101
+      z: 41
+    pos2:
+      x: 17
+      y: 103
+      z: 41
+    destination: hub-L2
+  hub2kepler:
+    world: Hub
+    pos1:
+      x: -64
+      y: 45
+      z: 117
+    pos2:
+      x: -64
+      y: 47
+      z: 115
+    destination: kepler
+  kepler2hub:
+    world: Kepler
+    pos1:
+      x: 280
+      y: 90
+      z: -33
+    pos2:
+      x: 280
+      y: 92
+      z: -31
+    destination: novalab
+  CSunStrip2hot:
+    world: ColderStrip
+    pos1:
+      x: -181
+      y: 85
+      z: -15
+    pos2:
+      x: -181
+      y: 87
+      z: -17
+    destination: CSunHot
+  CSunStrip2cold:
+    world: ColderStrip
+    pos1:
+      x: 271
+      y: 83
+      z: -17
+    pos2:
+      x: 271
+      y: 85
+      z: -15
+    destination: CSunCold
+  hub2browndwarf:
+    world: Hub
+    pos1:
+      x: -88
+      y: 45
+      z: 107
+    pos2:
+      x: -87
+      y: 46
+      z: 107
+    destination: browndwarf
+  browndwarf2hub:
+    world: BrownDwarf
+    pos1:
+      x: 41
+      y: 133
+      z: 23
+    pos2:
+      x: 40
+      y: 134
+      z: 23
+    destination: novalab
+  hub2TwoMoons:
+    world: Hub
+    pos1:
+      x: -31
+      y: 36
+      z: 85
+    pos2:
+      x: -31
+      y: 39
+      z: 81
+    destination: TwoMoons
+    filler: AIR
+  TwoMoons2hub:
+    world: TwoMoons
+    pos1:
+      x: 47
+      y: 71
+      z: 87
+    pos2:
+      x: 47
+      y: 69
+      z: 89
+    destination: Hub
+  TwoMoonsLow:
+    world: TwoMoonsLow
+    pos1:
+      x: 47
+      y: 71
+      z: 88
+    pos2:
+      x: 47
+      y: 69
+      z: 87
+    destination: TwoMoons
+  TwoMoons2TwoMoonsLow:
+    world: TwoMoons
+    pos1:
+      x: 86
+      y: 65
+      z: 10
+    pos2:
+      x: 86
+      y: 67
+      z: 12
+    destination: twomoonstimetunneltop
+  Lluna:
+    world: TwoMoons
+    pos1:
+      x: -20
+      y: 69
+      z: 101
+    pos2:
+      x: -20
+      y: 66
+      z: 97
+    destination: Lluna
+  Return2Moons:
+    world: TwoMoonsLluna
+    pos1:
+      x: 67
+      y: 89
+      z: 76
+    pos2:
+      x: 70
+      y: 86
+      z: 76
+    destination: TwoMoons
+  quasar2hub:
+    world: Quasar
+    pos1:
+      x: -111
+      y: 176
+      z: -102
+    pos2:
+      x: -112
+      y: 175
+      z: -103
+    destination: celestial-hub
+  PBS-elevator-bottom:
+    world: LunarCrater
+    pos1:
+      x: -182
+      y: 64
+      z: 29
+    pos2:
+      x: -183
+      y: 67
+      z: 30
+    destination: PBS-elevator-top
+    filler: AIR
+  PBS-elevator-top:
+    world: LunarCrater
+    pos1:
+      x: -214
+      y: 71
+      z: 21
+    pos2:
+      x: -213
+      y: 74
+      z: 20
+    destination: PBS-elevator-bottom
+    filler: AIR
+  Lluna2:
+    world: TwoMoonsLow
+    pos1:
+      x: -20
+      y: 66
+      z: 98
+    pos2:
+      x: -20
+      y: 68
+      z: 100
+    destination: Lluna
+  cancri-elevator:
+    world: CancriCold
+    pos1:
+      x: -20
+      y: 92
+      z: 33
+    pos2:
+      x: -18
+      y: 95
+      z: 30
+    destination: cancri-surface
+    filler: AIR
+  cancri_hot2CancriCold:
+    world: Cancri
+    pos1:
+      x: 49
+      y: 83
+      z: 43
+    pos2:
+      x: 45
+      y: 80
+      z: 41
+    destination: cancri-shuttle
+    filler: AIR
+  neutron2hub:
+    world: NeutronStar
+    pos1:
+      x: -94
+      y: 144
+      z: 10
+    pos2:
+      x: -94
+      y: 146
+      z: 8
+    destination: celestial-hub
+  blackhole2hub:
+    world: BlackHole
+    pos1:
+      x: -2
+      y: 155
+      z: 205
+    pos2:
+      x: -4
+      y: 157
+      z: 205
+    destination: celestial-hub
+  mynoahalf2mynoaclose:
+    world: MynoaHalf
+    pos1:
+      x: -44
+      y: 92
+      z: 184
+    pos2:
+      x: -44
+      y: 90
+      z: 182
+    destination: mynoa
+  cancricold2cancrihot:
+    world: CancriCold
+    pos1:
+      x: -20
+      y: 67
+      z: 33
+    pos2:
+      x: -20
+      y: 69
+      z: 31
+    destination: cancri
+  cancricloudup:
+    world: CancriCold
+    pos1:
+      x: -6
+      y: 68
+      z: 72
+    pos2:
+      x: -7
+      y: 64
+      z: 71
+    destination: cancricloudup
+    filler: AIR
+  summer2hub:
+    world: Hub
+    pos1:
+      x: -83
+      y: 26
+      z: 94
+    pos2:
+      x: -81
+      y: 28
+      z: 92
+    destination: shuttle
+    filler: AIR
+  other2hub:
+    world: Hub
+    pos1:
+      x: -81
+      y: 26
+      z: 102
+    pos2:
+      x: -83
+      y: 28
+      z: 104
+    destination: shuttle
+    filler: AIR
+  planetarium2hub:
+    world: Hub
+    pos1:
+      x: -76
+      y: 26
+      z: 99
+    pos2:
+      x: -74
+      y: 28
+      z: 101
+    destination: shuttle
+    filler: AIR
+  nova2hub:
+    world: Hub
+    pos1:
+      x: -76
+      y: 26
+      z: 95
+    pos2:
+      x: -74
+      y: 28
+      z: 97
+    destination: shuttle
+    filler: AIR
+  cancri-exit-clouds:
+    world: CancriCold
+    pos1:
+      x: -37
+      y: 116
+      z: 72
+    pos2:
+      x: -22
+      y: 117
+      z: 86
+    destination: cancri-surface
+    filler: AIR
+  AIchoice2nomoon:
+    world: NoMoon
+    pos1:
+      x: -56
+      y: 58
+      z: -34
+    pos2:
+      x: -56
+      y: 59
+      z: -35
+    destination: NoMoon
+  hub2icarus:
+    world: Hub
+    pos1:
+      x: -96
+      y: 45
+      z: 117
+    pos2:
+      x: -96
+      y: 47
+      z: 115
+    destination: icarus
+  icarus2etlife:
+    world: Icarus
+    pos1:
+      x: -438
+      y: 123
+      z: -506
+    pos2:
+      x: -435
+      y: 125
+      z: -506
+    destination: ETLife
+    filler: AIR
+  icarus2hub:
+    world: Icarus
+    pos1:
+      x: -439
+      y: 123
+      z: -485
+    pos2:
+      x: -435
+      y: 126
+      z: -485
+    destination: novalab
+    filler: AIR
+  pillars2hub:
+    world: Pillars
+    pos1:
+      x: 106
+      y: 187
+      z: 520
+    pos2:
+      x: 104
+      y: 185
+      z: 520
+    destination: celestial-hub
+  supercluster2hub:
+    world: Supercluster
+    pos1:
+      x: 207
+      y: 151
+      z: 4
+    pos2:
+      x: 207
+      y: 153
+      z: 6
+    destination: celestial-hub
+  warpone:
+    world: TiltedMelting
+    pos1:
+      x: -1011
+      y: 90
+      z: 432
+    pos2:
+      x: -1007
+      y: 94
+      z: 436
+    destination: tiltedfrozen
+  warptwo:
+    world: TiltedMelting
+    pos1:
+      x: -1007
+      y: -36
+      z: 436
+    pos2:
+      x: -1011
+      y: -39
+      z: 432
+    destination: tiltedmelting
+  warpzero:
+    world: TiltedMelting
+    pos1:
+      x: -1011
+      y: 237
+      z: 432
+    pos2:
+      x: -1007
+      y: 235
+      z: 436
+    destination: tiltedwarm
+  tiltedfrozen2melting:
+    world: TiltedFrozen
+    pos1:
+      x: 190
+      y: 83
+      z: 180
+    pos2:
+      x: 189
+      y: 84
+      z: 180
+    destination: timetwo
+  tiltedwarm2frozen:
+    world: TiltedWarm
+    pos1:
+      x: 403
+      y: 73
+      z: -458
+    pos2:
+      x: 400
+      y: 75
+      z: -458
+    destination: timeone
+  tiltedmelting2warm:
+    world: TiltedMelting
+    pos1:
+      x: 190
+      y: 83
+      z: 180
+    pos2:
+      x: 189
+      y: 84
+      z: 180
+    destination: timezero
+  tiltedwarmhelolaunch:
+    world: TiltedWarm
+    pos1:
+      x: 361
+      y: 87
+      z: -342
+    pos2:
+      x: 363
+      y: 88
+      z: -339
+    destination: tiltedwarmheloocean
+    filler: AIR
+  tiltedwarmheloreturn:
+    world: TiltedWarm
+    pos1:
+      x: 414
+      y: 60
+      z: -808
+    pos2:
+      x: 420
+      y: 67
+      z: -814
+    destination: tiltedwarmheloland
+    filler: AIR
+  tiltedmeltinghelolaunch:
+    world: TiltedMelting
+    pos1:
+      x: 361
+      y: 87
+      z: -342
+    pos2:
+      x: 363
+      y: 88
+      z: -339
+    destination: tiltedmeltingheloocean
+    filler: AIR
+  tiltedmeltingheloreturn:
+    world: TiltedMelting
+    pos1:
+      x: 414
+      y: 60
+      z: -808
+    pos2:
+      x: 420
+      y: 67
+      z: -814
+    destination: tiltedmeltingheloland
+    filler: AIR
+  tiltedfrozenhelolaunch:
+    world: TiltedFrozen
+    pos1:
+      x: 361
+      y: 87
+      z: -342
+    pos2:
+      x: 363
+      y: 88
+      z: -339
+    destination: tiltedfrozenheloocean
+    filler: AIR
+  tiltedfrozenheloreturn:
+    world: TiltedFrozen
+    pos1:
+      x: 414
+      y: 60
+      z: -808
+    pos2:
+      x: 420
+      y: 67
+      z: -814
+    destination: tiltedfrozenheloland
+    filler: AIR
+  tiltedwarm2hub:
+    world: TiltedWarm
+    pos1:
+      x: 190
+      y: 83
+      z: 180
+    pos2:
+      x: 189
+      y: 84
+      z: 180
+    destination: hub-L1
+  twomoonstime2twomoonslow:
+    world: TwoMoons
+    pos1:
+      x: -446
+      y: 68
+      z: 130
+    pos2:
+      x: -442
+      y: 64
+      z: 126
+    destination: TwoMoonsLow
+  celestial:
+    world: Hub
+    pos1:
+      x: -107
+      y: 37
+      z: 52
+    pos2:
+      x: -103
+      y: 37
+      z: 48
+    destination: celestial-hub
+    filler: AIR
+  celestial2hub:
+    world: Hub
+    pos1:
+      x: -129
+      y: 37
+      z: 114
+    pos2:
+      x: -127
+      y: 41
+      z: 114
+    destination: hub-L1
+    filler: AIR
+  universe2hub:
+    world: Universe
+    pos1:
+      x: 242
+      y: 155
+      z: -5
+    pos2:
+      x: 242
+      y: 157
+      z: -3
+    destination: celestial-hub
+  sagittarius2hub:
+    world: Sagittarius
+    pos1:
+      x: -5
+      y: 23
+      z: 1
+    pos2:
+      x: -5
+      y: 22
+      z: 0
+    destination: celestial-hub
+  solarsystem2hub:
+    world: SolarSystem
+    pos1:
+      x: 16
+      y: 140
+      z: -2417
+    pos2:
+      x: 18
+      y: 140
+      z: -2415
+    destination: celestial-hub
+  continuedplay:
+    world: Hub
+    pos1:
+      x: -87
+      y: 27
+      z: 98
+    pos2:
+      x: -87
+      y: 26
+      z: 98
+    destination: returners
+    permission: engineer
+  solo1:
+    world: eval
+    pos1:
+      x: -202
+      y: -57
+      z: -17
+    pos2:
+      x: -202
+      y: -55
+      z: -16
+    destination: pause
+    filler: END_GATEWAY
+  solo2:
+    world: eval
+    pos1:
+      x: -136
+      y: -57
+      z: -17
+    pos2:
+      x: -136
+      y: -55
+      z: -16
+    destination: pause
+    filler: END_GATEWAY
+  solo3:
+    world: eval
+    pos1:
+      x: -70
+      y: -57
+      z: -17
+    pos2:
+      x: -70
+      y: -55
+      z: -16
+    destination: pause
+    filler: END_GATEWAY
+  solo4:
+    world: eval
+    pos1:
+      x: -4
+      y: -57
+      z: -17
+    pos2:
+      x: -4
+      y: -55
+      z: -16
+    destination: pause
+    filler: END_GATEWAY
+  solo5:
+    world: eval
+    pos1:
+      x: -202
+      y: -57
+      z: -50
+    pos2:
+      x: -202
+      y: -55
+      z: -49
+    destination: pause
+    filler: END_GATEWAY
+  solo6:
+    world: eval
+    pos1:
+      x: -136
+      y: -57
+      z: -50
+    pos2:
+      x: -136
+      y: -55
+      z: -49
+    destination: pause
+    filler: END_GATEWAY
+  solo7:
+    world: eval
+    pos1:
+      x: -70
+      y: -57
+      z: -50
+    pos2:
+      x: -70
+      y: -55
+      z: -49
+    destination: pause
+    filler: END_GATEWAY
+  solo8:
+    world: eval
+    pos1:
+      x: -4
+      y: -57
+      z: -50
+    pos2:
+      x: -4
+      y: -55
+      z: -49
+    destination: pause
+    filler: END_GATEWAY
+  solo9:
+    world: eval
+    pos1:
+      x: -202
+      y: -57
+      z: -83
+    pos2:
+      x: -202
+      y: -55
+      z: -82
+    destination: pause
+    filler: END_GATEWAY
+  solo10:
+    world: eval
+    pos1:
+      x: -136
+      y: -57
+      z: -83
+    pos2:
+      x: -136
+      y: -55
+      z: -82
+    destination: pause
+    filler: END_GATEWAY
+  solo11:
+    world: eval
+    pos1:
+      x: -70
+      y: -57
+      z: -83
+    pos2:
+      x: -70
+      y: -55
+      z: -82
+    destination: pause
+    filler: END_GATEWAY
+  solo12:
+    world: eval
+    pos1:
+      x: -4
+      y: -57
+      z: -83
+    pos2:
+      x: -4
+      y: -55
+      z: -82
+    destination: pause
+    filler: END_GATEWAY
+  solo13:
+    world: eval
+    pos1:
+      x: -202
+      y: -57
+      z: -116
+    pos2:
+      x: -202
+      y: -55
+      z: -115
+    destination: pause
+    filler: END_GATEWAY
+  solo14:
+    world: eval
+    pos1:
+      x: -136
+      y: -57
+      z: -116
+    pos2:
+      x: -136
+      y: -55
+      z: -115
+    destination: pause
+    filler: END_GATEWAY
+  solo15:
+    world: eval
+    pos1:
+      x: -70
+      y: -57
+      z: -116
+    pos2:
+      x: -70
+      y: -55
+      z: -115
+    destination: pause
+    filler: END_GATEWAY
+  solo16:
+    world: eval
+    pos1:
+      x: -4
+      y: -57
+      z: -116
+    pos2:
+      x: -4
+      y: -55
+      z: -115
+    destination: pause
+    filler: END_GATEWAY
+  solo17:
+    world: eval
+    pos1:
+      x: -202
+      y: -57
+      z: -149
+    pos2:
+      x: -202
+      y: -55
+      z: -148
+    destination: pause
+    filler: END_GATEWAY
+  solo18:
+    world: eval
+    pos1:
+      x: -136
+      y: -57
+      z: -149
+    pos2:
+      x: -136
+      y: -55
+      z: -148
+    destination: pause
+    filler: END_GATEWAY
+  solo19:
+    world: eval
+    pos1:
+      x: -70
+      y: -57
+      z: -149
+    pos2:
+      x: -70
+      y: -55
+      z: -148
+    destination: pause
+    filler: END_GATEWAY
+  solo20:
+    world: eval
+    pos1:
+      x: -4
+      y: -57
+      z: -149
+    pos2:
+      x: -4
+      y: -55
+      z: -148
+    destination: pause
+    filler: END_GATEWAY
+  pair1:
+    world: eval
+    pos1:
+      x: -305
+      y: -57
+      z: -222
+    pos2:
+      x: -305
+      y: -55
+      z: -221
+    destination: pause
+    filler: END_GATEWAY
+  pair2:
+    world: eval
+    pos1:
+      x: -204
+      y: -57
+      z: -222
+    pos2:
+      x: -204
+      y: -55
+      z: -221
+    destination: pause
+    filler: END_GATEWAY
+  pair3:
+    world: eval
+    pos1:
+      x: -103
+      y: -57
+      z: -222
+    pos2:
+      x: -103
+      y: -55
+      z: -221
+    destination: pause
+    filler: END_GATEWAY
+  pair4:
+    world: eval
+    pos1:
+      x: -3
+      y: -57
+      z: -222
+    pos2:
+      x: -3
+      y: -55
+      z: -221
+    destination: pause
+    filler: END_GATEWAY
+  pair5:
+    world: eval
+    pos1:
+      x: -305
+      y: -57
+      z: -255
+    pos2:
+      x: -305
+      y: -55
+      z: -254
+    destination: pause
+    filler: END_GATEWAY
+  pair6:
+    world: eval
+    pos1:
+      x: -204
+      y: -57
+      z: -255
+    pos2:
+      x: -204
+      y: -55
+      z: -254
+    destination: pause
+    filler: END_GATEWAY
+  pair7:
+    world: eval
+    pos1:
+      x: -103
+      y: -57
+      z: -255
+    pos2:
+      x: -103
+      y: -55
+      z: -254
+    destination: pause
+    filler: END_GATEWAY
+  pair8:
+    world: eval
+    pos1:
+      x: -3
+      y: -57
+      z: -255
+    pos2:
+      x: -3
+      y: -55
+      z: -254
+    destination: pause
+    filler: END_GATEWAY
+  pair9:
+    world: eval
+    pos1:
+      x: -305
+      y: -57
+      z: -288
+    pos2:
+      x: -305
+      y: -55
+      z: -287
+    destination: pause
+    filler: END_GATEWAY
+  pair10:
+    world: eval
+    pos1:
+      x: -204
+      y: -57
+      z: -288
+    pos2:
+      x: -204
+      y: -55
+      z: -287
+    destination: pause
+    filler: END_GATEWAY
+  pair11:
+    world: eval
+    pos1:
+      x: -103
+      y: -57
+      z: -288
+    pos2:
+      x: -103
+      y: -55
+      z: -287
+    destination: pause
+    filler: END_GATEWAY
+  pair12:
+    world: eval
+    pos1:
+      x: -3
+      y: -57
+      z: -288
+    pos2:
+      x: -3
+      y: -55
+      z: -287
+    destination: pause
+    filler: END_GATEWAY
+  pair13:
+    world: eval
+    pos1:
+      x: -305
+      y: -57
+      z: -321
+    pos2:
+      x: -305
+      y: -55
+      z: -320
+    destination: pause
+    filler: END_GATEWAY
+  pair14:
+    world: eval
+    pos1:
+      x: -204
+      y: -57
+      z: -321
+    pos2:
+      x: -204
+      y: -55
+      z: -320
+    destination: pause
+    filler: END_GATEWAY
+  pair15:
+    world: eval
+    pos1:
+      x: -103
+      y: -57
+      z: -321
+    pos2:
+      x: -103
+      y: -55
+      z: -320
+    destination: pause
+    filler: END_GATEWAY
+  pair16:
+    world: eval
+    pos1:
+      x: -3
+      y: -57
+      z: -321
+    pos2:
+      x: -3
+      y: -55
+      z: -320
+    destination: pause
+    filler: END_GATEWAY
+  pair17:
+    world: eval
+    pos1:
+      x: -305
+      y: -57
+      z: -354
+    pos2:
+      x: -305
+      y: -55
+      z: -353
+    destination: pause
+    filler: END_GATEWAY
+  pair18:
+    world: eval
+    pos1:
+      x: -204
+      y: -57
+      z: -354
+    pos2:
+      x: -204
+      y: -55
+      z: -353
+    destination: pause
+    filler: END_GATEWAY
+  pair19:
+    world: eval
+    pos1:
+      x: -103
+      y: -57
+      z: -354
+    pos2:
+      x: -103
+      y: -55
+      z: -353
+    destination: pause
+    filler: END_GATEWAY
+  pair20:
+    world: eval
+    pos1:
+      x: -3
+      y: -57
+      z: -354
+    pos2:
+      x: -3
+      y: -55
+      z: -353
+    destination: pause
+    filler: END_GATEWAY
+  mynoamangrove-return:
+    world: MynoaMangrove
+    pos1:
+      x: 253
+      y: 76
+      z: 377
+    pos2:
+      x: 251
+      y: 84
+      z: 381
+    destination: Hub
+    filler: AIR
+  mynoamangrove-loop:
+    world: MynoaMangrove
+    pos1:
+      x: 262
+      y: 76
+      z: 390
+    pos2:
+      x: 262
+      y: 78
+      z: 388
+    destination: mynoa
+Destinations:
+  RocketLaunch:
+    world: RocketLaunch
+    x: -1555.3711297722698
+    y: 67.0
+    z: 2705.0986589933204
+    pitch: -4.8246946
+    yaw: -281.2885
+  Hub:
+    world: Hub
+    x: -50.91052781567828
+    y: 36.5
+    z: 98.4390906729728
+    pitch: -2.4491665
+    yaw: -269.56558
+  MoonStart:
+    world: LunarCrater
+    x: -21.993003129052084
+    y: 71.0
+    z: 209.29765440512878
+    pitch: -8.600508
+    yaw: -35.54892
+  obstut_Start:
+    world: EarthControl
+    x: 281.6982547482728
+    y: 78.0
+    z: 163.8088960668781
+    pitch: 16.491205
+    yaw: -270.67203
+  rocket-elevator:
+    world: RocketLaunch
+    x: -1599.5238865115973
+    y: 70.0
+    z: 2714.5126243440172
+    pitch: 5.248799
+    yaw: -0.123046875
+  obstut_towertp1:
+    world: EarthControl
+    x: 263.69999998807907
+    y: 93.0
+    z: 150.5049320189704
+    pitch: 16.950357
+    yaw: -281.73535
+  obstut_towertp2:
+    world: EarthControl
+    x: 261.0120235441176
+    y: 78.0
+    z: 156.86614956050212
+    pitch: 12.300369
+    yaw: -0.7869873
+  obstut_towertp3:
+    world: EarthControl
+    x: 382.69999998807907
+    y: 93.0
+    z: -238.6304241043778
+    pitch: 26.100075
+    yaw: -269.7212
+  obstut_towertp4:
+    world: EarthControl
+    x: 380.00168191326145
+    y: 78.0
+    z: -232.09058659930884
+    pitch: 3.4501595
+    yaw: -3.2902832
+  obstut_next:
+    world: EarthControl
+    x: 399.3880316633995
+    y: 80.0
+    z: -221.52717404823693
+    pitch: 7.799899
+    yaw: -269.2893
+  obstut_goback:
+    world: EarthControl
+    x: 281.4454888497249
+    y: 78.0
+    z: 163.69330257710743
+    pitch: 10.350378
+    yaw: -266.2937
+  obstut_exit:
+    world: LunarCrater
+    x: 159.0123121602594
+    y: 53.0
+    z: -127.86269076499374
+    pitch: 2.4994807
+    yaw: -136.04309
+  EarthControl:
+    world: EarthControl
+    x: -105.5776391274534
+    y: 78.0
+    z: 8.249215271449467
+    pitch: 7.4993954
+    yaw: -86.60181
+  NoMoon:
+    world: NoMoon
+    x: -55.06313041343087
+    y: 75.0
+    z: -22.260913885405852
+    pitch: -4.755993
+    yaw: -167.69112
+  CSunStrip:
+    world: ColderStrip
+    x: -98.09894062500835
+    y: 78.0
+    z: 2.5168061164319444
+    pitch: 7.9496894
+    yaw: -88.8746
+  DomeFix:
+    world: LunarCrater
+    x: 141.54989221797425
+    y: 53.0
+    z: -141.45199143508572
+    pitch: -2.4000742
+    yaw: -87.8125
+  CSunCold:
+    world: ColderCold
+    x: -90.25073473152322
+    y: 77.0
+    z: -9.2270538127518
+    pitch: 6.900237
+    yaw: -164.45773
+  CSunHot:
+    world: ColderHot
+    x: -96.90348797785317
+    y: 78.0
+    z: 7.320610447071007
+    pitch: 5.02013
+    yaw: -166.03253
+  return2dome:
+    world: LunarCrater
+    x: 17.460120650794032
+    y: 18.0
+    z: -12.4621257732854
+    pitch: 8.049339
+    yaw: -331.63718
+  back2moon:
+    world: LunarCrater
+    x: -22.8579404517247
+    y: 71.0
+    z: 209.1069418501271
+    pitch: 12.699487
+    yaw: 182.69914
+  hub-L2:
+    world: Hub
+    x: -59.19919770773696
+    y: 45.0
+    z: 91.19583986011125
+    pitch: 7.198888
+    yaw: -269.9815
+  hub-L1:
+    world: Hub
+    x: -53.79044076366003
+    y: 37.0
+    z: 90.82461181722809
+    pitch: 3.4495685
+    yaw: -267.2807
+  trappist:
+    world: Trappist
+    x: -17.691410146980296
+    y: 74.0
+    z: 10.498788595384733
+    pitch: 6.9886613
+    yaw: -270.591
+  gliese:
+    world: Gliese
+    x: 2.562206841278547
+    y: 94.0
+    z: 37.69999998807907
+    pitch: -0.6460171
+    yaw: -0.8146809
+  cancri:
+    world: Cancri
+    x: 47.48663141266921
+    y: 80.0
+    z: 50.69863766521563
+    pitch: 34.509014
+    yaw: 0.7976103
+  mynoa:
+    world: MynoaClose
+    x: 1329.6717161050299
+    y: 63.0
+    z: 949.3740608899155
+    pitch: -58.050533
+    yaw: -61.944427
+  rocket-tower-elevator-top:
+    world: RocketLaunch
+    x: -1613.292617564241
+    y: 144.0
+    z: 2911.498402308789
+    pitch: 11.055286
+    yaw: -91.64541
+  mars:
+    world: Mars
+    x: -424.67777275243213
+    y: 97.0
+    z: -219.3620254386351
+    pitch: -3.581151
+    yaw: -215.82687
+  earthcontrol2hub:
+    world: Hub
+    x: -79.34293071163583
+    y: 37.0
+    z: 154.2873197332904
+    pitch: 8.351067
+    yaw: -181.36438
+  MynoaHalf:
+    world: MynoaHalf
+    x: -0.09819830715506153
+    y: 86.0
+    z: 175.03228519170273
+    pitch: -44.101173
+    yaw: 178.98163
+  ETLife:
+    world: ETLife
+    x: 18.629877721721257
+    y: 101.615327828393
+    z: 39.0412890198924
+    pitch: 5.0993586
+    yaw: -170.61157
+  kepler:
+    world: Kepler
+    x: 279.099063344911
+    y: 90.0
+    z: -31.547390256245325
+    pitch: 2.6987705
+    yaw: 91.91149
+  csun-stripcatwalk-cold:
+    world: ColderStrip
+    x: 268.28523840147284
+    y: 83.0
+    z: -15.528730358903818
+    pitch: 3.449595
+    yaw: 91.58055
+  csun-stripcatwalk-hot:
+    world: ColderStrip
+    x: -176.5
+    y: 85.0
+    z: -15.5
+    pitch: 10.049746
+    yaw: 268.58078
+  novalab:
+    world: Hub
+    x: -79.83260019296685
+    y: 45.0
+    z: 115.03385352533392
+    pitch: 9.448884
+    yaw: -3.2800598
+  browndwarf:
+    world: BrownDwarf
+    x: 41.0557416689852
+    y: 133.0
+    z: 20.511816077668577
+    pitch: 14.399605
+    yaw: 178.06299
+  TwoMoons:
+    world: TwoMoons
+    x: 31.949804026176587
+    y: 65.0
+    z: 75.82775558427576
+    pitch: -27.750542
+    yaw: 271.63315
+  TwoMoonsLow:
+    world: TwoMoonsLow
+    x: 109.93460367242075
+    y: 65.0
+    z: 23.83850540291259
+    pitch: -3.9001133
+    yaw: 83.65317
+  Lluna:
+    world: TwoMoonsLluna
+    x: 70.10673467962904
+    y: 86.0
+    z: 80.41514408536493
+    pitch: -5.849971
+    yaw: 147.00093
+  PBS-elevator-bottom:
+    world: LunarCrater
+    x: -179.37069266366822
+    y: 64.0
+    z: 30.124992205341215
+    pitch: 5.248075
+    yaw: -90.81445
+  PBS-elevator-top:
+    world: LunarCrater
+    x: -212.95952876048628
+    y: 71.0
+    z: 23.458088199815283
+    pitch: -20.550215
+    yaw: -2.250122
+  cancri-surface:
+    world: CancriCold
+    x: -17.666288823001256
+    y: 67.0
+    z: 33.57357105612609
+    pitch: 0.5992165
+    yaw: -34.228027
+  cancri-shuttle:
+    world: CancriCold
+    x: -18.435209613773033
+    y: 93.0
+    z: 51.69999998807907
+    pitch: 15.1493435
+    yaw: 3.1215968
+  shuttle:
+    world: Hub
+    x: -80.42166524180905
+    y: 52.0
+    z: 213.2346866262975
+    pitch: 7.6499357
+    yaw: 178.9552
+  cancricloudup:
+    world: CancriCold
+    x: -28.607162448636895
+    y: 120.74891805015163
+    z: 80.37460438630178
+    pitch: 43.950172
+    yaw: 0.85079956
+  AIchoice:
+    world: NoMoon
+    x: -53.77726571397628
+    y: 58.0
+    z: -34.20256136014691
+    pitch: 8.550405
+    yaw: -91.968796
+  mynoaclose2mynoahalf:
+    world: MynoaHalf
+    x: -0.08403834102220166
+    y: 86.0
+    z: 175.2607842814637
+    pitch: -20.250898
+    yaw: -1.9189993
+  icarus:
+    world: Icarus
+    x: -411.1053725820132
+    y: 122.0
+    z: -473.41060521156277
+    pitch: -1.2000005
+    yaw: -40.951347
+  timeone:
+    world: TiltedMelting
+    x: -1008.4185712492333
+    y: 231.0
+    z: 434.5612769950325
+    pitch: 88.04998
+    yaw: -85.6022
+  tiltedmelting:
+    world: TiltedMelting
+    x: 413.5
+    y: 69.0
+    z: -504.5
+    pitch: 12.899635
+    yaw: -65.96178
+  timetwo:
+    world: TiltedMelting
+    x: -1008.3887038367067
+    y: 84.68072867650707
+    z: 434.6571230195611
+    pitch: 85.34995
+    yaw: -164.06476
+  tiltedfrozen:
+    world: TiltedFrozen
+    x: 384.00638277520926
+    y: 81.0
+    z: -409.67355240742216
+    pitch: 2.3999298
+    yaw: -156.11392
+  timezero:
+    world: TiltedMelting
+    x: -1008.5
+    y: 299.5820974165023
+    z: 434.5
+    pitch: 90.0
+    yaw: -179.80992
+  tiltedwarm:
+    world: TiltedWarm
+    x: 190
+    y: 83.0
+    z: 174
+    pitch: -9.300636
+    yaw: 61.768623
+  tiltedwarmheloocean:
+    world: TiltedWarm
+    x: 418.60144608171544
+    y: 94.0
+    z: -797.8161034765955
+    pitch: 16.79983
+    yaw: 97.64013
+  tiltedwarmheloland:
+    world: TiltedWarm
+    x: 357.27191067145884
+    y: 85.0
+    z: -340.69638906293983
+    pitch: 5.0998855
+    yaw: 88.48956
+  tiltedmeltingheloocean:
+    world: TiltedMelting
+    x: 418.60144608171544
+    y: 94.0
+    z: -797.8161034765955
+    pitch: 16.79983
+    yaw: 97.64013
+  tiltedmeltingheloland:
+    world: TiltedMelting
+    x: 357.27191067145884
+    y: 85.0
+    z: -340.69638906293983
+    pitch: 5.0998855
+    yaw: 88.48956
+  tiltedfrozenheloocean:
+    world: TiltedFrozen
+    x: 418.60144608171544
+    y: 94.0
+    z: -797.8161034765955
+    pitch: 16.79983
+    yaw: 97.64013
+  tiltedfrozenheloland:
+    world: TiltedFrozen
+    x: 357.5854740965138
+    y: 86.0
+    z: -340.55448689013554
+    pitch: 8.69976
+    yaw: 85.33957
+  twomoonstimetunneltop:
+    world: TwoMoons
+    x: -443.3434238254201
+    y: 225.0
+    z: 128.49582552052624
+    pitch: 85.499954
+    yaw: -177.76154
+  celestial-hub:
+    world: Hub
+    x: -127.54833345878765
+    y: 36.5
+    z: 116.8206799235102
+    pitch: 3.59964
+    yaw: 0.5935669
+  universe:
+    world: Universe
+    x: 241.5
+    y: 163.0
+    z: -3.5
+    pitch: 2.9998913
+    yaw: 87.15257
+  returners:
+    world: Hub
+    x: -82.58519778400094
+    y: 39.0
+    z: 99.1997389483753
+    pitch: 14.399662
+    yaw: -134.08334
+  pause:
+    world: Hub
+    x: -79.5
+    y: 10.0
+    z: 98.5
+    pitch: 55.19965
+    yaw: -70.05167
+  mynoamangrove:
+    world: MynoaMangrove
+    x: 307.63482530357555
+    y: 69.0
+    z: 187.41042204937034
+    pitch: -1.0505098
+    yaw: -174.95358

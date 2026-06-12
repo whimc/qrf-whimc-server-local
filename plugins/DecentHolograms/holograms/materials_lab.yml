@@ -1,0 +1,12 @@
+location: LunarCrater:20.338:19.000:-8.518
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c&lMaterials Laboratory'
+    height: 0.3
+  actions: {}

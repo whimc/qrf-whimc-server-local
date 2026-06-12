@@ -1,0 +1,15 @@
+location: ColderStrip:-84.091:77.646:6.806
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Look for Jorge behind the ship next to the desert where the sun is setting
+    height: 0.3
+  - content: All done exploring? Go back to the space station through the rocket you
+      landed in
+    height: 0.3
+  actions: {}

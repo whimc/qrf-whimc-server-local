@@ -1,0 +1,16 @@
+location: Icarus:-436.518:124.792:-505.700
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: click to
+    height: 0.3
+  - content: see microscopic
+    height: 0.3
+  - content: subsurface life!
+    height: 0.3
+  actions: {}

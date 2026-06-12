@@ -1,0 +1,28 @@
+{
+  "uniqueId": "a93b3d01-212f-456a-9a7a-b2162abf558a",
+  "location": {
+    "x": -124,
+    "y": 36,
+    "z": 119,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "mvtp {player-name} pillars"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

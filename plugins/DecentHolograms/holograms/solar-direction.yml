@@ -1,0 +1,12 @@
+location: SolarSystem:17.311:139.520:-2404.564
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Fly north or south!
+    height: 0.3
+  actions: {}

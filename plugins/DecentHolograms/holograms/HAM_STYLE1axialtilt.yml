@@ -1,0 +1,14 @@
+location: Kepler:267.985:93.578:-31.879
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Try /tilt
+    height: 0.3
+  - content: What does this tilt suggest?
+    height: 0.3
+  actions: {}

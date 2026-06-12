@@ -1,0 +1,28 @@
+{
+  "uniqueId": "fd144961-cea5-47fb-81e2-6461bf6e91ca",
+  "location": {
+    "x": 36,
+    "y": 27,
+    "z": 41,
+    "dimension": "LunarCrater"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "sciencetools validate PRESSURE {player-name} LunarCrater 43.0 22.0 31.0"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

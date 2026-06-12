@@ -1,0 +1,14 @@
+location: LunarCrater:38.540:23.000:40.492
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Type &a&l/pressure&f to measure
+    height: 0.3
+  - content: the current pressure from your suit
+    height: 0.3
+  actions: {}

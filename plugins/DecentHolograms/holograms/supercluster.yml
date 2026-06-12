@@ -1,0 +1,12 @@
+location: Hub:-125.000:40.000:128.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: galaxy supercluster
+    height: 0.3
+  actions: {}

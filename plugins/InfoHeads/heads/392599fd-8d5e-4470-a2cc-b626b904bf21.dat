@@ -1,0 +1,28 @@
+{
+  "uniqueId": "392599fd-8d5e-4470-a2cc-b626b904bf21",
+  "location": {
+    "x": 2,
+    "y": 93,
+    "z": 53,
+    "dimension": "Gliese"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "sciencetools validate GRAVITY {player-name} Gliese 2.0 93.0 53.0"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

@@ -1,0 +1,16 @@
+location: LunarCrater:-217.636:75.700:29.514
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Play the
+    height: 0.3
+  - content: Exoplanet
+    height: 0.3
+  - content: Lab!
+    height: 0.3
+  actions: {}

@@ -1,0 +1,12 @@
+location: Hub:-1810.475:134.274:545.030
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&2&lEarth'
+    height: 0.3
+  actions: {}

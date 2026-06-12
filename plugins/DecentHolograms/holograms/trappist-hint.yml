@@ -1,0 +1,14 @@
+location: Trappist:-33.562:73.369:-0.915
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Wow! Look at that sky
+    height: 0.3
+  - content: Try /radiation and see what you get
+    height: 0.3
+  actions: {}

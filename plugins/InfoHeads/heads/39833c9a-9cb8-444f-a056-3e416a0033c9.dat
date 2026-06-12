@@ -1,0 +1,21 @@
+{
+  "uniqueId": "39833c9a-9cb8-444f-a056-3e416a0033c9",
+  "location": {
+    "x": -8,
+    "y": 71,
+    "z": 175,
+    "dimension": "LunarCrater"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

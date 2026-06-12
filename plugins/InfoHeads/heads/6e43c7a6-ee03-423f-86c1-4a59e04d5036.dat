@@ -1,0 +1,34 @@
+{
+  "uniqueId": "6e43c7a6-ee03-423f-86c1-4a59e04d5036",
+  "location": {
+    "x": -126,
+    "y": 39,
+    "z": 67,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.MessageElement",
+      "data": {
+        "message": "Learn more about how earth with a colder sun."
+      }
+    },
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"https://youtu.be/WcC7vvDIpB8\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/WcC7vvDIpB8\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

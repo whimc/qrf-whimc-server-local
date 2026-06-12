@@ -1,0 +1,14 @@
+location: Mars:-417.566:98.742:-225.387
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Back to
+    height: 0.3
+  - content: Space Station
+    height: 0.3
+  actions: {}

@@ -1,0 +1,368 @@
+PlayerMapStore:
+  mapList:
+  - name: Map 1
+    mapID: 246
+    id: Map 1
+    type: SINGLE
+  - name: Map
+    mapID: 247
+    id: Map-1
+    type: SINGLE
+  - columns: 10
+    name: Map
+    id: Map-2
+    type: POSTER
+    rows: 10
+    mapsIDs:
+    - 248
+    - 249
+    - 250
+    - 251
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    - 257
+    - 258
+    - 259
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    - 265
+    - 266
+    - 267
+    - 268
+    - 269
+    - 270
+    - 271
+    - 272
+    - 273
+    - 274
+    - 275
+    - 276
+    - 277
+    - 278
+    - 279
+    - 280
+    - 281
+    - 282
+    - 283
+    - 284
+    - 285
+    - 286
+    - 287
+    - 288
+    - 289
+    - 290
+    - 291
+    - 292
+    - 293
+    - 294
+    - 295
+    - 296
+    - 297
+    - 298
+    - 299
+    - 300
+    - 301
+    - 302
+    - 303
+    - 304
+    - 305
+    - 306
+    - 307
+    - 308
+    - 309
+    - 310
+    - 311
+    - 312
+    - 313
+    - 314
+    - 315
+    - 316
+    - 317
+    - 318
+    - 319
+    - 320
+    - 321
+    - 322
+    - 323
+    - 324
+    - 325
+    - 326
+    - 327
+    - 328
+    - 329
+    - 330
+    - 331
+    - 332
+    - 333
+    - 334
+    - 335
+    - 336
+    - 337
+    - 338
+    - 339
+    - 340
+    - 341
+    - 342
+    - 343
+    - 344
+    - 345
+    - 346
+    - 347
+  - columns: 5
+    name: Map
+    id: Map-3
+    type: POSTER
+    rows: 5
+    mapsIDs:
+    - 348
+    - 349
+    - 350
+    - 351
+    - 352
+    - 353
+    - 354
+    - 355
+    - 356
+    - 357
+    - 358
+    - 359
+    - 360
+    - 361
+    - 362
+    - 363
+    - 364
+    - 365
+    - 366
+    - 367
+    - 368
+    - 369
+    - 370
+    - 371
+    - 372
+  - name: Map
+    mapID: 373
+    id: Map-4
+    type: SINGLE
+  - columns: 3
+    name: Map
+    id: Map-5
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 374
+    - 375
+    - 376
+    - 377
+    - 378
+    - 379
+  - columns: 2
+    name: Map
+    id: Map-6
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 380
+    - 381
+    - 382
+    - 383
+  - columns: 5
+    name: Map
+    id: Map-7
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 384
+    - 385
+    - 386
+    - 387
+    - 388
+    - 389
+    - 390
+    - 391
+    - 392
+    - 393
+  - columns: 2
+    name: Map
+    id: Map-8
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 394
+    - 395
+    - 396
+    - 397
+  - columns: 3
+    name: Map
+    id: Map-9
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 398
+    - 399
+    - 400
+    - 401
+    - 402
+    - 403
+  - columns: 1
+    name: Map
+    id: Map-10
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 404
+    - 405
+  - columns: 6
+    name: Map
+    id: Map-11
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 406
+    - 407
+    - 408
+    - 409
+    - 410
+    - 411
+    - 412
+    - 413
+    - 414
+    - 415
+    - 416
+    - 417
+  - columns: 2
+    name: Material Science
+    id: Material Science
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 418
+    - 419
+  - columns: 3
+    name: Rover Drop
+    id: Rover Drop
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 420
+    - 421
+    - 422
+    - 423
+    - 424
+    - 425
+  - columns: 5
+    name: BIG NSF
+    id: BIG NSF
+    type: POSTER
+    rows: 5
+    mapsIDs:
+    - 426
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    - 432
+    - 433
+    - 434
+    - 435
+    - 436
+    - 437
+    - 438
+    - 439
+    - 440
+    - 441
+    - 442
+    - 443
+    - 444
+    - 445
+    - 446
+    - 447
+    - 448
+    - 449
+    - 450
+  - name: NSF blank
+    mapID: 451
+    id: NSF blank
+    type: SINGLE
+  - name: FISKE
+    mapID: 452
+    id: FISKE
+    type: SINGLE
+  - name: UIUC
+    mapID: 453
+    id: UIUC
+    type: SINGLE
+  - columns: 2
+    name: WHIMC Title Map
+    id: WHIMC Title Map
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 455
+    - 456
+    - 457
+    - 458
+  - name: Dome Access
+    mapID: 459
+    id: Dome Access
+    type: SINGLE
+  - name: University of Maine
+    mapID: 460
+    id: University of Maine
+    type: SINGLE
+  - name: UNCC
+    mapID: 461
+    id: UNCC
+    type: SINGLE
+  - name: PBS Nova Labs
+    mapID: 462
+    id: PBS Nova Labs
+    type: SINGLE
+  - name: NSF
+    mapID: 464
+    id: NSF
+    type: SINGLE
+  - name: radial velecoity
+    mapID: 475
+    id: radial velecoity
+    type: SINGLE
+  - name: Data Transit
+    mapID: 476
+    id: Data Transit
+    type: SINGLE
+  - name: exoatmosphere
+    mapID: 477
+    id: exoatmosphere
+    type: SINGLE
+  - name: exoatmofinder
+    mapID: 478
+    id: exoatmofinder
+    type: SINGLE
+  - columns: 2
+    name: stardeck
+    id: stardeck
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 479
+    - 480
+  - name: pbs-videos
+    mapID: 481
+    id: pbs-videos
+    type: SINGLE
+  - name: aliens1
+    mapID: 482
+    id: aliens1
+    type: SINGLE
+  - name: aliens2
+    mapID: 483
+    id: aliens2
+    type: SINGLE
+playerPosterStore:
+  posterList: []

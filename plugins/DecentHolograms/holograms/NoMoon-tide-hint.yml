@@ -1,0 +1,16 @@
+location: NoMoon:-235.461:92.118:-218.527
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: This water is pretty high above sea level!
+    height: 0.3
+  - content: What's going on? Do tides impact lakes too?
+    height: 0.3
+  - content: Try &e/tides &for &a/temperature
+    height: 0.3
+  actions: {}

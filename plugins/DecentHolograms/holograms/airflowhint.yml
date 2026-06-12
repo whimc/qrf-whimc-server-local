@@ -1,0 +1,14 @@
+location: LunarCrater:-23.614:23.868:-8.536
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: type &a&l/airflow &fto
+    height: 0.3
+  - content: measure air circulation
+    height: 0.3
+  actions: {}

@@ -1,0 +1,14 @@
+location: ColderStrip:-92.614:87.732:-15.505
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Remember to pay attention
+    height: 0.3
+  - content: to the different gradients across the planet!
+    height: 0.3
+  actions: {}

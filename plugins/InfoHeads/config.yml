@@ -1,0 +1,18 @@
+########################################################
+#                     InfoHeads                        #
+# - Authors: Harry0198, Lorenzo0111                    #
+# - License: FREE! (Well... Actually it's Apache-2.0)  #
+#                                                      #
+#                 Enjoy the Plugin!                    #
+########################################################
+#
+# Optional Dependencies:
+# PlaceHolderAPI: You can use placeholders provided by PAPI.
+#
+# Configuration explanation:
+# checkForUpdate = If true, enables checking for the latest update on startup.
+# configVer = Version of generated configuration. (Probably don't touch this).
+checkForUpdate: true
+configVer: 3
+languageTag: en-GB
+loggingLevel: INFO

@@ -1,0 +1,305 @@
+boards:
+  '[obstut_descriptive]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - '&l= Descriptive Observations ='
+    - '&r'
+    - 'The floor is made of &c&lconcrete'
+    - '&r'
+    - 'The building provides &a&lshelter from rain'
+    - '&r'
+    - 'The temperature is about &b&l70 degrees'
+    - '&r'
+    - '&b&l3 potions&r are on the brewing stand'
+    - '&r'
+    - 'The lantern is &9&lblue'
+    - '&r'
+    - '(come up with yours now!)'
+    - '&r'
+    - '&r'
+    - '&r'
+  '[obstut_comparative]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - '&l= Comparative Observations ='
+    - '&r'
+    - 'The &a&lgrass&r here is colored'
+    - 'differently than the &b&lother area'
+    - '&r'
+    - 'There are &c&lpigs&r here, but'
+    - 'not in the &b&lother area'
+    - '&r'
+    - 'This area is &d&lcloser to the sea'
+    - '&rthan the &b&lother area'
+    - '&r'
+    - 'The outer carpet is &7&ldarker&r'
+    - 'than the &b&linner carpet&r'
+    - '&r'
+    - 'There is &7&lone more yellow lantern&r'
+    - 'than &b&lblue lantern&r'
+  '[obstut_inferential]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - '&l= Inferential Observations ='
+    - '&r'
+    - '&0&lNight&r and &e&lday&r are roughly'
+    - 'equal, which suggests we are near an'
+    - '&5&lequinox'
+    - '&r'
+    - 'Half of the island has been &4&lscoured'
+    - 'of dirt, there may not be enough food'
+    - 'to sustain the &3&lpig population'
+    - '&r'
+    - 'The adjacent island is &6&ldesert,&r'
+    - 'indicating that it receives &7&lvery'
+    - '&7&llittle precipitation'
+    - '&r'
+    - 'The &a&lmushrooms&r get blue lanterns'
+    - 'so they may need &d&lless light'
+  '[Jorge-Earth]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - '= &lDr. Neil Comins&r ='
+    - '&r'
+    - 'Welcome [back?] to &d&lEarth! &fIn'
+    - 'science it is important to have a'
+    - '"control" case.'
+    - '&r'
+    - 'This earth is unmodified.'
+    - '&r'
+    - 'We can make observations here'
+    - 'to &a&lcompare&r to later.'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+  '[Hub-Quests]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - '= &lWHIMC Station Challenges ='
+    - '&r'
+    - '1. &e&lExplore &fthe station and learn'
+    - '&r'
+    - '2. Visit &b&l"What-If" &fEarths, make'
+    - 'scientific observations'
+    - '&r'
+    - '3. Visit &d&lexoplanets &fand solar'
+    - 'system features, observe differences'
+    - '&r'
+    - '4. Build a &a&lhabitat &fto survive in'
+    - 'outer space or on a harsh planet!'
+    - '&r'
+    - '&c&lHint: &fdescriptive, comparative'
+    - 'and inferential observations'
+    - '&r'
+  '[hub-shuttle]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - '&a&l===== Get Started ====='
+    - '&r'
+    - 'Ready to explore "what if" earths,'
+    - 'exoplanets and build habitats?'
+    - '&r'
+    - 'Great!'
+    - '&r'
+    - 'First we have to get you trained up.'
+    - '&r'
+    - '1. Visit the &e&lRocket Launch facility'
+    - 'learn about how we escape the earth'
+    - '&r'
+    - '2. Learn to observe like a scientist on'
+    - 'our first &b&lMoon base LeGuin'
+    - '&r'
+    - 'Good luck cadet!'
+  '[What-If-Guide]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'You are in the wing with portals to'
+    - 'unchanged &7(control) &aEarth &fand what'
+    - 'the Earth would be like &ewithout a moon'
+    - '&r'
+    - 'To access the next set, you need to'
+    - 'talk to &dNiel Comins &7(control Earth)'
+    - 'and help &dTanya &fwith the &b/observe'
+    - '&fcommand &7(no moon)'
+    - '&r'
+    - '&fAfter all of this you get to find'
+    - '&dJorge &fon the edge of the habitable'
+    - 'strip &7(colder sun) &fand &eTIME TRAVEL'
+    - 'to study animals with &dClara &7(Earth'
+    - '&7tilted 90°)'
+  '[Kepler]':
+    owner: fb59871d-c325-49ec-8f4e-9b6f81dfba20
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'Welcome To Kepler 186f'
+    - '&r'
+    - 'We are currently 500 light years'
+    - 'away from Earth and orbiting a red dwarf'
+    - '&r'
+    - defaultBoardLine09
+    - defaultBoardLine08
+    - 'While the air here may be breathable, we'
+    - 'keep our suits on so that we avoid'
+    - 'disturbing the ecosystem'
+    - '&r'
+    - defaultBoardLine03
+    - defaultBoardLine02
+    - defaultBoardLine01
+  '[BDInfo]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - '&6Welcome to CWW 89Ab'
+    - defaultBoardLine13
+    - 'This object is has been found orbiting a'
+    - 'star. It is currently unknown if it is a'
+    - 'brown dwarf or a gas giant planet.'
+    - defaultBoardLine09
+    - 'We can better qualify this object by'
+    - 'testing the ratio of carbon to oxygen'
+    - 'in its atmosphere.'
+    - '&r'
+    - 'If the ratio is similar to the star then'
+    - 'it is considered a brown dwarf. If it is'
+    - 'much higher then it is qualified as a'
+    - 'gas giant planet.'
+  '[BDQuest]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'Walk off of the platform'
+    - 'to pilot the probe.'
+    - '&r'
+    - 'Once near the atmosphere,'
+    - 'use &a/atmosphere &r to take a sample.'
+    - defaultBoardLine09
+    - 'Take note of the ratio and report'
+    - 'back to Theron at the space station'
+    - 'PBS research lab.'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+    - defaultBoardLine01
+  '[Info]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'Welcome to our Museum!'
+    - defaultBoardLine13
+    - 'Here you can visualize how our two moons'
+    - 'orbit our planet.'
+    - '&r'
+    - 'As you can see, one moon, Lluna (red),'
+    - 'is closer than the other, Kuu (white).'
+    - '&r'
+    - 'To learn more about our two moons,'
+    - 'talk with Kate on the balcony.'
+    - '&r'
+    - 'You can also feel free to enter our'
+    - 'virtual reality demonstration of Lluna!'
+    - defaultBoardLine01
+  '[Kuu]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'Kuu is the same size and distance'
+    - 'from our planet as is your Moon.'
+    - '&r'
+    - 'It shares the same characteristics'
+    - 'of the moon of Earth as well.'
+    - defaultBoardLine09
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+    - '&r'
+  '[Lluna]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'Lluna was captured by our planet'
+    - 'many years ago.'
+    - '&r'
+    - 'The way that it was captured'
+    - 'created many volcanoes on the'
+    - 'surface which are still active today.'
+    - '&r'
+    - 'Lluna is the same size as Kuu, but'
+    - 'at half the distance to our planet.'
+    - '&r'
+    - 'To learn more and to view the surface,'
+    - 'go into the interactive demonstartion'
+    - 'behind you.'
+    - defaultBoardLine01
+  '[BDDefinition]':
+    owner: b96975b5-0b3f-47da-950a-3918165706cf
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'A brown dwarf is a "failed star"'
+    - defaultBoardLine13
+    - 'What this means is that when a star was'
+    - 'forming, it stabilized before it became'
+    - 'hot enough to perform the fusion'
+    - 'of normal hydrogen. Without this'
+    - 'fusion, they cool down over time.'
+    - '&r'
+    - 'They are around the size of Jupiter'
+    - 'but have a mass 13 to 80 times it.'
+    - '&r'
+    - 'Brown Dwarfs do not emit much visible'
+    - 'light which can make them hard to'
+    - 'study from far away.'
+  '[Volcanoes]':
+    owner: fb59871d-c325-49ec-8f4e-9b6f81dfba20
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'Welcome to the moon Lluna'
+    - defaultBoardLine13
+    - 'The volcanoes here are formed'
+    - 'by the constant pull of gravity'
+    - 'in different directions by the'
+    - 'Earth and the other moon.'
+    - '&r'
+    - 'This causes Lluna to stretch and'
+    - 'compress, leading to tectonic'
+    - 'activity that pushed the volcanoes up.'
+    - '&r'
+    - 'Make sure to observe the environment'
+    - 'here and how it differs from your moon.'
+    - defaultBoardLine01
+  '[Cancri-Info]':
+    owner: fb59871d-c325-49ec-8f4e-9b6f81dfba20
+    content:
+    - defaultBoardLine16
+    - defaultBoardLine15
+    - 'Welcome to the "cold" side of Cancri 55e'
+    - defaultBoardLine13
+    - 'The average temperature here is between'
+    - '1300 and 1400 celsius, but this area is'
+    - 'closer to 1000 celsius which allows'
+    - 'there to be land.'
+    - '&r'
+    - 'We conduct research on this station'
+    - 'to learn more about the planet.'
+    - '&r'
+    - 'Have a look around at what we do and'
+    - 'check out the observation area too.'
+    - defaultBoardLine02
+    - defaultBoardLine01

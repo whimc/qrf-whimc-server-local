@@ -1,0 +1,16 @@
+location: RocketLaunch:-1575.591:78.401:2774.526
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Launch control takes care of
+    height: 0.3
+  - content: working and coordinating the ground
+    height: 0.3
+  - content: equipment for launch
+    height: 0.3
+  actions: {}

@@ -1,0 +1,20 @@
+location: EarthControl:372.434:80.200:-223.995
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Important! Make sure you've talked
+    height: 0.3
+  - content: to &c&leveryone &fhere before continuing.
+    height: 0.3
+  - content: There are &6&l5 &fguides in this area.
+    height: 0.3
+  - content: If you've talked to everyone,
+    height: 0.3
+  - content: your quest should complete.
+    height: 0.3
+  actions: {}

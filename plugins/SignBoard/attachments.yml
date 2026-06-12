@@ -1,0 +1,22 @@
+# The attachments file
+attachments:
+  EarthControl:
+    380_78_-222: '[obstut_comparative]'
+    385_78_-229: '[obstut_inferential]'
+    '26578167': '[obstut_descriptive]'
+    '265_78_167': '[obstut_descriptive]'
+  BrownDwarf:
+    '4213418': '[BDInfo]'
+    '4213318': '[BDQuest]'
+    '42_133_18': '[BDQuest]'
+    '42_134_18': '[BDInfo]'
+  TwoMoons:
+    '-27099': '[Kuu]'
+    '-157099': '[Lluna]'
+    '-14_66_99': '[Lluna]'
+  Hub:
+    '-8847109': '[BDDefinition]'
+    '-88_47_109': '[BDDefinition]'
+    '-89_45_109': '[BDDefinition]'
+  Cancri_Cold:
+    '-14_67_32': '[Cancri-Info]'

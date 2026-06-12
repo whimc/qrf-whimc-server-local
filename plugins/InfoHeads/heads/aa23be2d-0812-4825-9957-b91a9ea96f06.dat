@@ -1,0 +1,21 @@
+{
+  "uniqueId": "aa23be2d-0812-4825-9957-b91a9ea96f06",
+  "location": {
+    "x": -389,
+    "y": 98,
+    "z": 122,
+    "dimension": "world"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

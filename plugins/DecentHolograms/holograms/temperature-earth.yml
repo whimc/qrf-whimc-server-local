@@ -1,0 +1,14 @@
+location: EarthControl:-91.387:81.388:7.848
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Is it warm? Cold?
+    height: 0.3
+  - content: Try /temperature to find out
+    height: 0.3
+  actions: {}

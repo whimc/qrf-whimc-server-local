@@ -1,0 +1,14 @@
+location: NoMoon:-33.385:77.147:2.870
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Remember to observe like a scientist!
+    height: 0.3
+  - content: Try /wind to compare to earth
+    height: 0.3
+  actions: {}

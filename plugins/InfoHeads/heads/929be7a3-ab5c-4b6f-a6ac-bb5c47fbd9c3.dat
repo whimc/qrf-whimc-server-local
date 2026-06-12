@@ -1,0 +1,28 @@
+{
+  "uniqueId": "929be7a3-ab5c-4b6f-a6ac-bb5c47fbd9c3",
+  "location": {
+    "x": -275,
+    "y": 157,
+    "z": 380,
+    "dimension": "world"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "mvtp {player-name} celestial-hub"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

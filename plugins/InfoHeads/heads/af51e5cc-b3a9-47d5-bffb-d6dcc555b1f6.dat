@@ -1,0 +1,32 @@
+{
+  "uniqueId": "af51e5cc-b3a9-47d5-bffb-d6dcc555b1f6",
+  "location": {
+    "x": -63,
+    "y": 38,
+    "z": 102,
+    "dimension": "Hub"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.PlayerCommandElement",
+      "data": {
+        "command": "quests journal"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {
+    "b96975b5-0b3f-47da-950a-3918165706cf": 1767762019327
+  },
+  "usersExecuted": [
+    "b96975b5-0b3f-47da-950a-3918165706cf"
+  ]
+}

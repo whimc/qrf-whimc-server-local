@@ -1,0 +1,12 @@
+location: MynoaMangrove:295.820:70.873:162.622
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Look at the horizon, are those the northern lights?
+    height: 0.3
+  actions: {}

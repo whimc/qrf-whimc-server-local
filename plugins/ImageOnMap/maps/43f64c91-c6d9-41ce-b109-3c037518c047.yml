@@ -1,0 +1,150 @@
+PlayerMapStore:
+  mapList:
+  - name: fine
+    mapID: 2907
+    id: Map-12
+    type: SINGLE
+  - name: defeated
+    mapID: 2908
+    id: Map-13
+    type: SINGLE
+  - name: confused
+    mapID: 2909
+    id: Map-14
+    type: SINGLE
+  - name: bored
+    mapID: 2910
+    id: Map-15
+    type: SINGLE
+  - name: accomplished
+    mapID: 2911
+    id: Map-16
+    type: SINGLE
+  - name: frustrated
+    mapID: 2912
+    id: Map-17
+    type: SINGLE
+  - columns: 4
+    name: progress
+    id: Map
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 2913
+    - 2914
+    - 2915
+    - 2916
+  - columns: 2
+    name: why-stop
+    id: Map-1
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 2917
+    - 2918
+  - name: too-long
+    mapID: 2921
+    id: Map-19
+    type: SINGLE
+  - name: other
+    mapID: 2922
+    id: Map-20
+    type: SINGLE
+  - name: dont-get
+    mapID: 2923
+    id: Map-21
+    type: SINGLE
+  - name: all-done
+    mapID: 2924
+    id: Map-22
+    type: SINGLE
+  - columns: 2
+    name: im-frustrated
+    id: Map-23
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 2925
+    - 2926
+  - columns: 4
+    name: how-interesting
+    id: Map-24
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 2927
+    - 2928
+    - 2929
+    - 2930
+  - columns: 2
+    name: one
+    id: Map-25
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 2931
+    - 2932
+    - 2933
+    - 2934
+  - columns: 2
+    name: two
+    id: Map-26
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 2935
+    - 2936
+    - 2937
+    - 2938
+  - columns: 2
+    name: three
+    id: Map-27
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 2939
+    - 2940
+    - 2941
+    - 2942
+  - columns: 2
+    name: four
+    id: Map-28
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 2943
+    - 2944
+    - 2945
+    - 2946
+  - columns: 2
+    name: five
+    id: Map-29
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 2947
+    - 2948
+    - 2949
+    - 2950
+  - columns: 4
+    name: try-harder
+    id: Map-30
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 2951
+    - 2952
+    - 2953
+    - 2954
+  - columns: 4
+    name: kids-internet
+    id: Map-31
+    type: POSTER
+    rows: 1
+    mapsIDs:
+    - 2955
+    - 2956
+    - 2957
+    - 2958
+playerPosterStore:
+  posterList: []

@@ -1,0 +1,12 @@
+location: NoMoon:-2.106:76.533:3.709
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Talk to Tanya ->
+    height: 0.3
+  actions: {}

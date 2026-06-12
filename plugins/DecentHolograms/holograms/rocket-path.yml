@@ -1,0 +1,12 @@
+location: RocketLaunch:-1599.419:71.200:2720.336
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&uThis way to launch!'
+    height: 0.3
+  actions: {}

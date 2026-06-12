@@ -1,0 +1,14 @@
+location: TwoMoonsLow:71.285:68.124:30.060
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Look at the tides!
+    height: 0.3
+  - content: make an observation about them
+    height: 0.3
+  actions: {}

@@ -1,0 +1,783 @@
+# This is the commands configuration file for Bukkit.
+# For documentation on how to make use of this file, check out the Bukkit Wiki at
+# https://www.spigotmc.org/go/commands-yml
+#
+# If you need help on this file, feel free to join us on irc or leave a message
+# on the forums asking for advice.
+#
+# IRC: #spigot @ irc.spi.gt
+#    (If this means nothing to you, just go to https://www.spigotmc.org/go/irc )
+# Forums: https://www.spigotmc.org/
+# Bug tracker: https://www.spigotmc.org/go/bugs
+
+command-block-overrides: []
+ignore-vanilla-permissions: false
+aliases:
+  build:
+  - minecraft:give MCSarmadillo item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSbear item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCScobra item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSdolphin item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSeagle item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSfox item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSgecko item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCShorse item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSiguana item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSjackal item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSkangarooo item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSlion item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSmouse item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSnarwhal item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSoctopus item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSpanda item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSquail item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSraccoon item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSswan item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSturtle item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSunicorn item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSvampire item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSwalrus item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSyak item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSzebra item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSdragon item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSbutterflyy item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCScaterpillar item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSparrot item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSmonkeyy item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSalien item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSplatypuss item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCStree item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCScat item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSpotato item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSplanet item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCStardigrade item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSostrich item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSgoblin item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSmanatee item_frame{EntityTag:{Invisible:1}}
+  - minecraft:give MCSarmadillo light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSbear light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCScobra light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSdolphin light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSeagle light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSfox light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSgecko light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCShorse light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSiguana light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSjackal light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSkangarooo light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSlion light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSmouse light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSnarwhal light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSoctopus light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSpanda light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSquail light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSraccoon light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSswan light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSturtle light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSunicorn light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSvampire light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSwalrus light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSyak light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSzebra light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSdragon light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSbutterflyy light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCScaterpillar light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSparrot light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSmonkeyy light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSalien light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSplatypuss light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCStree light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCScat light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSpotato light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSplanet light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCStardigrade light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSostrich light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSgoblin light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSmanatee light{BlockStateTag:{level:"15"}}
+  - minecraft:give MCSarmadillo minecraft:debug_stick 1
+  - minecraft:give MCSbear minecraft:debug_stick 1
+  - minecraft:give MCScobra minecraft:debug_stick 1
+  - minecraft:give MCSdolphin minecraft:debug_stick 1
+  - minecraft:give MCSeagle minecraft:debug_stick 1
+  - minecraft:give MCSfox minecraft:debug_stick 1
+  - minecraft:give MCSgecko minecraft:debug_stick 1
+  - minecraft:give MCShorse minecraft:debug_stick 1
+  - minecraft:give MCSiguana minecraft:debug_stick 1
+  - minecraft:give MCSjackal minecraft:debug_stick 1
+  - minecraft:give MCSkangarooo minecraft:debug_stick 1
+  - minecraft:give MCSlion minecraft:debug_stick 1
+  - minecraft:give MCSmouse minecraft:debug_stick 1
+  - minecraft:give MCSnarwhal minecraft:debug_stick 1
+  - minecraft:give MCSoctopus minecraft:debug_stick 1
+  - minecraft:give MCSpanda minecraft:debug_stick 1
+  - minecraft:give MCSquail minecraft:debug_stick 1
+  - minecraft:give MCSraccoon minecraft:debug_stick 1
+  - minecraft:give MCSswan minecraft:debug_stick 1
+  - minecraft:give MCSturtle minecraft:debug_stick 1
+  - minecraft:give MCSunicorn minecraft:debug_stick 1
+  - minecraft:give MCSvampire minecraft:debug_stick 1
+  - minecraft:give MCSwalrus minecraft:debug_stick 1
+  - minecraft:give MCSyak minecraft:debug_stick 1
+  - minecraft:give MCSzebra minecraft:debug_stick 1
+  - minecraft:give MCSdragon minecraft:debug_stick 1
+  - minecraft:give MCSbutterflyy minecraft:debug_stick 1
+  - minecraft:give MCScaterpillar minecraft:debug_stick 1
+  - minecraft:give MCSparrot minecraft:debug_stick 1
+  - minecraft:give MCSmonkeyy minecraft:debug_stick 1
+  - minecraft:give MCSalien minecraft:debug_stick 1
+  - minecraft:give MCSplatypuss minecraft:debug_stick 1
+  - minecraft:give MCStree minecraft:debug_stick 1
+  - minecraft:give MCScat minecraft:debug_stick 1
+  - minecraft:give MCSpotato minecraft:debug_stick 1
+  - minecraft:give MCSplanet minecraft:debug_stick 1
+  - minecraft:give MCStardigrade minecraft:debug_stick 1
+  - minecraft:give MCSostrich minecraft:debug_stick 1
+  - minecraft:give MCSgoblin minecraft:debug_stick 1
+  - minecraft:give MCSmanatee minecraft:debug_stick 1
+  adventure:
+  - gamemode adventure MCSarmadillo
+  - gamemode adventure MCSbear
+  - gamemode adventure MCScobra
+  - gamemode adventure MCSdolphin
+  - gamemode adventure MCSeagle
+  - gamemode adventure MCSfox
+  - gamemode adventure MCSgecko
+  - gamemode adventure MCShorse
+  - gamemode adventure MCSiguana
+  - gamemode adventure MCSjackal
+  - gamemode adventure MCSkangarooo
+  - gamemode adventure MCSlion
+  - gamemode adventure MCSmouse
+  - gamemode adventure MCSnarwhal
+  - gamemode adventure MCSoctopus
+  - gamemode adventure MCSpanda
+  - gamemode adventure MCSquail
+  - gamemode adventure MCSraccoon
+  - gamemode adventure MCSswan
+  - gamemode adventure MCSturtle
+  - gamemode adventure MCSunicorn
+  - gamemode adventure MCSvampire
+  - gamemode adventure MCSwalrus
+  - gamemode adventure MCSyak
+  - gamemode adventure MCSzebra
+  - gamemode adventure MCSdragon
+  - gamemode adventure MCSbutterflyy
+  - gamemode adventure MCScaterpillar
+  - gamemode adventure MCSparrot
+  - gamemode adventure MCSmonkeyy
+  - gamemode adventure MCSalien
+  - gamemode adventure MCSplatypuss
+  - gamemode adventure MCStree
+  - gamemode adventure MCScat
+  - gamemode adventure MCSpotato
+  - gamemode adventure MCSplanet
+  - gamemode adventure MCStardigrade
+  - gamemode adventure MCSostrich
+  - gamemode adventure MCSgoblin
+  - gamemode adventure MCSmanatee
+  pause:
+  - mvtp MCSarmadillo e:hub:-80,10,98
+  - mvtp MCSbear e:hub:-80,10,98
+  - mvtp MCScobra e:hub:-80,10,98
+  - mvtp MCSdolphin e:hub:-80,10,98
+  - mvtp MCSeagle e:hub:-80,10,98
+  - mvtp MCSfox e:hub:-80,10,98
+  - mvtp MCSgecko e:hub:-80,10,98
+  - mvtp MCShorse e:hub:-80,10,98
+  - mvtp MCSiguana e:hub:-80,10,98
+  - mvtp MCSjackal e:hub:-80,10,98
+  - mvtp MCSkangarooo e:hub:-80,10,98
+  - mvtp MCSlion e:hub:-80,10,98
+  - mvtp MCSmouse e:hub:-80,10,98
+  - mvtp MCSnarwhal e:hub:-80,10,98
+  - mvtp MCSoctopus e:hub:-80,10,98
+  - mvtp MCSpanda e:hub:-80,10,98
+  - mvtp MCSquail e:hub:-80,10,98
+  - mvtp MCSraccoon e:hub:-80,10,98
+  - mvtp MCSswan e:hub:-80,10,98
+  - mvtp MCSturtle e:hub:-80,10,98
+  - mvtp MCSunicorn e:hub:-80,10,98
+  - mvtp MCSvampire e:hub:-80,10,98
+  - mvtp MCSwalrus e:hub:-80,10,98
+  - mvtp MCSyak e:hub:-80,10,98
+  - mvtp MCSzebra e:hub:-80,10,98
+  - mvtp MCSdragon e:hub:-80,10,98
+  - mvtp MCSbutterflyy e:hub:-80,10,98
+  - mvtp MCScaterpillar e:hub:-80,10,98
+  - mvtp MCSparrot e:hub:-80,10,98
+  - mvtp MCSmonkeyy e:hub:-80,10,98
+  - mvtp MCSalien e:hub:-80,10,98
+  - mvtp MCSplatypuss e:hub:-80,10,98
+  - mvtp MCStree e:hub:-80,10,98
+  - mvtp MCScat e:hub:-80,10,98
+  - mvtp MCSpotato e:hub:-80,10,98
+  - mvtp MCSplanet e:hub:-80,10,98
+  - mvtp MCStardigrade e:hub:-80,10,98
+  - mvtp MCSostrich e:hub:-80,10,98
+  - mvtp MCSgoblin e:hub:-80,10,98
+  - mvtp MCSmanatee e:hub:-80,10,98
+  - minecraft:clear MCSoctopus
+  - minecraft:clear MCSnarwhal
+  - minecraft:clear MCSmouse
+  - minecraft:clear MCSlion
+  - minecraft:clear MCSiguana
+  - minecraft:clear MCSarmadillo
+  - minecraft:clear MCSbear
+  - minecraft:clear MCScobra
+  - minecraft:clear MCSdolphin
+  - minecraft:clear MCSeagle
+  - minecraft:clear MCSfox
+  - minecraft:clear MCSgecko
+  - minecraft:clear MCShorse
+  - minecraft:clear MCSjackal
+  - minecraft:clear MCSkangarooo
+  - minecraft:clear MCSpanda
+  - minecraft:clear MCSquail
+  - minecraft:clear MCSraccoon
+  - minecraft:clear MCSswan
+  - minecraft:clear MCSturtle
+  - minecraft:clear MCSunicorn
+  - minecraft:clear MCSvampire
+  - minecraft:clear MCSwalrus
+  - minecraft:clear MCSyak
+  - minecraft:clear MCSzebra
+  - minecraft:clear MCSdragon
+  - minecraft:clear MCSbutterflyy
+  - minecraft:clear MCScaterpillar
+  - minecraft:clear MCSparrot
+  - minecraft:clear MCSmonkeyy
+  - minecraft:clear MCSalien
+  - minecraft:clear MCSplatypuss
+  - minecraft:clear MCStree
+  - minecraft:clear MCScat
+  - minecraft:clear MCSpotato
+  - minecraft:clear MCSplanet
+  - minecraft:clear MCStardigrade
+  - minecraft:clear MCSostrich
+  - minecraft:clear MCSgoblin
+  - minecraft:clear MCSmanatee
+  - effect clear MCSarmadillo
+  - effect clear MCSbear
+  - effect clear MCScobra
+  - effect clear MCSdolphin
+  - effect clear MCSeagle
+  - effect clear MCSfox
+  - effect clear MCSgecko
+  - effect clear MCShorse
+  - effect clear MCSiguana
+  - effect clear MCSjackal
+  - effect clear MCSkangarooo
+  - effect clear MCSlion
+  - effect clear MCSmouse
+  - effect clear MCSnarwhal
+  - effect clear MCSoctopus
+  - effect clear MCSpanda
+  - effect clear MCSquail
+  - effect clear MCSraccoon
+  - effect clear MCSswan
+  - effect clear MCSturtle
+  - effect clear MCSunicorn
+  - effect clear MCSvampire
+  - effect clear MCSwalrus
+  - effect clear MCSyak
+  - effect clear MCSzebra
+  - effect clear MCSdragon
+  - effect clear MCSbutterflyy
+  - effect clear MCScaterpillar
+  - effect clear MCSparrot
+  - effect clear MCSmonkeyy
+  - effect clear MCSalien
+  - effect clear MCSplatypuss
+  - effect clear MCStree
+  - effect clear MCScat
+  - effect clear MCSpotato
+  - effect clear MCSplanet
+  - effect clear MCStardigrade
+  - effect clear MCSostrich
+  - effect clear MCSgoblin
+  - effect clear MCSmanatee
+  icanhasbukkit:
+  - version $1-
+  silence:
+  - mute MCSarmadillo
+  - mute MCSbear
+  - mute MCScobra
+  - mute MCSdolphin
+  - mute MCSeagle
+  - mute MCSfox
+  - mute MCSgecko
+  - mute MCShorse
+  - mute MCSiguana
+  - mute MCSjackal
+  - mute MCSkangarooo
+  - mute MCSlion
+  - mute MCSmouse
+  - mute MCSnarwhal
+  - mute MCSoctopus
+  - mute MCSpanda
+  - mute MCSquail
+  - mute MCSraccoon
+  - mute MCSswan
+  - mute MCSturtle
+  - mute MCSunicorn
+  - mute MCSvampire
+  - mute MCSwalrus
+  - mute MCSyak
+  - mute MCSzebra
+  - mute MCSdragon
+  - mute MCSbutterflyy
+  - mute MCScaterpillar
+  - mute MCSparrot
+  - mute MCSmonkeyy
+  - mute MCSalien
+  - mute MCSplatypuss
+  - mute MCStree
+  - mute MCScat
+  - mute MCSpotato
+  - mute MCSplanet
+  - mute MCStardigrade
+  - mute MCSostrich
+  - mute MCSgoblin
+  - mute MCSmanatee
+  rankinitiate:
+  - luckperms:lp user MCSarmadillo parent add initiate
+  - luckperms:lp user MCSbear parent add initiate
+  - luckperms:lp user MCScobra parent add initiate
+  - luckperms:lp user MCSdolphin parent add initiate
+  - luckperms:lp user MCSeagle parent add initiate
+  - luckperms:lp user MCSfox parent add initiate
+  - luckperms:lp user MCSgecko parent add initiate
+  - luckperms:lp user MCShorse parent add initiate
+  - luckperms:lp user MCSiguana parent add initiate
+  - luckperms:lp user MCSjackal parent add initiate
+  - luckperms:lp user MCSkangarooo parent add initiate
+  - luckperms:lp user MCSlion parent add initiate
+  - luckperms:lp user MCSmouse parent add initiate
+  - luckperms:lp user MCSnarwhal parent add initiate
+  - luckperms:lp user MCSoctopus parent add initiate
+  - luckperms:lp user MCSpanda parent add initiate
+  - luckperms:lp user MCSquail parent add initiate
+  - luckperms:lp user MCSraccoon parent add initiate
+  - luckperms:lp user MCSswan parent add initiate
+  - luckperms:lp user MCSturtle parent add initiate
+  - luckperms:lp user MCSunicorn parent add initiate
+  - luckperms:lp user MCSvampire parent add initiate
+  - luckperms:lp user MCSwalrus parent add initiate
+  - luckperms:lp user MCSyak parent add initiate
+  - luckperms:lp user MCSzebra parent add initiate
+  - luckperms:lp user MCSdragon parent add initiate
+  - luckperms:lp user MCSbutterflyy parent add initiate
+  - luckperms:lp user MCScaterpillar parent add initiate
+  - luckperms:lp user MCSparrot parent add initiate
+  - luckperms:lp user MCSmonkeyy parent add initiate
+  - luckperms:lp user MCSalien parent add initiate
+  - luckperms:lp user MCSplatypuss parent add initiate
+  - luckperms:lp user MCStree parent add initiate
+  - luckperms:lp user MCScat parent add initiate
+  - luckperms:lp user MCSpotato parent add initiate
+  - luckperms:lp user MCSplanet parent add initiate
+  - luckperms:lp user MCStardigrade parent add initiate
+  - luckperms:lp user MCSostrich parent add initiate
+  - luckperms:lp user MCSgoblin parent add initiate
+  - luckperms:lp user MCSmanatee parent add initiate
+  rankobserver:
+  - luckperms:lp user MCSarmadillo parent add observer
+  - luckperms:lp user MCSbear parent add observer
+  - luckperms:lp user MCScobra parent add observer
+  - luckperms:lp user MCSdolphin parent add observer
+  - luckperms:lp user MCSeagle parent add observer
+  - luckperms:lp user MCSfox parent add observer
+  - luckperms:lp user MCSgecko parent add observer
+  - luckperms:lp user MCShorse parent add observer
+  - luckperms:lp user MCSiguana parent add observer
+  - luckperms:lp user MCSjackal parent add observer
+  - luckperms:lp user MCSkangarooo parent add observer
+  - luckperms:lp user MCSlion parent add observer
+  - luckperms:lp user MCSmouse parent add observer
+  - luckperms:lp user MCSnarwhal parent add observer
+  - luckperms:lp user MCSoctopus parent add observer
+  - luckperms:lp user MCSpanda parent add observer
+  - luckperms:lp user MCSquail parent add observer
+  - luckperms:lp user MCSraccoon parent add observer
+  - luckperms:lp user MCSswan parent add observer
+  - luckperms:lp user MCSturtle parent add observer
+  - luckperms:lp user MCSunicorn parent add observer
+  - luckperms:lp user MCSvampire parent add observer
+  - luckperms:lp user MCSwalrus parent add observer
+  - luckperms:lp user MCSyak parent add observer
+  - luckperms:lp user MCSzebra parent add observer
+  - luckperms:lp user MCSdragon parent add observer
+  - luckperms:lp user MCSbutterflyy parent add observer
+  - luckperms:lp user MCScaterpillar parent add observer
+  - luckperms:lp user MCSparrot parent add observer
+  - luckperms:lp user MCSmonkeyy parent add observer
+  - luckperms:lp user MCSalien parent add observer
+  - luckperms:lp user MCSplatypuss parent add observer
+  - luckperms:lp user MCStree parent add observer
+  - luckperms:lp user MCScat parent add observer
+  - luckperms:lp user MCSpotato parent add observer
+  - luckperms:lp user MCSplanet parent add observer
+  - luckperms:lp user MCStardigrade parent add observer
+  - luckperms:lp user MCSostrich parent add observer
+  - luckperms:lp user MCSgoblin parent add observer
+  - luckperms:lp user MCSmanatee parent add observer
+  rankexplorer:
+  - luckperms:lp user MCSarmadillo parent add explorer
+  - luckperms:lp user MCSbear parent add explorer
+  - luckperms:lp user MCScobra parent add explorer
+  - luckperms:lp user MCSdolphin parent add explorer
+  - luckperms:lp user MCSeagle parent add explorer
+  - luckperms:lp user MCSfox parent add explorer
+  - luckperms:lp user MCSgecko parent add explorer
+  - luckperms:lp user MCShorse parent add explorer
+  - luckperms:lp user MCSiguana parent add explorer
+  - luckperms:lp user MCSjackal parent add explorer
+  - luckperms:lp user MCSkangarooo parent add explorer
+  - luckperms:lp user MCSlion parent add explorer
+  - luckperms:lp user MCSmouse parent add explorer
+  - luckperms:lp user MCSnarwhal parent add explorer
+  - luckperms:lp user MCSoctopus parent add explorer
+  - luckperms:lp user MCSpanda parent add explorer
+  - luckperms:lp user MCSquail parent add explorer
+  - luckperms:lp user MCSraccoon parent add explorer
+  - luckperms:lp user MCSswan parent add explorer
+  - luckperms:lp user MCSturtle parent add explorer
+  - luckperms:lp user MCSunicorn parent add explorer
+  - luckperms:lp user MCSvampire parent add explorer
+  - luckperms:lp user MCSwalrus parent add explorer
+  - luckperms:lp user MCSyak parent add explorer
+  - luckperms:lp user MCSzebra parent add explorer
+  - luckperms:lp user MCSdragon parent add explorer
+  - luckperms:lp user MCSbutterflyy parent add explorer
+  - luckperms:lp user MCScaterpillar parent add explorer
+  - luckperms:lp user MCSparrot parent add explorer
+  - luckperms:lp user MCSmonkeyy parent add explorer
+  - luckperms:lp user MCSalien parent add explorer
+  - luckperms:lp user MCSplatypuss parent add explorer
+  - luckperms:lp user MCStree parent add explorer
+  - luckperms:lp user MCScat parent add explorer
+  - luckperms:lp user MCSpotato parent add explorer
+  - luckperms:lp user MCSplanet parent add explorer
+  - luckperms:lp user MCStardigrade parent add explorer
+  - luckperms:lp user MCSostrich parent add explorer
+  - luckperms:lp user MCSgoblin parent add explorer
+  - luckperms:lp user MCSmanatee parent add explorer
+  rankscientist:
+  - luckperms:lp user MCSarmadillo parent add scientist
+  - luckperms:lp user MCSbear parent add scientist
+  - luckperms:lp user MCScobra parent add scientist
+  - luckperms:lp user MCSdolphin parent add scientist
+  - luckperms:lp user MCSeagle parent add scientist
+  - luckperms:lp user MCSfox parent add scientist
+  - luckperms:lp user MCSgecko parent add scientist
+  - luckperms:lp user MCShorse parent add scientist
+  - luckperms:lp user MCSiguana parent add scientist
+  - luckperms:lp user MCSjackal parent add scientist
+  - luckperms:lp user MCSkangarooo parent add scientist
+  - luckperms:lp user MCSlion parent add scientist
+  - luckperms:lp user MCSmouse parent add scientist
+  - luckperms:lp user MCSnarwhal parent add scientist
+  - luckperms:lp user MCSoctopus parent add scientist
+  - luckperms:lp user MCSpanda parent add scientist
+  - luckperms:lp user MCSquail parent add scientist
+  - luckperms:lp user MCSraccoon parent add scientist
+  - luckperms:lp user MCSswan parent add scientist
+  - luckperms:lp user MCSturtle parent add scientist
+  - luckperms:lp user MCSunicorn parent add scientist
+  - luckperms:lp user MCSvampire parent add scientist
+  - luckperms:lp user MCSwalrus parent add scientist
+  - luckperms:lp user MCSyak parent add scientist
+  - luckperms:lp user MCSzebra parent add scientist
+  - luckperms:lp user MCSdragon parent add scientist
+  - luckperms:lp user MCSbutterflyy parent add scientist
+  - luckperms:lp user MCScaterpillar parent add scientist
+  - luckperms:lp user MCSparrot parent add scientist
+  - luckperms:lp user MCSmonkeyy parent add scientist
+  - luckperms:lp user MCSalien parent add scientist
+  - luckperms:lp user MCSplatypuss parent add scientist
+  - luckperms:lp user MCStree parent add scientist
+  - luckperms:lp user MCScat parent add scientist
+  - luckperms:lp user MCSpotato parent add scientist
+  - luckperms:lp user MCSplanet parent add scientist
+  - luckperms:lp user MCStardigrade parent add scientist
+  - luckperms:lp user MCSostrich parent add scientist
+  - luckperms:lp user MCSgoblin parent add scientist
+  - luckperms:lp user MCSmanatee parent add scientist
+  lock:
+  - portal permission Shuttle2Rocket engineer
+  - portal permission Shuttle2Station engineer
+  - portal permission rocket-tower-elevator engineer
+  - portal permission DomeFix engineer
+  - portal permission nomoon2hub engineer
+  - portal permission earthcontrol2hub engineer
+  - portal permission tiltedwarm2hub engineer
+  - portal permission ColderSun2hub engineer
+  - portal permission TwoMoons2hub engineer
+  - portal permission kepler2hub engineer
+  - portal permission trappist2hub engineer
+  - portal permission browndwarf2hub engineer
+  - portal permission cancri2hub engineer
+  - portal permission gliese2hub engineer
+  - portal permission nomoonhub engineer
+  - portal permission mynoamangrove-return engineer
+  - rg flag cancri-button -w CancriCold interact deny
+  - rg flag rocketelevator-interact -w RocketLaunch interact deny
+  - rg flag portalblock -w LunarCrater interact deny
+  - lp group default permission set essentials.spawn false
+  unlock:
+  - portal permission Shuttle2Rocket none
+  - portal permission Shuttle2Station initiate
+  - portal permission rocket-tower-elevator none
+  - portal permission DomeFix initiate
+  - portal permission nomoon2hub observer
+  - portal permission earthcontrol2hub none
+  - portal permission tiltedwarm2hub none
+  - portal permission ColderSun2hub none
+  - portal permission TwoMoons2hub none
+  - portal permission kepler2hub none
+  - portal permission trappist2hub none
+  - portal permission browndwarf2hub none
+  - portal permission cancri2hub none
+  - portal permission gliese2hub none
+  - portal permission nomoonhub initiate
+  - portal permission mynoamangrove-return none
+  - rg flag cancri-button -w CancriCold interact allow
+  - rg flag rocketelevator-interact -w RocketLaunch interact allow
+  - rg flag portalblock -w LunarCrater interact allow
+  - lp group default permission set essentials.spawn true
+  tour:
+  - portal permission Shuttle2Rocket none
+  - portal permission Shuttle2Station none
+  - portal permission rocket-tower-elevator none
+  - portal permission DomeFix none
+  - portal permission nomoon2hub none
+  - portal permission earthcontrol2hub none
+  - portal permission tiltedwarm2hub none
+  - portal permission ColderSun2hub none
+  - portal permission TwoMoons2hub none
+  - portal permission kepler2hub none
+  - portal permission trappist2hub none
+  - portal permission browndwarf2hub none
+  - portal permission cancri2hub none
+  - portal permission gliese2hub none
+  - portal permission hub2mars none
+  - portal permission mynoa none
+  - portal permission build none
+  - portal permission hub2cancri none
+  - portal permission hub2gliese none
+  - portal permission hub2kepler none
+  - portal permission hub2trappist none
+  - portal permission hub2life none
+  - portal permission hub2browndwarf none
+  - portal permission hub2twomoons none
+  - portal permission colderstrip none
+  - portal permission tiltedwarm none
+  - portal permission hub-elevator-up none
+  - portal permission nomoonhub none
+  - portal permission mynoamangrove-return none
+  - rg flag cancri-button -w CancriCold interact allow
+  - rg flag rocketelevator-interact -w RocketLaunch interact allow
+  - rg flag portalblock -w LunarCrater interact allow
+  - lp group default permission set essentials.spawn true
+  campreset:
+  - minecraft:clear MCSoctopus
+  - minecraft:clear MCSnarwhal
+  - minecraft:clear MCSmouse
+  - minecraft:clear MCSlion
+  - minecraft:clear MCSiguana
+  - minecraft:clear MCSarmadillo
+  - minecraft:clear MCSbear
+  - minecraft:clear MCScobra
+  - minecraft:clear MCSdolphin
+  - minecraft:clear MCSeagle
+  - minecraft:clear MCSfox
+  - minecraft:clear MCSgecko
+  - minecraft:clear MCShorse
+  - minecraft:clear MCSjackal
+  - minecraft:clear MCSkangarooo
+  - minecraft:clear MCSpanda
+  - minecraft:clear MCSquail
+  - minecraft:clear MCSraccoon
+  - minecraft:clear MCSswan
+  - minecraft:clear MCSturtle
+  - minecraft:clear MCSunicorn
+  - minecraft:clear MCSvampire
+  - minecraft:clear MCSwalrus
+  - minecraft:clear MCSyak
+  - minecraft:clear MCSzebra
+  - minecraft:clear MCSdragon
+  - minecraft:clear MCSbutterflyy
+  - minecraft:clear MCScaterpillar
+  - minecraft:clear MCSparrot
+  - minecraft:clear MCSmonkeyy
+  - minecraft:clear MCSalien
+  - minecraft:clear MCSplatypuss
+  - minecraft:clear MCStree
+  - minecraft:clear MCScat
+  - minecraft:clear MCSpotato
+  - minecraft:clear MCSplanet
+  - minecraft:clear MCStardigrade
+  - minecraft:clear MCSostrich
+  - minecraft:clear MCSgoblin
+  - minecraft:clear MCSmanatee
+  - luckperms:lp user MCSoctopus
+  - luckperms:lp user MCSnarwhal
+  - luckperms:lp user MCSmouse
+  - luckperms:lp user MCSlion
+  - luckperms:lp user MCSiguana
+  - luckperms:lp user MCSarmadillo
+  - luckperms:lp user MCSbear
+  - luckperms:lp user MCScobra
+  - luckperms:lp user MCSdolphin
+  - luckperms:lp user MCSeagle
+  - luckperms:lp user MCSfox
+  - luckperms:lp user MCSgecko
+  - luckperms:lp user MCShorse
+  - luckperms:lp user MCSjackal
+  - luckperms:lp user MCSkangarooo
+  - luckperms:lp user MCSpanda
+  - luckperms:lp user MCSquail
+  - luckperms:lp user MCSraccoon
+  - luckperms:lp user MCSswan
+  - luckperms:lp user MCSturtle
+  - luckperms:lp user MCSunicorn
+  - luckperms:lp user MCSvampire
+  - luckperms:lp user MCSwalrus
+  - luckperms:lp user MCSyak
+  - luckperms:lp user MCSzebra
+  - luckperms:lp user MCSdragon
+  - luckperms:lp user MCSbutterflyy
+  - luckperms:lp user MCScaterpillar
+  - luckperms:lp user MCSparrot
+  - luckperms:lp user MCSmonkeyy
+  - luckperms:lp user MCSalien
+  - luckperms:lp user MCSplatypuss
+  - luckperms:lp user MCStree
+  - luckperms:lp user MCScat
+  - luckperms:lp user MCSpotato
+  - luckperms:lp user MCSplanet
+  - luckperms:lp user MCStardigrade
+  - luckperms:lp user MCSostrich
+  - luckperms:lp user MCSgoblin
+  - luckperms:lp user MCSmanatee
+  - quests:questadmin reset MCSoctopus
+  - quests:questadmin reset MCSnarwhal
+  - quests:questadmin reset MCSmouse
+  - quests:questadmin reset MCSlion
+  - quests:questadmin reset MCSiguana
+  - quests:questadmin reset MCSarmadillo
+  - quests:questadmin reset MCSbear
+  - quests:questadmin reset MCScobra
+  - quests:questadmin reset MCSdolphin
+  - quests:questadmin reset MCSeagle
+  - quests:questadmin reset MCSfox
+  - quests:questadmin reset MCSgecko
+  - quests:questadmin reset MCShorse
+  - quests:questadmin reset MCSjackal
+  - quests:questadmin reset MCSkangarooo
+  - quests:questadmin reset MCSpanda
+  - quests:questadmin reset MCSquail
+  - quests:questadmin reset MCSraccoon
+  - quests:questadmin reset MCSswan
+  - quests:questadmin reset MCSturtle
+  - quests:questadmin reset MCSunicorn
+  - quests:questadmin reset MCSvampire
+  - quests:questadmin reset MCSwalrus
+  - quests:questadmin reset MCSyak
+  - quests:questadmin reset MCSzebra
+  - quests:questadmin reset MCSdragon
+  - quests:questadmin reset MCSbutterflyy
+  - quests:questadmin reset MCScaterpillar
+  - quests:questadmin reset MCSparrot
+  - quests:questadmin reset MCSmonkeyy
+  - quests:questadmin reset MCSalien
+  - quests:questadmin reset MCSplatypuss
+  - quests:questadmin reset MCStree
+  - quests:questadmin reset MCScat
+  - quests:questadmin reset MCSpotato
+  - quests:questadmin reset MCSplanet
+  - quests:questadmin reset MCStardigrade
+  - quests:questadmin reset MCSostrich
+  - quests:questadmin reset MCSgoblin
+  - quests:questadmin reset MCSmanatee
+  inventoryreset:
+  - minecraft:clear MCSoctopus
+  - minecraft:clear MCSnarwhal
+  - minecraft:clear MCSmouse
+  - minecraft:clear MCSlion
+  - minecraft:clear MCSiguana
+  - minecraft:clear MCSarmadillo
+  - minecraft:clear MCSbear
+  - minecraft:clear MCScobra
+  - minecraft:clear MCSdolphin
+  - minecraft:clear MCSeagle
+  - minecraft:clear MCSfox
+  - minecraft:clear MCSgecko
+  - minecraft:clear MCShorse
+  - minecraft:clear MCSjackal
+  - minecraft:clear MCSkangarooo
+  - minecraft:clear MCSpanda
+  - minecraft:clear MCSquail
+  - minecraft:clear MCSraccoon
+  - minecraft:clear MCSswan
+  - minecraft:clear MCSturtle
+  - minecraft:clear MCSunicorn
+  - minecraft:clear MCSvampire
+  - minecraft:clear MCSwalrus
+  - minecraft:clear MCSyak
+  - minecraft:clear MCSzebra
+  - minecraft:clear MCSdragon
+  - minecraft:clear MCSbutterflyy
+  - minecraft:clear MCScaterpillar
+  - minecraft:clear MCSparrot
+  - minecraft:clear MCSmonkeyy
+  - minecraft:clear MCSalien
+  - minecraft:clear MCSplatypuss
+  - minecraft:clear MCStree
+  - minecraft:clear MCScat
+  - minecraft:clear MCSpotato
+  - minecraft:clear MCSplanet
+  - minecraft:clear MCStardigrade
+  - minecraft:clear MCSostrich
+  - minecraft:clear MCSgoblin
+  - minecraft:clear MCSmanatee
+  - effect clear MCSarmadillo
+  - effect clear MCSbear
+  - effect clear MCScobra
+  - effect clear MCSdolphin
+  - effect clear MCSeagle
+  - effect clear MCSfox
+  - effect clear MCSgecko
+  - effect clear MCShorse
+  - effect clear MCSiguana
+  - effect clear MCSjackal
+  - effect clear MCSkangarooo
+  - effect clear MCSlion
+  - effect clear MCSmouse
+  - effect clear MCSnarwhal
+  - effect clear MCSoctopus
+  - effect clear MCSpanda
+  - effect clear MCSquail
+  - effect clear MCSraccoon
+  - effect clear MCSswan
+  - effect clear MCSturtle
+  - effect clear MCSunicorn
+  - effect clear MCSvampire
+  - effect clear MCSwalrus
+  - effect clear MCSyak
+  - effect clear MCSzebra
+  - effect clear MCSdragon
+  - effect clear MCSbutterflyy
+  - effect clear MCScaterpillar
+  - effect clear MCSparrot
+  - effect clear MCSmonkeyy
+  - effect clear MCSalien
+  - effect clear MCSplatypuss
+  - effect clear MCStree
+  - effect clear MCScat
+  - effect clear MCSpotato
+  - effect clear MCSplanet
+  - effect clear MCStardigrade
+  - effect clear MCSostrich
+  - effect clear MCSgoblin
+  - effect clear MCSmanatee

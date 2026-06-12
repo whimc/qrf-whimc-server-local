@@ -1,0 +1,16 @@
+location: Hub:-62.559:39.700:102.517
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: quests
+    height: 0.3
+  - content: journal
+    height: 0.3
+  - content: v
+    height: 0.3
+  actions: {}

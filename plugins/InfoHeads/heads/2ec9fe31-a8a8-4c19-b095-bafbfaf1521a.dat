@@ -1,0 +1,28 @@
+{
+  "uniqueId": "2ec9fe31-a8a8-4c19-b095-bafbfaf1521a",
+  "location": {
+    "x": -440,
+    "y": 123,
+    "z": -497,
+    "dimension": "Icarus"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.ConsoleCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"Icarus IV on Planet Minecraft\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.planetminecraft.com/project/icarus-iv-an-open-world-survival-adventure\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

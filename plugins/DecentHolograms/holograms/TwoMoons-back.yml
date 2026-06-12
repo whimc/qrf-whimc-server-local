@@ -1,0 +1,14 @@
+location: TwoMoonsLow:46.014:71.116:88.041
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: Return to
+    height: 0.3
+  - content: High Tide
+    height: 0.3
+  actions: {}

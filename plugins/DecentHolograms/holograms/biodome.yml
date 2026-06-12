@@ -1,0 +1,12 @@
+location: LunarCrater:6.681:19.000:-8.473
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&lBiodome'
+    height: 0.3
+  actions: {}

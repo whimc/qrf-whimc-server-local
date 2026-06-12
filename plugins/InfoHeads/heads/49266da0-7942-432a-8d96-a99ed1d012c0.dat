@@ -1,0 +1,28 @@
+{
+  "uniqueId": "49266da0-7942-432a-8d96-a99ed1d012c0",
+  "location": {
+    "x": 6,
+    "y": 95,
+    "z": 38,
+    "dimension": "Gliese"
+  },
+  "coolDown": {
+    "weeks": 0,
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "oneTimeUse": false,
+  "enabled": true,
+  "elements": [
+    {
+      "type": "me.harry0198.infoheads.libs.core.elements.PlayerCommandElement",
+      "data": {
+        "command": "tellraw {player-name} {\"text\":\"Learn about solar wind\",\"bold\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/twB62NYsaIg\"}}"
+      }
+    }
+  ],
+  "userToCoolDownExpiryMappings": {},
+  "usersExecuted": []
+}

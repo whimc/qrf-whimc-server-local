@@ -1,0 +1,14 @@
+location: Kepler:190.850:68.182:-75.240
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: What? Purple water?
+    height: 0.3
+  - content: Jump in and try /atmosphere
+    height: 0.3
+  actions: {}

@@ -1,0 +1,16 @@
+location: Trappist:-2.840:63.587:124.139
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: 'Hint: &e/atmosphere &fwill'
+    height: 0.3
+  - content: measure liquid composition too
+    height: 0.3
+  - content: but you need to stand in the pool
+    height: 0.3
+  actions: {}

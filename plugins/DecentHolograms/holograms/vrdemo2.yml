@@ -1,0 +1,12 @@
+location: TwoMoonsLow:-18.552:68.532:99.492
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: VR Demonstration
+    height: 0.3
+  actions: {}
