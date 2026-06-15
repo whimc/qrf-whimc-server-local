@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         localhost
--- Server version:               5.7.24 - MySQL Community Server (GPL)
+-- Server version:               8.4.9 - MySQL Community Server - GPL
 -- Server OS:                    Win64
--- HeidiSQL Version:             12.14.0.7165
+-- HeidiSQL Version:             12.18.0.7304
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,17 +16,17 @@
 
 
 -- Dumping database structure for whimc
-CREATE DATABASE IF NOT EXISTS `whimc` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE IF NOT EXISTS `whimc` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `whimc`;
 
 -- Dumping structure for table whimc.co_art_map
 CREATE TABLE IF NOT EXISTS `co_art_map` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `id` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `id` int DEFAULT NULL,
   `art` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.co_art_map: ~26 rows (approximately)
 INSERT INTO `co_art_map` (`rowid`, `id`, `art`) VALUES
@@ -59,26 +59,26 @@ INSERT INTO `co_art_map` (`rowid`, `id`, `art`) VALUES
 
 -- Dumping structure for table whimc.co_block
 CREATE TABLE IF NOT EXISTS `co_block` (
-  `rowid` bigint(20) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
-  `user` int(8) DEFAULT NULL,
-  `wid` int(4) DEFAULT NULL,
-  `x` int(8) DEFAULT NULL,
-  `y` int(3) DEFAULT NULL,
-  `z` int(8) DEFAULT NULL,
-  `type` int(6) DEFAULT NULL,
-  `data` int(8) DEFAULT NULL,
+  `rowid` bigint NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
+  `user` int DEFAULT NULL,
+  `wid` int DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `y` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
+  `type` int DEFAULT NULL,
+  `data` int DEFAULT NULL,
   `meta` mediumblob,
   `blockdata` blob,
-  `action` int(2) DEFAULT NULL,
+  `action` int DEFAULT NULL,
   `rolled_back` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `wid` (`wid`,`x`,`z`,`time`),
   KEY `user` (`user`,`time`),
   KEY `type` (`type`,`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_block: ~190 rows (approximately)
+-- Dumping data for table whimc.co_block: ~211 rows (approximately)
 INSERT INTO `co_block` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `type`, `data`, `meta`, `blockdata`, `action`, `rolled_back`) VALUES
 	(1, 1686869237, 6, 27, 26, -27, 13, 4, 1, NULL, NULL, 3, 0),
 	(2, 1686869311, 7, 27, 24, -25, 8, 4, 2, NULL, NULL, 3, 0),
@@ -294,12 +294,12 @@ INSERT INTO `co_block` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `type`, `
 
 -- Dumping structure for table whimc.co_blockdata_map
 CREATE TABLE IF NOT EXISTS `co_blockdata_map` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `id` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `id` int DEFAULT NULL,
   `data` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.co_blockdata_map: ~10 rows (approximately)
 INSERT INTO `co_blockdata_map` (`rowid`, `id`, `data`) VALUES
@@ -316,19 +316,19 @@ INSERT INTO `co_blockdata_map` (`rowid`, `id`, `data`) VALUES
 
 -- Dumping structure for table whimc.co_chat
 CREATE TABLE IF NOT EXISTS `co_chat` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
-  `user` int(8) DEFAULT NULL,
-  `wid` int(4) DEFAULT NULL,
-  `x` int(8) DEFAULT NULL,
-  `y` int(3) DEFAULT NULL,
-  `z` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
+  `user` int DEFAULT NULL,
+  `wid` int DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `y` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
   `message` varchar(16000) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `time` (`time`),
   KEY `user` (`user`,`time`),
   KEY `wid` (`wid`,`x`,`z`,`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table whimc.co_chat: ~4 rows (approximately)
 INSERT INTO `co_chat` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `message`) VALUES
@@ -339,19 +339,19 @@ INSERT INTO `co_chat` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `message`)
 
 -- Dumping structure for table whimc.co_command
 CREATE TABLE IF NOT EXISTS `co_command` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
-  `user` int(8) DEFAULT NULL,
-  `wid` int(4) DEFAULT NULL,
-  `x` int(8) DEFAULT NULL,
-  `y` int(3) DEFAULT NULL,
-  `z` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
+  `user` int DEFAULT NULL,
+  `wid` int DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `y` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
   `message` varchar(16000) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `time` (`time`),
   KEY `user` (`user`,`time`),
   KEY `wid` (`wid`,`x`,`z`,`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table whimc.co_command: ~83 rows (approximately)
 INSERT INTO `co_command` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `message`) VALUES
@@ -441,48 +441,48 @@ INSERT INTO `co_command` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `messag
 
 -- Dumping structure for table whimc.co_container
 CREATE TABLE IF NOT EXISTS `co_container` (
-  `rowid` int(10) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
-  `user` int(8) DEFAULT NULL,
-  `wid` int(4) DEFAULT NULL,
-  `x` int(8) DEFAULT NULL,
-  `y` int(3) DEFAULT NULL,
-  `z` int(8) DEFAULT NULL,
-  `type` int(6) DEFAULT NULL,
-  `data` int(6) DEFAULT NULL,
-  `amount` int(4) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
+  `user` int DEFAULT NULL,
+  `wid` int DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `y` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
+  `type` int DEFAULT NULL,
+  `data` int DEFAULT NULL,
+  `amount` int DEFAULT NULL,
   `metadata` blob,
-  `action` int(2) DEFAULT NULL,
+  `action` int DEFAULT NULL,
   `rolled_back` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `wid` (`wid`,`x`,`z`,`time`),
   KEY `user` (`user`,`time`),
   KEY `type` (`type`,`time`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.co_container: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.co_database_lock
 CREATE TABLE IF NOT EXISTS `co_database_lock` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
+  `rowid` int NOT NULL AUTO_INCREMENT,
   `status` tinyint(1) DEFAULT NULL,
-  `time` int(10) DEFAULT NULL,
+  `time` int DEFAULT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_database_lock: ~0 rows (approximately)
+-- Dumping data for table whimc.co_database_lock: ~1 rows (approximately)
 INSERT INTO `co_database_lock` (`rowid`, `status`, `time`) VALUES
 	(1, 0, 1686873097);
 
 -- Dumping structure for table whimc.co_entity
 CREATE TABLE IF NOT EXISTS `co_entity` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
   `data` blob,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_entity: ~106 rows (approximately)
+-- Dumping data for table whimc.co_entity: ~108 rows (approximately)
 INSERT INTO `co_entity` (`rowid`, `time`, `data`) VALUES
 	(1, 1686869237, _binary 0xaced0005737200136a6176612e7574696c2e41727261794c6973747881d21d99c7619d03000149000473697a657870000000077704000000077371007e000000000000770400000000787371007e000000000000770400000000787371007e00000000000077040000000078737200116a6176612e6c616e672e426f6f6c65616ecd207280d59cfaee0200015a000576616c7565787000707371007e0000000000077704000000077371007e0000000000037704000000037e72001e6f72672e62756b6b69742e6174747269627574652e41747472696275746500000000000000001200007872000e6a6176612e6c616e672e456e756d0000000000000000120000787074001247454e455249435f4d41585f4845414c5448737200106a6176612e6c616e672e446f75626c6580b3c24a296bfb0402000144000576616c7565787200106a6176612e6c616e672e4e756d62657286ac951d0b94e08b020000787040180000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001447454e455249435f464f4c4c4f575f52414e47457371007e000d40300000000000007371007e000000000001770400000001737200116a6176612e7574696c2e486173684d61700507dac1c31660d103000246000a6c6f6164466163746f724900097468726573686f6c6478703f4000000000000c77080000001000000004740006616d6f756e747371007e000dbfa65e7bb711e52f7400046e616d6574001252616e646f6d20737061776e20626f6e75737400047575696474002432333165393035352d326536332d346537642d393538332d6232356433666263353562377400096f7065726174696f6e737200116a6176612e6c616e672e496e746567657212e2a0a4f781873802000149000576616c75657871007e000e000000017878787371007e0000000000037704000000037e71007e000974001c47454e455249435f4b4e4f434b4241434b5f524553495354414e43457371007e000d00000000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001647454e455249435f4d4f56454d454e545f53504545447371007e000d3fe66666600000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001847454e455249435f41545441434b5f4b4e4f434b4241434b7371007e000d00000000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974000d47454e455249435f41524d4f527371007e000d00000000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001747454e455249435f41524d4f525f544f5547484e4553537371007e000d00000000000000007371007e0000000000007704000000007878787371007e0000000000027704000000027371007e00050171007e00067878),
 	(2, 1686869311, _binary 0xaced0005737200136a6176612e7574696c2e41727261794c6973747881d21d99c7619d03000149000473697a657870000000077704000000077371007e000000000000770400000000787371007e000000000000770400000000787371007e00000000000077040000000078737200116a6176612e6c616e672e426f6f6c65616ecd207280d59cfaee0200015a000576616c7565787000707371007e0000000000077704000000077371007e0000000000037704000000037e72001e6f72672e62756b6b69742e6174747269627574652e41747472696275746500000000000000001200007872000e6a6176612e6c616e672e456e756d0000000000000000120000787074001247454e455249435f4d41585f4845414c5448737200106a6176612e6c616e672e446f75626c6580b3c24a296bfb0402000144000576616c7565787200106a6176612e6c616e672e4e756d62657286ac951d0b94e08b020000787040180000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001447454e455249435f464f4c4c4f575f52414e47457371007e000d40300000000000007371007e000000000001770400000001737200116a6176612e7574696c2e486173684d61700507dac1c31660d103000246000a6c6f6164466163746f724900097468726573686f6c6478703f4000000000000c77080000001000000004740006616d6f756e747371007e000dbfa104ded0ced6427400046e616d6574001252616e646f6d20737061776e20626f6e75737400047575696474002437323933633432622d643135382d343465622d623435662d3963623337393935663965637400096f7065726174696f6e737200116a6176612e6c616e672e496e746567657212e2a0a4f781873802000149000576616c75657871007e000e000000017878787371007e0000000000037704000000037e71007e000974001c47454e455249435f4b4e4f434b4241434b5f524553495354414e43457371007e000d00000000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001647454e455249435f4d4f56454d454e545f53504545447371007e000d3fe66666600000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001847454e455249435f41545441434b5f4b4e4f434b4241434b7371007e000d00000000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974000d47454e455249435f41524d4f527371007e000d00000000000000007371007e00000000000077040000000078787371007e0000000000037704000000037e71007e000974001747454e455249435f41524d4f525f544f5547484e4553537371007e000d00000000000000007371007e0000000000007704000000007878787371007e0000000000027704000000027371007e00050171007e00067878),
@@ -595,14 +595,14 @@ INSERT INTO `co_entity` (`rowid`, `time`, `data`) VALUES
 
 -- Dumping structure for table whimc.co_entity_map
 CREATE TABLE IF NOT EXISTS `co_entity_map` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `id` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `id` int DEFAULT NULL,
   `entity` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_entity_map: ~30 rows (approximately)
+-- Dumping data for table whimc.co_entity_map: ~31 rows (approximately)
 INSERT INTO `co_entity_map` (`rowid`, `id`, `entity`) VALUES
 	(1, 1, 'cow'),
 	(2, 2, 'wolf'),
@@ -638,36 +638,36 @@ INSERT INTO `co_entity_map` (`rowid`, `id`, `entity`) VALUES
 
 -- Dumping structure for table whimc.co_item
 CREATE TABLE IF NOT EXISTS `co_item` (
-  `rowid` int(10) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
-  `user` int(8) DEFAULT NULL,
-  `wid` int(4) DEFAULT NULL,
-  `x` int(8) DEFAULT NULL,
-  `y` int(3) DEFAULT NULL,
-  `z` int(8) DEFAULT NULL,
-  `type` int(6) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
+  `user` int DEFAULT NULL,
+  `wid` int DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `y` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
+  `type` int DEFAULT NULL,
   `data` blob,
-  `amount` int(4) DEFAULT NULL,
+  `amount` int DEFAULT NULL,
   `action` tinyint(1) DEFAULT NULL,
   `rolled_back` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`rowid`),
   KEY `wid` (`wid`,`x`,`z`,`time`),
   KEY `user` (`user`,`time`),
   KEY `type` (`type`,`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_item: ~0 rows (approximately)
+-- Dumping data for table whimc.co_item: ~1 rows (approximately)
 INSERT INTO `co_item` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `type`, `data`, `amount`, `action`, `rolled_back`) VALUES
 	(1, 1686869714, 239, 84, -419, 97, -226, 270, NULL, 1, 3, 0);
 
 -- Dumping structure for table whimc.co_material_map
 CREATE TABLE IF NOT EXISTS `co_material_map` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `id` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `id` int DEFAULT NULL,
   `material` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1062 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1062 DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.co_material_map: ~1,061 rows (approximately)
 INSERT INTO `co_material_map` (`rowid`, `id`, `material`) VALUES
@@ -1735,20 +1735,20 @@ INSERT INTO `co_material_map` (`rowid`, `id`, `material`) VALUES
 
 -- Dumping structure for table whimc.co_session
 CREATE TABLE IF NOT EXISTS `co_session` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
-  `user` int(8) DEFAULT NULL,
-  `wid` int(4) DEFAULT NULL,
-  `x` int(8) DEFAULT NULL,
-  `y` int(3) DEFAULT NULL,
-  `z` int(8) DEFAULT NULL,
-  `action` int(1) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
+  `user` int DEFAULT NULL,
+  `wid` int DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `y` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
+  `action` int DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `wid` (`wid`,`x`,`z`,`time`),
   KEY `action` (`action`,`time`),
   KEY `user` (`user`,`time`),
   KEY `time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.co_session: ~12 rows (approximately)
 INSERT INTO `co_session` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `action`) VALUES
@@ -1767,15 +1767,15 @@ INSERT INTO `co_session` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `action
 
 -- Dumping structure for table whimc.co_sign
 CREATE TABLE IF NOT EXISTS `co_sign` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
-  `user` int(8) DEFAULT NULL,
-  `wid` int(4) DEFAULT NULL,
-  `x` int(8) DEFAULT NULL,
-  `y` int(3) DEFAULT NULL,
-  `z` int(8) DEFAULT NULL,
-  `action` int(1) DEFAULT NULL,
-  `color` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
+  `user` int DEFAULT NULL,
+  `wid` int DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `y` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
+  `action` int DEFAULT NULL,
+  `color` int DEFAULT NULL,
   `line_1` varchar(100) DEFAULT NULL,
   `line_2` varchar(100) DEFAULT NULL,
   `line_3` varchar(100) DEFAULT NULL,
@@ -1785,34 +1785,34 @@ CREATE TABLE IF NOT EXISTS `co_sign` (
   KEY `wid` (`wid`,`x`,`z`,`time`),
   KEY `user` (`user`,`time`),
   KEY `time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_sign: ~0 rows (approximately)
+-- Dumping data for table whimc.co_sign: ~1 rows (approximately)
 INSERT INTO `co_sign` (`rowid`, `time`, `user`, `wid`, `x`, `y`, `z`, `action`, `color`, `line_1`, `line_2`, `line_3`, `line_4`, `data`) VALUES
 	(1, 1686869707, 239, 84, -418, 100, -226, 0, 1908001, '', '§fBack to', '§fspace station', '', 0);
 
 -- Dumping structure for table whimc.co_skull
 CREATE TABLE IF NOT EXISTS `co_skull` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
   `owner` varchar(64) DEFAULT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.co_skull: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.co_user
 CREATE TABLE IF NOT EXISTS `co_user` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
   `user` varchar(100) DEFAULT NULL,
   `uuid` varchar(64) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `user` (`user`),
   KEY `uuid` (`uuid`)
-) ENGINE=InnoDB AUTO_INCREMENT=241 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=241 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_user: ~49 rows (approximately)
+-- Dumping data for table whimc.co_user: ~51 rows (approximately)
 INSERT INTO `co_user` (`rowid`, `time`, `user`, `uuid`) VALUES
 	(3, 1606940024, '#cow', NULL),
 	(4, 1606940024, '#wolf', NULL),
@@ -1868,41 +1868,41 @@ INSERT INTO `co_user` (`rowid`, `time`, `user`, `uuid`) VALUES
 
 -- Dumping structure for table whimc.co_username_log
 CREATE TABLE IF NOT EXISTS `co_username_log` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
   `uuid` varchar(64) DEFAULT NULL,
   `user` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `uuid` (`uuid`,`user`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_username_log: ~1 rows (approximately)
+-- Dumping data for table whimc.co_username_log: ~2 rows (approximately)
 INSERT INTO `co_username_log` (`rowid`, `time`, `uuid`, `user`) VALUES
 	(1, 1686869410, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph'),
 	(2, 1686871625, 'cb1465d7-f90e-4761-be84-3cc59e8e632c', 'MCScobra');
 
 -- Dumping structure for table whimc.co_version
 CREATE TABLE IF NOT EXISTS `co_version` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `time` int(10) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` int DEFAULT NULL,
   `version` varchar(16) DEFAULT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_version: ~0 rows (approximately)
+-- Dumping data for table whimc.co_version: ~1 rows (approximately)
 INSERT INTO `co_version` (`rowid`, `time`, `version`) VALUES
 	(1, 1686869112, '2.21.3');
 
 -- Dumping structure for table whimc.co_world
 CREATE TABLE IF NOT EXISTS `co_world` (
-  `rowid` int(8) NOT NULL AUTO_INCREMENT,
-  `id` int(8) DEFAULT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `id` int DEFAULT NULL,
   `world` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`rowid`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table whimc.co_world: ~83 rows (approximately)
+-- Dumping data for table whimc.co_world: ~88 rows (approximately)
 INSERT INTO `co_world` (`rowid`, `id`, `world`) VALUES
 	(1, 1, 'Hub'),
 	(2, 2, 'TiltedEarth_Melting'),
@@ -1993,47 +1993,279 @@ INSERT INTO `co_world` (`rowid`, `id`, `world`) VALUES
 	(87, 87, 'sdp3'),
 	(88, 88, 'sdp4');
 
+-- Dumping structure for table whimc.journey_cached_path_cells
+CREATE TABLE IF NOT EXISTS `journey_cached_path_cells` (
+  `path_id` int NOT NULL,
+  `x` int NOT NULL,
+  `y` int NOT NULL,
+  `z` int NOT NULL,
+  `path_index` int NOT NULL,
+  `mode_type` smallint NOT NULL,
+  UNIQUE KEY `path_id` (`path_id`,`path_index`),
+  KEY `path_id_2` (`path_id`),
+  CONSTRAINT `journey_cached_path_cells_ibfk_1` FOREIGN KEY (`path_id`) REFERENCES `journey_cached_paths` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table whimc.journey_cached_path_cells: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.journey_cached_path_modes
+CREATE TABLE IF NOT EXISTS `journey_cached_path_modes` (
+  `path_id` int NOT NULL,
+  `mode_type` smallint NOT NULL,
+  UNIQUE KEY `path_id` (`path_id`,`mode_type`),
+  KEY `path_id_2` (`path_id`),
+  CONSTRAINT `journey_cached_path_modes_ibfk_1` FOREIGN KEY (`path_id`) REFERENCES `journey_cached_paths` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table whimc.journey_cached_path_modes: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.journey_cached_paths
+CREATE TABLE IF NOT EXISTS `journey_cached_paths` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `duration` int NOT NULL,
+  `path_length` double(12,5) NOT NULL,
+  `origin_x` int NOT NULL,
+  `origin_y` int NOT NULL,
+  `origin_z` int NOT NULL,
+  `destination_x` int NOT NULL,
+  `destination_y` int NOT NULL,
+  `destination_z` int NOT NULL,
+  `domain_id` binary(16) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `journey_cached_paths_idx` (`origin_x`,`origin_y`,`origin_z`,`destination_x`,`destination_y`,`destination_z`,`domain_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table whimc.journey_cached_paths: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.journey_db_version
+CREATE TABLE IF NOT EXISTS `journey_db_version` (
+  `db_version` int DEFAULT NULL,
+  KEY `journey_db_version_idx` (`db_version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table whimc.journey_db_version: ~0 rows (approximately)
+INSERT INTO `journey_db_version` (`db_version`) VALUES
+	(2);
+
+-- Dumping structure for table whimc.journey_tunnels
+CREATE TABLE IF NOT EXISTS `journey_tunnels` (
+  `origin_domain_id` binary(16) NOT NULL,
+  `origin_x` int NOT NULL,
+  `origin_y` int NOT NULL,
+  `origin_z` int NOT NULL,
+  `destination_domain_id` binary(16) NOT NULL,
+  `destination_x` int NOT NULL,
+  `destination_y` int NOT NULL,
+  `destination_z` int NOT NULL,
+  `tunnel_type` tinyint NOT NULL,
+  KEY `journey_tunnels_origin_idx` (`origin_domain_id`,`origin_x`,`origin_y`,`origin_z`),
+  KEY `journey_tunnels_destination_idx` (`destination_domain_id`,`destination_x`,`destination_y`,`destination_z`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table whimc.journey_tunnels: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.journey_waypoints
+CREATE TABLE IF NOT EXISTS `journey_waypoints` (
+  `player_uuid` binary(16) DEFAULT NULL,
+  `name_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `domain_id` binary(16) NOT NULL,
+  `x` int NOT NULL,
+  `y` int NOT NULL,
+  `z` int NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `publicity` int NOT NULL DEFAULT '0',
+  UNIQUE KEY `unique_player_waypoint` (`player_uuid`,`name_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table whimc.journey_waypoints: ~143 rows (approximately)
+INSERT INTO `journey_waypoints` (`player_uuid`, `name_id`, `name`, `domain_id`, `x`, `y`, `z`, `created`, `publicity`) VALUES
+	(NULL, 'npc-new-astronaut-recruiter', 'New Astronaut Recruiter', _binary 0x3c04240d604b438db2d978e715a0a514, -89, 52, 215, '2026-05-14 16:09:05', 0),
+	(NULL, 'npc-hydro-engineer', 'Hydro Engineer', _binary 0xa748906a9b82498e85994563daffb7d9, -61, 49, -34, '2026-05-14 16:13:33', 0),
+	(NULL, 'npc-shadowy-mynoan-creature', 'Shadowy Mynoan Creature', _binary 0x4e7bb60fc79f4174a6d019af7afe56f2, 1322, 65, 917, '2026-05-14 16:20:57', 0),
+	(NULL, 'npc-chemist', 'Trappist Chemist', _binary 0x4efa3f5bf5044051a822952e3076c1b7, -33, 69, 6, '2026-05-14 16:21:51', 0),
+	(NULL, 'npc-exonaut-explorer', 'Kepler Exonaut Explorer', _binary 0x5afc5613a8bd49d68a7382af94db7a32, 276, 90, -33, '2026-05-14 16:23:33', 0),
+	(NULL, 'npc-surveyor', 'Cancri Laser Probe Surveyor', _binary 0x7d2861804b634a69a7d76337d044d56b, 46, 78, 62, '2026-05-14 16:24:06', 0),
+	(NULL, 'npc-prospector', 'Gliese Prospector', _binary 0x010a0de4919f41bc854c3ccb104fd482, 0, 92, 49, '2026-05-14 16:25:14', 0),
+	(NULL, 'poi-brown-dwarf-quest', 'Brown Dwarf Quest Assignment', _binary 0xe328f4869fb44375adb1bc85bfaddbd1, 40, 133, 19, '2026-05-14 16:29:31', 0),
+	(NULL, 'npc-carls', 'Carl S.', _binary 0xeb47310156b04f618c428f70eef23acd, -2, 74, 1, '2026-05-27 19:16:00', 0),
+	(NULL, 'npc-tanyaj', 'Tanya J.', _binary 0xeb47310156b04f618c428f70eef23acd, -1, 74, 12, '2026-05-27 19:16:00', 0),
+	(NULL, 'npc-kwalit', 'Kwali T.', _binary 0xeb47310156b04f618c428f70eef23acd, -101, 74, 52, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-turbine_control', 'Wind Turbine Power Control', _binary 0xeb47310156b04f618c428f70eef23acd, -100, 76, 54, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-valley', 'Wind Sheltered Valley', _binary 0xeb47310156b04f618c428f70eef23acd, -88, 81, 6, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-turbine', 'Wind Turbine', _binary 0xeb47310156b04f618c428f70eef23acd, -142, 129, 118, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-coast_south', 'Stripped Southern Coast', _binary 0xeb47310156b04f618c428f70eef23acd, 0, 71, 335, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-coast_east', 'Stripped Eastern Coast', _binary 0xeb47310156b04f618c428f70eef23acd, 320, 71, -30, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-coast_north', 'Stripped Northern Coast', _binary 0xeb47310156b04f618c428f70eef23acd, -5, 71, -350, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-coast_west', 'Stripped Western Coast', _binary 0xeb47310156b04f618c428f70eef23acd, -365, 71, -30, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-welcome_center', 'Welcome Center', _binary 0xeb47310156b04f618c428f70eef23acd, -5, 76, 6, '2026-05-27 19:16:00', 0),
+	(NULL, 'poi-greenhouse', 'Greenhouse', _binary 0xeb47310156b04f618c428f70eef23acd, -4, 76, 9, '2026-05-27 19:16:00', 0),
+	(NULL, 'npc-jackl', 'Jack L.', _binary 0xa748906a9b82498e85994563daffb7d9, -84, 51, -31, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-verak', 'Vera K.', _binary 0xa748906a9b82498e85994563daffb7d9, -84, 51, -41, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-damienk', 'Damien K. Team Leader', _binary 0x18f5a48cee364f10b1b7f999ed194477, -78, 60, -55, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-josephinar', 'Josephina R.', _binary 0xa748906a9b82498e85994563daffb7d9, -100, 76, -45, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-anitaj', 'Anita J.', _binary 0x18f5a48cee364f10b1b7f999ed194477, -93, 41, -85, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-pierreb', 'Pierre B.', _binary 0x18f5a48cee364f10b1b7f999ed194477, -85, 46, -91, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-jorgeperezgallego', 'Dr. Jorge Perez Gallego', _binary 0x413f0fdb041c448eaa50d81bb702298b, -151, 67, 4, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-underground_habitat', 'Underground Habitat', _binary 0xa748906a9b82498e85994563daffb7d9, -77, 54, -50, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-solar_panel_power', 'Solar Panel Power', _binary 0x18f5a48cee364f10b1b7f999ed194477, -95, 81, -45, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-geothermal_power', 'Geothermal Power', _binary 0xa748906a9b82498e85994563daffb7d9, -63, 50, -31, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-clarasousasilva', 'Clara Sousa Silva', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 192, 84, 174, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-towermechanic', 'Tower Mechanic', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 405, 73, -448, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-ornithologist', 'Ornithologist', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 400, 81, -453, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-herpetologist', 'Herpetologist', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, -95, 81, -453, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-rabbits', 'Rabbits', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 123, 72, 107, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-birds', 'Birds', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 276, 187, 343, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-bears', 'Bears', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 349, 71, 47, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-axolotls', 'Axolotls', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 214, 63, -82, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-helicopter_ride_to_reef', 'Helicopter Ride to Reef', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 357, 85, -341, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-research_lab_and_time_travel', 'Research Lab and Time Travel!', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 402, 73, -450, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-reef', 'Reef', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 415, 2, -821, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-return_buoy', 'Return Buoy', _binary 0x5b703589cc2749b2b69c1ff55abc1fe4, 417, 69, -811, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-kristina', 'Kristina', _binary 0x7a5d8e1791864cc393e33933560213f8, 45, 69, 93, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-tobias', 'Tobias', _binary 0x7a5d8e1791864cc393e33933560213f8, 86, 63, 109, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-worker', 'Worker', _binary 0x7a5d8e1791864cc393e33933560213f8, 88, 67, 13, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-joel', 'Joel', _binary 0x7a5d8e1791864cc393e33933560213f8, -9, 66, 90, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-kate', 'Kate', _binary 0x7a5d8e1791864cc393e33933560213f8, -6, 71, 106, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-museum_and_travel_to_moon', 'Museum and Travel to Moon!', _binary 0x7a5d8e1791864cc393e33933560213f8, -14, 66, 99, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-tides_investigation', 'Tides Investigation', _binary 0x7a5d8e1791864cc393e33933560213f8, 48, 69, 93, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-travel_through_time', 'Travel Through Time', _binary 0x7a5d8e1791864cc393e33933560213f8, 85, 65, 11, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-tide_investigation', 'Tide Investigation', _binary 0xa716aae657134c7aaedfea1ca49917df, 84, 64, 23, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-look_at_the_other_moon', 'Look at the Other Moon!', _binary 0x99e7b812ca7b4fd787467a88bd191059, 66, 76, 46, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-return_to_museum', 'Return to Museum', _binary 0x99e7b812ca7b4fd787467a88bd191059, 68, 86, 77, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-mysteriousmynoan', 'Mysterious Mynoa', _binary 0x9b62735ea8574de39fb382a3e015fc7d, 6, 92, 178, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-biologist', 'Biologist', _binary 0x9b62735ea8574de39fb382a3e015fc7d, 303, 83, 194, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-museum_of_mynoa', 'Museum of Mynoa', _binary 0x9b62735ea8574de39fb382a3e015fc7d, 273, 76, 378, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-habitation_compound', 'Habitation Compound', _binary 0x9b62735ea8574de39fb382a3e015fc7d, 319, 76, 336, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-atmospheric_observation_deck', 'Atmospheric Observation Deck', _binary 0x9b62735ea8574de39fb382a3e015fc7d, 303, 83, 194, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-sunken_forest', 'Sunken Forest?', _binary 0x9b62735ea8574de39fb382a3e015fc7d, 353, 69, 204, '2026-05-27 20:16:00', 0),
+	(NULL, 'poi-is_this_sea_level_normal', 'Is this Sea Level Normal?', _binary 0x9b62735ea8574de39fb382a3e015fc7d, 329, 69, 159, '2026-05-27 20:16:00', 0),
+	(NULL, 'npc-logistics', 'Logistics and Shipping', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1576, 67, 2770, '2026-03-25 05:02:39', 0),
+	(NULL, 'npc-dr-ginger-and-prof-h-chad', 'The Professors', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1557, 67, 2717, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-front-desk-attendant', 'Front Desk', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1565, 67, 2731, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-guest-lecturer', 'Asteroid Mining Lecture', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1562, 67, 2738, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-neil-comins', 'Neil Comins', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1562, 67, 2738, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-mars-robotics-simulation', 'Mars Robot Sim', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1562, 67, 2751, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-material-science-researcher', 'MatSci Researcher', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1570, 67, 2738, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-mission-control', 'Mission Control', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1577, 76, 2746, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-astronaut-in-training', 'Astronaut in Training', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1556, 73, 2737, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-computer-scientist', 'Computer Scientist', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1576, 58, 2751, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-environmental-astrophysicist', 'Environmental Astrophysicist', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1608, 61, 2706, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-rocket-payload-overseer', 'Rocket Payload Overseer', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1611, 85, 2712, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-space-shuttle', 'Space Shuttle', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1572, 67, 2883, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-electrician', 'Electrician', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1612, 66, 2734, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-testing-director', 'Testing Director', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1531, 67, 2742, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-psychologist', 'Psychologist', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1532, 79, 2745, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-mechanic', 'Mechanic', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1565, 67, 2840, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-launch-control', 'Launch Control', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1557, 75, 2766, '2026-03-31 18:44:36', 0),
+	(NULL, 'poi-rocket', 'Rocket', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1615, 147, 2911, '2026-03-31 18:44:36', 0),
+	(NULL, 'npc-recent-arrival', 'Recent Arrival', _binary 0x66029d48aa7e4b258da8525309768a49, -23, 71, 192, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-facility-administrator', 'Facility Administrator', _binary 0x66029d48aa7e4b258da8525309768a49, -6, 71, 164, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-facility-overseer', 'Facility Overseer', _binary 0x66029d48aa7e4b258da8525309768a49, 10, 18, -5, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-head-botanist', 'Head Botanist', _binary 0x66029d48aa7e4b258da8525309768a49, -25, 18, -5, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-facility-biologist', 'Facility Biologist', _binary 0x66029d48aa7e4b258da8525309768a49, -32, 18, -21, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-nursery-manager', 'Nursery Manager', _binary 0x66029d48aa7e4b258da8525309768a49, -14, 12, 9, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-station-horticulturist', 'Station Horticulturist', _binary 0x66029d48aa7e4b258da8525309768a49, -42, 12, 4, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-mycologist', 'Mycologist', _binary 0x66029d48aa7e4b258da8525309768a49, -50, 12, 14, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-facilities-manager', 'Facilities Manager', _binary 0x66029d48aa7e4b258da8525309768a49, 25, 18, -65, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-material-scientist', 'Material Scientist', _binary 0x66029d48aa7e4b258da8525309768a49, 25, 18, -61, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-psychiatrist', 'Psychiatrist', _binary 0x66029d48aa7e4b258da8525309768a49, 23, 22, -53, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-life-support', 'Life Support', _binary 0x66029d48aa7e4b258da8525309768a49, 3, 18, -71, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-medic', 'Medic', _binary 0x66029d48aa7e4b258da8525309768a49, 19, 18, -54, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-medical-doctor', 'Medical Doctor', _binary 0x66029d48aa7e4b258da8525309768a49, 24, 18, -73, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-physical-therapist', 'Physical Therapist', _binary 0x66029d48aa7e4b258da8525309768a49, 8, 18, -46, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-materials-scientist', 'Materials Scientist', _binary 0x66029d48aa7e4b258da8525309768a49, 55, 14, -13, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-computer-engineer', 'Computer Engineer', _binary 0x66029d48aa7e4b258da8525309768a49, 61, 25, -22, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-head-mechanic', 'Head Mechanic', _binary 0x66029d48aa7e4b258da8525309768a49, 39, 38, 102, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-seismologist', 'Seismologist', _binary 0x66029d48aa7e4b258da8525309768a49, 67, 38, 105, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-construction-engineer', 'Construction Engineer', _binary 0x66029d48aa7e4b258da8525309768a49, 37, 26, 39, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-pbs-nova', 'Pbs Nova', _binary 0x66029d48aa7e4b258da8525309768a49, -217, 73, 33, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-launch-director', 'Launch Director', _binary 0x66029d48aa7e4b258da8525309768a49, 18, 18, -11, '2026-03-31 19:10:42', 0),
+	(NULL, 'npc-instructor', 'Instructor', _binary 0x66029d48aa7e4b258da8525309768a49, 148, 53, -129, '2026-03-31 19:10:42', 0),
+	(NULL, 'poi-mission_control', 'Mission Control', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1572, 89, 2747, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-labs_and_testing', 'Labs and Testing', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1520, 73, 2741, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-mars_simulation', 'Mars Simulation', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1569, 67, 2750, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-launch_control', 'Launch Control', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1575, 76, 2772, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-space_elevator', 'Space Elevator?', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1570, 67, 2736, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-logistics', 'Logistics', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1576, 68, 2771, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-data_center', 'Data Center', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1575, 58, 2749, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-rocket_payload', 'Rocket Payload', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1612, 85, 2710, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-rocket_construction', 'Rocket Construction', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1600, 68, 2747, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-space_shuttle', 'Space Shuttle', _binary 0x6b6de5701f754ed18657ddb743ff92d4, -1569, 67, 2832, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-ice_storage_misavo', 'Ice Storage (Misavo)', _binary 0x66029d48aa7e4b258da8525309768a49, 62, 44, 98, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-engineering_and_oxygen_olivia', 'Engineering and Oxygen (Olivia)', _binary 0x66029d48aa7e4b258da8525309768a49, 49, 34, -15, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-biodome_airflow_huxley', 'Biodome Airflow (Huxley)', _binary 0x66029d48aa7e4b258da8525309768a49, -47, 34, -14, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-supplies_and_hq_blair', 'Supplies and HQ (Blair)', _binary 0x66029d48aa7e4b258da8525309768a49, 14, 40, -8, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-living_quarters_herbert', 'Living Quarters (Herbert)', _binary 0x66029d48aa7e4b258da8525309768a49, 13, 18, -59, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-solar_systems_dreyhala', 'Solar Systems (Dreyhala)', _binary 0x66029d48aa7e4b258da8525309768a49, -25, 23, -52, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-observatory_gina', 'Observatory (Gina)', _binary 0x66029d48aa7e4b258da8525309768a49, -170, 79, 30, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-pressure_settings_harlem', 'Pressure Settings (Harlem)', _binary 0x66029d48aa7e4b258da8525309768a49, 38, 26, 35, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-suit_up', 'Suit Up!', _binary 0x66029d48aa7e4b258da8525309768a49, -17, 71, 183, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-construction_rover', 'Construction Rover', _binary 0x66029d48aa7e4b258da8525309768a49, 73, 41, -44, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-storage_tanks', 'Storage Tanks', _binary 0x66029d48aa7e4b258da8525309768a49, -45, 32, 14, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-mushroom_lab', 'Mushroom Lab', _binary 0x66029d48aa7e4b258da8525309768a49, -48, 12, -9, '2026-05-27 20:26:00', 0),
+	(NULL, 'npc-engineersaige', 'Engineer Saige', _binary 0x7d2861804b634a69a7d76337d044d56b, -12, 32, 67, '2026-05-27 20:26:00', 0),
+	(NULL, 'npc-researchernate', 'Researcher Nate', _binary 0x7d2861804b634a69a7d76337d044d56b, -40, 68, 9, '2026-05-27 20:26:00', 0),
+	(NULL, 'npc-scientistkobey', 'Scientist Kobey', _binary 0x7d2861804b634a69a7d76337d044d56b, 24, 67, 15, '2026-05-27 20:26:00', 0),
+	(NULL, 'npc-geologistgavin', 'Geologist Gavin', _binary 0x7d2861804b634a69a7d76337d044d56b, -42, 66, -12, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-talk_to_surveyor', 'Talk to Surveyor', _binary 0x7d2861804b634a69a7d76337d044d56b, 45, 78, 64, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-travel_to_cold_side_of_cancri', 'Travel to "cold" Side of Cancri', _binary 0x7d2861804b634a69a7d76337d044d56b, 47, 80, 43, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-fly_in_the_drone', 'Fly in the Drone', _binary 0x7d2861804b634a69a7d76337d044d56b, -7, 65, 70, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-launch_drone', 'Launch Drone', _binary 0x7d2861804b634a69a7d76337d044d56b, -36, 67, 8, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-thermal_vents', 'Thermal Vents', _binary 0x7d2861804b634a69a7d76337d044d56b, 25, 67, 10, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-program_probe', 'Program Probe', _binary 0x010a0de4919f41bc854c3ccb104fd482, 2, 92, 52, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-investigate_the_sublimation', 'Investigate the Sublimation', _binary 0x010a0de4919f41bc854c3ccb104fd482, 5, 20, 88, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-pond_1', 'Pond 1', _binary 0x4efa3f5bf5044051a822952e3076c1b7, -143, 63, -50, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-pond_2', 'Pond 2', _binary 0x4efa3f5bf5044051a822952e3076c1b7, -7, 63, 119, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-investigate_the_core', 'Investigate the Core', _binary 0xe328f4869fb44375adb1bc85bfaddbd1, 39, 40, -11, '2026-05-27 20:26:00', 0),
+	(NULL, 'npc-xenobotanist', 'Xenobotanist', _binary 0x5afc5613a8bd49d68a7382af94db7a32, 269, 86, -86, '2026-05-27 20:26:00', 0),
+	(NULL, 'npc-astrozoologist', 'Astrozoologist', _binary 0x5afc5613a8bd49d68a7382af94db7a32, 167, 64, -7, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-sample_robot', 'Sample Robot', _binary 0x5afc5613a8bd49d68a7382af94db7a32, 196, 77, 68, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-water_sample', 'Water Sample', _binary 0x5afc5613a8bd49d68a7382af94db7a32, 166, 65, -11, '2026-05-27 20:26:00', 0),
+	(NULL, 'poi-sample_drop', 'Sample Drop', _binary 0x5afc5613a8bd49d68a7382af94db7a32, 269, 87, -85, '2026-05-27 20:26:00', 0);
+
 -- Dumping structure for table whimc.qrf_poi_coords
 CREATE TABLE IF NOT EXISTS `qrf_poi_coords` (
-  `rowid` int(8) NOT NULL,
+  `rowid` int NOT NULL,
   `World` varchar(255) DEFAULT NULL,
   `Object` text,
   `Object_name` text,
-  `x` int(11) DEFAULT NULL,
-  `z` int(11) DEFAULT NULL,
+  `x` int DEFAULT NULL,
+  `z` int DEFAULT NULL,
   `range` text,
   `Expected_Action` text,
   `Note` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.qrf_poi_coords: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.quests_player_completedquests
 CREATE TABLE IF NOT EXISTS `quests_player_completedquests` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `questid` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uuid` (`uuid`,`questid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table whimc.quests_player_completedquests: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.quests_player_currentquests
 CREATE TABLE IF NOT EXISTS `quests_player_currentquests` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `questid` varchar(100) NOT NULL,
-  `stageNum` int(11) NOT NULL,
+  `stageNum` int NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uuid` (`uuid`,`questid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table whimc.quests_player_currentquests: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.quests_player_questdata
 CREATE TABLE IF NOT EXISTS `quests_player_questdata` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `quest_id` varchar(100) NOT NULL,
   `blocks_broken` varchar(100) DEFAULT NULL,
@@ -2051,31 +2283,31 @@ CREATE TABLE IF NOT EXISTS `quests_player_questdata` (
   `npcs_killed` varchar(100) DEFAULT NULL,
   `mobs_killed` varchar(100) DEFAULT NULL,
   `mobs_tamed` varchar(100) DEFAULT NULL,
-  `fish_caught` int(11) DEFAULT NULL,
-  `cows_milked` int(11) DEFAULT NULL,
+  `fish_caught` int DEFAULT NULL,
+  `cows_milked` int DEFAULT NULL,
   `sheep_sheared` varchar(100) DEFAULT NULL,
-  `players_killed` int(11) DEFAULT NULL,
+  `players_killed` int DEFAULT NULL,
   `locations_reached` varchar(100) DEFAULT NULL,
   `passwords_said` varchar(100) DEFAULT NULL,
   `custom_counts` varchar(100) DEFAULT NULL,
-  `delay_start_time` bigint(20) DEFAULT NULL,
-  `delay_time_left` bigint(20) DEFAULT NULL,
+  `delay_start_time` bigint DEFAULT NULL,
+  `delay_time_left` bigint DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uuid` (`uuid`,`quest_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table whimc.quests_player_questdata: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.quests_player_redoablequests
 CREATE TABLE IF NOT EXISTS `quests_player_redoablequests` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `questid` varchar(100) NOT NULL,
-  `lasttime` bigint(20) NOT NULL,
-  `amount` int(11) NOT NULL,
+  `lasttime` bigint NOT NULL,
+  `amount` int NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uuid` (`uuid`,`questid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table whimc.quests_player_redoablequests: ~0 rows (approximately)
 
@@ -2083,230 +2315,390 @@ CREATE TABLE IF NOT EXISTS `quests_player_redoablequests` (
 CREATE TABLE IF NOT EXISTS `quests_players` (
   `uuid` varchar(36) NOT NULL,
   `lastknownname` varchar(16) NOT NULL,
-  `questpoints` bigint(20) NOT NULL,
+  `questpoints` bigint NOT NULL,
   PRIMARY KEY (`uuid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table whimc.quests_players: ~0 rows (approximately)
+-- Dumping data for table whimc.quests_players: ~1 rows (approximately)
+INSERT INTO `quests_players` (`uuid`, `lastknownname`, `questpoints`) VALUES
+	('b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 0);
 
 -- Dumping structure for table whimc.rg_group
 CREATE TABLE IF NOT EXISTS `rg_group` (
-  `id` int(10) unsigned NOT NULL,
-  `name` varchar(64) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `id` int unsigned NOT NULL,
+  `name` varchar(64) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_group: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_migrations
 CREATE TABLE IF NOT EXISTS `rg_migrations` (
-  `version_rank` int(11) NOT NULL,
-  `installed_rank` int(11) NOT NULL,
+  `version_rank` int NOT NULL,
+  `installed_rank` int NOT NULL,
   `version` varchar(50) NOT NULL,
   `description` varchar(200) NOT NULL,
   `type` varchar(20) NOT NULL,
   `script` varchar(1000) NOT NULL,
-  `checksum` int(11) DEFAULT NULL,
+  `checksum` int DEFAULT NULL,
   `installed_by` varchar(100) NOT NULL,
   `installed_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `execution_time` int(11) NOT NULL,
+  `execution_time` int NOT NULL,
   `success` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.rg_migrations: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_region
 CREATE TABLE IF NOT EXISTS `rg_region` (
-  `id` varchar(128) COLLATE utf8_bin NOT NULL,
-  `world_id` int(10) unsigned NOT NULL,
-  `type` enum('cuboid','poly2d','global') COLLATE utf8_bin NOT NULL,
-  `priority` smallint(6) NOT NULL DEFAULT '0',
-  `parent` varchar(128) COLLATE utf8_bin DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `id` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `world_id` int unsigned NOT NULL,
+  `type` enum('cuboid','poly2d','global') CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `priority` smallint NOT NULL DEFAULT '0',
+  `parent` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_region: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_region_cuboid
 CREATE TABLE IF NOT EXISTS `rg_region_cuboid` (
-  `region_id` varchar(128) COLLATE utf8_bin NOT NULL,
-  `world_id` int(10) unsigned NOT NULL,
-  `min_x` bigint(20) NOT NULL,
-  `min_y` bigint(20) NOT NULL,
-  `min_z` bigint(20) NOT NULL,
-  `max_x` bigint(20) NOT NULL,
-  `max_y` bigint(20) NOT NULL,
-  `max_z` bigint(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `region_id` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `world_id` int unsigned NOT NULL,
+  `min_x` bigint NOT NULL,
+  `min_y` bigint NOT NULL,
+  `min_z` bigint NOT NULL,
+  `max_x` bigint NOT NULL,
+  `max_y` bigint NOT NULL,
+  `max_z` bigint NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_region_cuboid: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_region_flag
 CREATE TABLE IF NOT EXISTS `rg_region_flag` (
-  `id` int(10) unsigned NOT NULL,
-  `region_id` varchar(128) COLLATE utf8_bin NOT NULL,
-  `world_id` int(10) unsigned NOT NULL,
-  `flag` varchar(45) COLLATE utf8_bin NOT NULL,
-  `value` varchar(512) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `id` int unsigned NOT NULL,
+  `region_id` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `world_id` int unsigned NOT NULL,
+  `flag` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `value` varchar(512) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_region_flag: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_region_groups
 CREATE TABLE IF NOT EXISTS `rg_region_groups` (
-  `region_id` varchar(128) COLLATE utf8_bin NOT NULL,
-  `world_id` int(10) unsigned NOT NULL,
-  `group_id` int(10) unsigned NOT NULL,
+  `region_id` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `world_id` int unsigned NOT NULL,
+  `group_id` int unsigned NOT NULL,
   `owner` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_region_groups: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_region_players
 CREATE TABLE IF NOT EXISTS `rg_region_players` (
-  `region_id` varchar(128) COLLATE utf8_bin NOT NULL,
-  `world_id` int(10) unsigned NOT NULL,
-  `user_id` int(10) unsigned NOT NULL,
+  `region_id` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `world_id` int unsigned NOT NULL,
+  `user_id` int unsigned NOT NULL,
   `owner` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_region_players: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_region_poly2d
 CREATE TABLE IF NOT EXISTS `rg_region_poly2d` (
-  `region_id` varchar(128) COLLATE utf8_bin NOT NULL,
-  `world_id` int(10) unsigned NOT NULL,
-  `min_y` int(11) NOT NULL,
-  `max_y` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `region_id` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `world_id` int unsigned NOT NULL,
+  `min_y` int NOT NULL,
+  `max_y` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_region_poly2d: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_region_poly2d_point
 CREATE TABLE IF NOT EXISTS `rg_region_poly2d_point` (
-  `id` bigint(20) unsigned NOT NULL,
-  `region_id` varchar(128) COLLATE utf8_bin NOT NULL,
-  `world_id` int(10) unsigned NOT NULL,
-  `x` bigint(20) NOT NULL,
-  `z` bigint(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `id` bigint unsigned NOT NULL,
+  `region_id` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `world_id` int unsigned NOT NULL,
+  `x` bigint NOT NULL,
+  `z` bigint NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_region_poly2d_point: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_user
 CREATE TABLE IF NOT EXISTS `rg_user` (
-  `id` int(10) unsigned NOT NULL,
-  `name` varchar(64) COLLATE utf8_bin DEFAULT NULL,
-  `uuid` char(36) COLLATE utf8_bin DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `id` int unsigned NOT NULL,
+  `name` varchar(64) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `uuid` char(36) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_user: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.rg_world
 CREATE TABLE IF NOT EXISTS `rg_world` (
-  `id` int(10) unsigned NOT NULL,
-  `name` varchar(128) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `id` int unsigned NOT NULL,
+  `name` varchar(128) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 -- Dumping data for table whimc.rg_world: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.whimc_action_physical
 CREATE TABLE IF NOT EXISTS `whimc_action_physical` (
-  `rowid` int(11) NOT NULL,
+  `rowid` int NOT NULL,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(36) NOT NULL,
   `x` double NOT NULL,
   `y` double NOT NULL,
   `z` double NOT NULL,
-  `time` bigint(20) NOT NULL,
+  `time` bigint NOT NULL,
   `type` varchar(36) NOT NULL,
   `region_name` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.whimc_action_physical: ~0 rows (approximately)
 
+-- Dumping structure for table whimc.whimc_agent_chat_context_items
+CREATE TABLE IF NOT EXISTS `whimc_agent_chat_context_items` (
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `turn_id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `time` bigint NOT NULL,
+  `context_rank` int NOT NULL,
+  `context_type` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `source_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `source_title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `world_name` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `x` double DEFAULT NULL,
+  `y` double DEFAULT NULL,
+  `z` double DEFAULT NULL,
+  `distance` double DEFAULT NULL,
+  `trait_type` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `context_text` mediumtext COLLATE utf8mb4_unicode_ci,
+  `context_hash` char(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `score` double DEFAULT NULL,
+  PRIMARY KEY (`rowid`),
+  KEY `turn_id` (`turn_id`),
+  KEY `context_type` (`context_type`),
+  KEY `source_id` (`source_id`),
+  KEY `world_name` (`world_name`),
+  KEY `time` (`time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table whimc.whimc_agent_chat_context_items: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.whimc_agent_chat_conversations
+CREATE TABLE IF NOT EXISTS `whimc_agent_chat_conversations` (
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `conversation_id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `time` bigint NOT NULL,
+  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `player_research_id` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `session_id` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `world_name` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `agent_type` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `research_allowed` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`rowid`),
+  UNIQUE KEY `conversation_id` (`conversation_id`),
+  KEY `uuid` (`uuid`),
+  KEY `username` (`username`),
+  KEY `player_research_id` (`player_research_id`),
+  KEY `time` (`time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table whimc.whimc_agent_chat_conversations: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.whimc_agent_chat_events
+CREATE TABLE IF NOT EXISTS `whimc_agent_chat_events` (
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `turn_id` varchar(36) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `time` bigint NOT NULL,
+  `event_type` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `event_payload` mediumtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`rowid`),
+  KEY `turn_id` (`turn_id`),
+  KEY `time` (`time`),
+  KEY `event_type` (`event_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table whimc.whimc_agent_chat_events: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.whimc_agent_chat_retrieved_chunks
+CREATE TABLE IF NOT EXISTS `whimc_agent_chat_retrieved_chunks` (
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `turn_id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `chunk_rank` int NOT NULL,
+  `source_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `source_title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `chunk_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `chunk_text_hash` char(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `score` double DEFAULT NULL,
+  `chunk_text` mediumtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`rowid`),
+  KEY `turn_id` (`turn_id`),
+  KEY `source_id` (`source_id`),
+  KEY `chunk_id` (`chunk_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table whimc.whimc_agent_chat_retrieved_chunks: ~0 rows (approximately)
+
+-- Dumping structure for table whimc.whimc_agent_chat_turns
+CREATE TABLE IF NOT EXISTS `whimc_agent_chat_turns` (
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `turn_id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `conversation_id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `turn_index` int NOT NULL,
+  `time` bigint NOT NULL,
+  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `player_research_id` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `session_id` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `world_name` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `agent_type` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `agent_name` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `command` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_message` text COLLATE utf8mb4_unicode_ci,
+  `assistant_response` mediumtext COLLATE utf8mb4_unicode_ci,
+  `llm_provider` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `llm_model` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `system_prompt_version` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `system_prompt_hash` char(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `rag_enabled` tinyint(1) NOT NULL DEFAULT '0',
+  `rag_query` text COLLATE utf8mb4_unicode_ci,
+  `request_started_at` bigint DEFAULT NULL,
+  `response_received_at` bigint DEFAULT NULL,
+  `latency_ms` int DEFAULT NULL,
+  `status` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `error_message` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`rowid`),
+  UNIQUE KEY `turn_id` (`turn_id`),
+  KEY `conversation_id` (`conversation_id`),
+  KEY `uuid` (`uuid`),
+  KEY `username` (`username`),
+  KEY `player_research_id` (`player_research_id`),
+  KEY `time` (`time`),
+  KEY `status` (`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Dumping data for table whimc.whimc_agent_chat_turns: ~0 rows (approximately)
+
 -- Dumping structure for table whimc.whimc_agents
 CREATE TABLE IF NOT EXISTS `whimc_agents` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
-  `time` bigint(20) NOT NULL,
-  `uuid` varchar(36) NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `command` varchar(64) NOT NULL,
-  `agent_name` varchar(36) NOT NULL,
-  `agent_skin` varchar(36) NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` bigint NOT NULL,
+  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `command` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `agent_name` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `agent_skin` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`rowid`),
   KEY `uuid` (`uuid`),
   KEY `username` (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table whimc.whimc_agents: ~0 rows (approximately)
+-- Dumping data for table whimc.whimc_agents: ~33 rows (approximately)
+INSERT INTO `whimc_agents` (`rowid`, `time`, `uuid`, `username`, `command`, `agent_name`, `agent_skin`) VALUES
+	(1, 1774999509077, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'animal', 'astronaut'),
+	(2, 1775029150107, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'animal', 'astronaut'),
+	(3, 1775029158054, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'animal', 'SHEEP'),
+	(4, 1775029277306, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'animal', 'AXOLOTL'),
+	(5, 1775029805424, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'BURT', 'AXOLOTL'),
+	(6, 1775058537383, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'Tardigrade', 'AXOLOTL'),
+	(7, 1775059811788, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'SHEEP'),
+	(8, 1775060767059, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'Tardigrade', 'AXOLOTL'),
+	(9, 1775063075316, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'derp', 'SHEEP'),
+	(10, 1775064555181, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'SHEEP'),
+	(11, 1775065007489, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'AXOLOTL'),
+	(12, 1775533116631, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'MULE'),
+	(13, 1775533278477, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'TURTLE'),
+	(14, 1775533394576, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'PLAYER'),
+	(15, 1775534140158, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'STRIDER'),
+	(16, 1775534158456, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'PLAYER'),
+	(17, 1775537394390, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'TRADER_LLAMA'),
+	(18, 1775537408117, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'MULE'),
+	(19, 1775537504364, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'PLAYER'),
+	(20, 1775541132854, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'NAUTILUS'),
+	(21, 1775541168649, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'ARMADILLO'),
+	(22, 1775541257248, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'Tardigrade', 'HAPPY_GHAST'),
+	(23, 1775665434246, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'bzz', 'BEE'),
+	(24, 1775665484402, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'bzz', 'PLAYER'),
+	(25, 1775665624551, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'bzz', 'STRIDER'),
+	(26, 1775666920545, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'bob', 'NAUTILUS'),
+	(27, 1775666947951, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'bob', 'PLAYER'),
+	(28, 1775667759118, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'wario', 'HAPPY_GHAST'),
+	(29, 1775667770526, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'wario', 'PLAYER'),
+	(30, 1775767376954, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'wario', 'TURTLE'),
+	(31, 1775770200551, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'wario', 'PIG'),
+	(32, 1776792994544, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'edit', 'wario', 'PLAYER'),
+	(33, 1781121934830, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'expert', 'walker', 'astronaut');
 
 -- Dumping structure for table whimc.whimc_barrelbot_outcome
 CREATE TABLE IF NOT EXISTS `whimc_barrelbot_outcome` (
-  `rowid` int(11) NOT NULL,
+  `rowid` int NOT NULL,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(36) NOT NULL,
   `x` double NOT NULL,
   `y` double NOT NULL,
   `z` double NOT NULL,
-  `time` bigint(20) NOT NULL,
+  `time` bigint NOT NULL,
   `outcome` text NOT NULL,
-  `inventory_row_id` int(11) NOT NULL,
+  `inventory_row_id` int NOT NULL,
   `puzzle_name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.whimc_barrelbot_outcome: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.whimc_build_assessment
 CREATE TABLE IF NOT EXISTS `whimc_build_assessment` (
-  `rowid` int(11) NOT NULL,
+  `rowid` int NOT NULL,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(36) NOT NULL,
   `x` double NOT NULL,
   `y` double NOT NULL,
   `z` double NOT NULL,
-  `time` bigint(20) NOT NULL,
+  `time` bigint NOT NULL,
   `feedback_low` varchar(36) NOT NULL,
   `feedback_high` varchar(36) NOT NULL,
-  `area` int(11) NOT NULL,
-  `communications_facilities` int(11) NOT NULL,
-  `food` int(11) NOT NULL,
-  `gravity` int(11) NOT NULL,
-  `health` int(11) NOT NULL,
-  `oxygen_regulation` int(11) NOT NULL,
-  `power_generation` int(11) NOT NULL,
-  `radiation_protection` int(11) NOT NULL,
-  `supplies` int(11) NOT NULL,
-  `shape` int(11) NOT NULL,
-  `transportation` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `area` int NOT NULL,
+  `communications_facilities` int NOT NULL,
+  `food` int NOT NULL,
+  `gravity` int NOT NULL,
+  `health` int NOT NULL,
+  `oxygen_regulation` int NOT NULL,
+  `power_generation` int NOT NULL,
+  `radiation_protection` int NOT NULL,
+  `supplies` int NOT NULL,
+  `shape` int NOT NULL,
+  `transportation` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.whimc_build_assessment: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.whimc_build_templates
 CREATE TABLE IF NOT EXISTS `whimc_build_templates` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(36) NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `template_name` varchar(36) NOT NULL,
-  `start_time` bigint(20) NOT NULL,
-  `end_time` bigint(20) NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `template_name` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `start_time` bigint NOT NULL,
+  `end_time` bigint NOT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table whimc.whimc_build_templates: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.whimc_containers
 CREATE TABLE IF NOT EXISTS `whimc_containers` (
-  `rowid` int(11) NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(36) NOT NULL,
   `x` double NOT NULL,
   `y` double NOT NULL,
   `z` double NOT NULL,
-  `time` bigint(20) NOT NULL,
+  `time` bigint NOT NULL,
   `slot1` text,
   `slot2` text,
   `slot3` text,
@@ -2335,37 +2727,54 @@ CREATE TABLE IF NOT EXISTS `whimc_containers` (
   `slot26` text,
   `slot27` text,
   `inventory_type` text,
-  `region_name` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `region_name` text,
+  PRIMARY KEY (`rowid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.whimc_containers: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.whimc_dialog_science
 CREATE TABLE IF NOT EXISTS `whimc_dialog_science` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(36) NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `world` varchar(36) NOT NULL,
-  `time` bigint(20) NOT NULL,
-  `science_inquiry` text NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `world` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `time` bigint NOT NULL,
+  `science_inquiry` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `agent_response` mediumtext COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table whimc.whimc_dialog_science: ~0 rows (approximately)
+-- Dumping data for table whimc.whimc_dialog_science: ~14 rows (approximately)
+INSERT INTO `whimc_dialog_science` (`rowid`, `uuid`, `username`, `world`, `time`, `science_inquiry`, `agent_response`) VALUES
+	(1, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775537463762, 'test', 'Sorry I am not sure about this. Try talking to me about something else or maybe ask an instructor to help you.'),
+	(2, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775538347207, 'Where is the solar panel', 'I will give you the location of the nearby NPCs you should try to find them and talk to them: Roger M.\'s location is (-23, 71, 191)\nJohn B.\'s location is (-27, 18, -6)\nBob K.\'s location is (39, 38, 102)\nOlivia (MatLab)\'s location is (55, 14, -14)\nHeinlein R.\'s location is (-14, 71, 172)\nMisavo (Icecave)\'s location is (66, 38, 105)\nE.A. Blair\'s location is (9, 18, -5)\nHuxley (Biodome)\'s location is (-34, 18, -22)\nHarlem (Construction)\'s location is (37, 26, 39)\nWells O.\'s location is (-7, 71, 164)\nHerbert F.\'s location is (25, 18, -65)\nLynn J.\'s location is (25, 18, -63)\nD.B. Webster\'s location is (24, 18, -74)\nO. Butler\'s location is (23, 22, -55)\nJanusz Z.\'s location is (19, 18, -54)\nDreyhala Y.\'s location is (-39, 24, -54)\nAbe K.\'s location is (18, 18, -13)\nEstelle B.\'s location is (-43, 12, 3)\nArmina J.\'s location is (-16, 12, 9)\nEugene V.\'s location is (-51, 12, -15)\nCyril H.\'s location is (62, 25, -23)\nK. Allison\'s location is (3, 18, -73)\nExercising astronaut\'s location is (7, 18, -48)\nGina Varamo\'s location is (-217, 73, 33)\nNeil\'s location is (-215, 73, 35)\nfish\'s location is (-35, 19, 8)\nfish\'s location is (-34, 21, 8)\n'),
+	(3, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775538512858, 'What is your name?', 'My name is Tardigrade.'),
+	(4, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775539150413, 'Can you help me find the biodome?', 'Sorry I am not sure about this. Try talking to me about something else or maybe ask an instructor to help you.'),
+	(5, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775667815172, 'gravity', 'The measured {TOOL} is {MEASUREMENT}'),
+	(6, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775667834127, 'name', 'Your name is Geph.'),
+	(7, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775767365060, 'What\'s your name!', 'My name is wario.'),
+	(8, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1781122013803, 'What world am I on?', 'You are currently on NoMoon.'),
+	(9, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122059062, 'hi', 'Hello Geph, my name is walker it is nice to meet you!'),
+	(10, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122066615, 'what world am I on now?', 'Sorry I am not sure about this. Try talking to me about something else or maybe ask an instructor to help you.'),
+	(11, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122084718, 'do you have a starter prompt you were given?', 'Sorry I am not sure about this. Try talking to me about something else or maybe ask an instructor to help you.'),
+	(12, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122107530, 'what AI LLM are you using?', 'My name is walker.'),
+	(13, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781130024982, 'You can walk again! How fast?', 'Typical walking speeds for most healthy people fall in a fairly narrow range:\n\n| Walking pace | Approx. speed | Typical situation |\n|--------------|--------------|-------------------|\n| **Slow**     | 0.8–1.2 m s⁻¹ (≈ 3 km/h or 1.9 mph) | Strolling, casual chat, early rehab |\n| **Average / comfortable** | 1.3–1.5 m s⁻¹ (≈ 4.5–5.5 km/h or 2.8‑3.4 mph) | Everyday commuting, school corridors |\n| **Brisk / power walk** | 1.6–2.0 m s⁻¹ (≈ 6–7 km/h or 3.7‑4.4 mph) | Fitness walking, sports warm‑up |\n\nSo if you’ve just gotten back to walking after an injury, start near the **slow** end (≈ 3 km/h). As strength and confidence improve, you can gradually increase toward the **average** (≈ 5 km/h) or even a **brisk** pace if your doctor says it’s safe.  \n\n*Tip:* A simple way to gauge your speed is to count how many steps you take in a minute. About **100–110 steps per minute** corresponds to a comfortable walking speed of ~5 km/h. Adjust upward or downward as needed.'),
+	(14, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781130110389, 'What is the temperature of the sun on this world?', 'The Sun itself is incredibly hot – its visible “surface” (the photosphere) is about **5 800 K**, which is roughly **5 500 °C** (or **9 900 °F**).\n\nWhen that light reaches a planet, the temperature you feel depends on things like the planet’s distance from the Sun, its atmosphere, and its surface reflectivity (albedo).  \n\n* On Earth (about 1 AU from the Sun) the **average global temperature** is ~15 °C, but objects in direct sunlight can easily get **over 100 °C** on a hot day.  \n* A planet closer to the Sun would get hotter, and one farther away would be colder.\n\nSo the Sun’s own temperature is ~5 800 K, while the temperature on a world’s surface varies widely based on local conditions.');
 
 -- Dumping structure for table whimc.whimc_dialogue
 CREATE TABLE IF NOT EXISTS `whimc_dialogue` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
+  `rowid` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(36) NOT NULL,
-  `time` bigint(20) NOT NULL,
-  `overall_observation` int(11) NOT NULL,
-  `quests` int(11) NOT NULL,
-  `session_observation` int(11) NOT NULL,
-  `science_tools` int(11) NOT NULL,
-  `exploration_metric` int(11) NOT NULL,
-  `science_topics` int(11) NOT NULL,
+  `time` bigint NOT NULL,
+  `overall_observation` int NOT NULL,
+  `quests` int NOT NULL,
+  `session_observation` int NOT NULL,
+  `science_tools` int NOT NULL,
+  `exploration_metric` int NOT NULL,
+  `science_topics` int NOT NULL,
   PRIMARY KEY (`rowid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -2373,43 +2782,123 @@ CREATE TABLE IF NOT EXISTS `whimc_dialogue` (
 
 -- Dumping structure for table whimc.whimc_dialogue_builder_interaction
 CREATE TABLE IF NOT EXISTS `whimc_dialogue_builder_interaction` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(36) NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `world` varchar(36) NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `world` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `x` double NOT NULL,
   `y` double NOT NULL,
   `z` double NOT NULL,
-  `time` bigint(20) NOT NULL,
-  `interaction` text NOT NULL,
-  `build_id` int(11) DEFAULT NULL,
+  `time` bigint NOT NULL,
+  `interaction` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `build_id` int DEFAULT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table whimc.whimc_dialogue_builder_interaction: ~0 rows (approximately)
+-- Dumping data for table whimc.whimc_dialogue_builder_interaction: ~1 rows (approximately)
 INSERT INTO `whimc_dialogue_builder_interaction` (`rowid`, `uuid`, `username`, `world`, `x`, `y`, `z`, `time`, `interaction`, `build_id`) VALUES
 	(1, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'MynoaMangrove', 309.6867050983893, 76, 197.21932862916782, 1767769769466, 'assess', -1);
 
 -- Dumping structure for table whimc.whimc_dialogue_interaction
 CREATE TABLE IF NOT EXISTS `whimc_dialogue_interaction` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(36) NOT NULL,
-  `username` varchar(16) NOT NULL,
-  `world` varchar(36) NOT NULL,
-  `time` bigint(20) NOT NULL,
-  `interaction` text NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `world` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `time` bigint NOT NULL,
+  `interaction` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `x` double DEFAULT NULL,
   `y` double DEFAULT NULL,
   `z` double DEFAULT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table whimc.whimc_dialogue_interaction: ~0 rows (approximately)
+-- Dumping data for table whimc.whimc_dialogue_interaction: ~79 rows (approximately)
+INSERT INTO `whimc_dialogue_interaction` (`rowid`, `uuid`, `username`, `world`, `time`, `interaction`, `x`, `y`, `z`) VALUES
+	(1, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775026392039, 'Guidance', -48.82404272777279, 74, -28.526435685406504),
+	(2, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775027529481, 'Guidance', -48.82404272777279, 74, -28.526435685406504),
+	(3, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775027651157, 'Guidance', -55.68799586546124, 74, -28.52162546068904),
+	(4, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775027669107, 'Guidance', -56.47608810640448, 74, -33.48358177549559),
+	(5, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775029134854, 'Edit', -56.975911885176735, 74, -34.179363307676496),
+	(6, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775029157919, 'Edit', -50.70486543719278, 74, -32.44428737250919),
+	(7, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775029277164, 'Edit', -47.9788403823199, 74, -31.56693721308484),
+	(8, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775029821612, 'Guidance', -45.36125109377938, 74, -26.794360785729307),
+	(9, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775029880423, 'Guidance', -70.41913176641678, 74, 6.337546938635236),
+	(10, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1775029890690, 'Guidance', -70.41913176641678, 74, 6.337546938635236),
+	(11, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775058565563, 'Guidance', -211.8400291623275, 73.0625, 30.489621598266243),
+	(12, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775059811648, 'Edit', -238.43310847620427, 75, 44.770191073923996),
+	(13, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775060791413, 'Guidance', -238.61436124429332, 75, 44.52587662713795),
+	(14, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775062175261, 'Guidance', -235.8138725418882, 75, 47.03133312701548),
+	(15, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775062191424, 'Guidance', -235.8138725418882, 75, 47.03133312701548),
+	(16, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775062991544, 'Edit', -234.8951504322924, 76, 33.760657131852945),
+	(17, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775063056777, 'Edit', -234.43913447448438, 76, 32.860766568144584),
+	(18, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775064513875, 'Guidance', -234.03847312895445, 76, 30.322270714226125),
+	(19, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775064555069, 'Edit', -234.14287748949465, 76, 28.203498569494148),
+	(20, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775065007368, 'Edit', -231.55661294392877, 76, 32.29884547984655),
+	(21, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775065044083, 'Guidance', -230.8071967524418, 76, 30.05773275883265),
+	(22, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775065060982, 'Guidance', -230.8071967524418, 76, 30.05773275883265),
+	(23, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775533116492, 'Edit', -230.8071967524418, 76, 30.05773275883265),
+	(24, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775533144975, 'Progress', -233.27348450775045, 75, 39.906313356363846),
+	(25, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775533161314, 'Guidance', -233.27348450775045, 75, 39.906313356363846),
+	(26, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775533278324, 'Edit', -230.7749445619575, 75, 38.980772368730555),
+	(27, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775533394465, 'Edit', -214.32016394741697, 78, 62.86213505886711),
+	(28, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775533467728, 'Guidance', -230.45833361150656, 76, 58.565763437562666),
+	(29, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775534140039, 'Edit', -228.58445161626247, 76, 56.26326498105739),
+	(30, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775534158320, 'Edit', -214.1182439536566, 78, 68.06536077633268),
+	(31, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775535249705, 'Guidance', -224.99756720705585, 76, 52.48249626355533),
+	(32, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775535271784, 'Guidance', -224.99756720705585, 76, 52.48249626355533),
+	(33, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775535276501, 'Progress', -224.99756720705585, 76, 52.48249626355533),
+	(34, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775537394238, 'Edit', -222.45960623305635, 77, 62.71009514333348),
+	(35, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775537408003, 'Edit', -217.33407153063862, 77, 62.722622113821735),
+	(36, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775537441501, 'Progress', -212.12093711675013, 78, 68.69999998807907),
+	(37, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775537463809, 'Dialogue', -212.12093711675013, 78, 68.69999998807907),
+	(38, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775537504217, 'Edit', -213.67683791204652, 78, 67.78240253337701),
+	(39, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775538255807, 'Guidance', -189.92706864714052, 81, 54.71744818428462),
+	(40, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775538317670, 'Guidance', -189.92706864714052, 81, 54.71744818428462),
+	(41, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775538320202, 'Guidance', -189.92706864714052, 81, 54.71744818428462),
+	(42, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775538347252, 'Dialogue', -189.92706864714052, 81, 54.71744818428462),
+	(43, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775538512902, 'Dialogue', -189.92706864714052, 81, 54.71744818428462),
+	(44, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775539150464, 'Dialogue', -190.99632907429364, 81, 57.887619962164635),
+	(45, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775539174503, 'Guidance', -179.18622644455644, 82, 54.69750122625941),
+	(46, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775540434723, 'Guidance', 13.949671407629188, 18, -5.239834738919055),
+	(47, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775540443922, 'Guidance', 14.293753889453718, 18, -4.130441257576757),
+	(48, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775541132713, 'Edit', -158.38558469785002, 61, 29.47338136435284),
+	(49, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775541168528, 'Edit', -149.91735589542606, 59, 32.341179998572635),
+	(50, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775541257110, 'Edit', -152.09083512246696, 59, 27.85846712025105),
+	(51, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775665484267, 'Edit', -132.45086346582207, 51, 2.485957830583114),
+	(52, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775665520514, 'Progress', -152.43282183856846, 57, 12.900059193990783),
+	(53, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775665532049, 'Guidance', -152.43282183856846, 57, 12.900059193990783),
+	(54, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775665624410, 'Edit', -159.00768263296894, 59, 9.898947801398014),
+	(55, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775666947810, 'Edit', -123.62018693195176, 53.5, 48.30102897134358),
+	(56, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775667770397, 'Edit', -128.88927371931211, 56, 49.082903196922246),
+	(57, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775667815218, 'Dialogue', -126.82843425019904, 55, 50.65692446740609),
+	(58, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775667834170, 'Dialogue', -126.0877741321977, 55, 49.74272633128471),
+	(59, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775767288225, 'Guidance', -126.38192175948814, 55, 50.36345905599657),
+	(60, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775767345206, 'Progress', -131.9720855569307, 53, 22.876087622788177),
+	(61, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775767365098, 'Dialogue', -131.9720855569307, 53, 22.876087622788177),
+	(62, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775767376804, 'Edit', -131.77686521468456, 53, 23.255698835066433),
+	(63, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'RocketLaunch', 1775770200433, 'Edit', -1555.5778349914085, 66.9375, 2705.596730833259),
+	(64, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'RocketLaunch', 1776792994399, 'Edit', -1555.1680667185992, 66.9375, 2702.5643374647575),
+	(65, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'NoMoon', 1781122013846, 'Dialogue', 68.70721799215441, 79, -118.29451361856502),
+	(66, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122059107, 'Dialogue', -90.61566331913903, 74.5, 3.7310354900514433),
+	(67, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122066658, 'Dialogue', -90.61566331913903, 74.5, 3.7310354900514433),
+	(68, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122084761, 'Dialogue', -89.41823163717712, 74, 4.527417056041055),
+	(69, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781122107566, 'Dialogue', -89.41823163717712, 74, 4.527417056041055),
+	(70, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781130025031, 'Dialogue', -87.82498763544591, 74, 13.159951226472126),
+	(71, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781130110433, 'Dialogue', -88.61956461963425, 74, 14.316876193483626),
+	(72, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781130131231, 'Guidance', -88.61956461963425, 74, 14.316876193483626),
+	(73, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781132787151, 'Guidance', -98.18895350149938, 70, 48.203374827075876),
+	(74, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781132806099, 'Guidance', -98.80639638100108, 71, 46.13452228162151),
+	(75, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781134463478, 'Guidance', -144.09216985399866, 68, 7.6919125022534915),
+	(76, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781134511561, 'Guidance', -144.09216985399866, 68, 7.6919125022534915),
+	(77, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781134515711, 'Guidance', -144.09216985399866, 68, 7.6919125022534915),
+	(78, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781134517343, 'Guidance', -144.09216985399866, 68, 7.6919125022534915),
+	(79, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781134556326, 'Progress', -144.09216985399866, 68, 7.6919125022534915);
 
 -- Dumping structure for table whimc.whimc_observations
 CREATE TABLE IF NOT EXISTS `whimc_observations` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
-  `time` bigint(20) NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` bigint NOT NULL,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(64) NOT NULL,
@@ -2420,7 +2909,7 @@ CREATE TABLE IF NOT EXISTS `whimc_observations` (
   `pitch` float NOT NULL,
   `observation` text NOT NULL,
   `active` tinyint(1) NOT NULL,
-  `expiration` bigint(20) DEFAULT NULL,
+  `expiration` bigint DEFAULT NULL,
   `category` varchar(64) DEFAULT NULL,
   `observation_color_stripped` text,
   PRIMARY KEY (`rowid`),
@@ -2429,17 +2918,15 @@ CREATE TABLE IF NOT EXISTS `whimc_observations` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4371 DEFAULT CHARSET=latin1;
 
 -- Dumping data for table whimc.whimc_observations: 1 rows
-/*!40000 ALTER TABLE `whimc_observations` DISABLE KEYS */;
 INSERT INTO `whimc_observations` (`rowid`, `time`, `uuid`, `username`, `world`, `x`, `y`, `z`, `yaw`, `pitch`, `observation`, `active`, `expiration`, `category`, `observation_color_stripped`) VALUES
-	(4370, 1767764435356, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'MynoaClose', 1326.950492554506, 67.77717469261599, 922.2956936571599, -172.645, 4.64949, 'test', 1, 1768196435356, NULL, 'test');
-/*!40000 ALTER TABLE `whimc_observations` ENABLE KEYS */;
+	(4370, 1767764435356, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'MynoaClose', 1326.950492554506, 67.77717469261599, 922.2956936571599, -172.645, 4.64949, 'test', 0, 1768196435356, NULL, 'test');
 
 -- Dumping structure for table whimc.whimc_player_positions
 CREATE TABLE IF NOT EXISTS `whimc_player_positions` (
-  `rowid` bigint(20) NOT NULL,
-  `x` int(11) NOT NULL,
-  `y` int(11) NOT NULL,
-  `z` int(11) NOT NULL,
+  `rowid` bigint NOT NULL,
+  `x` int NOT NULL,
+  `y` int NOT NULL,
+  `z` int NOT NULL,
   `yaw` float DEFAULT NULL,
   `pitch` float DEFAULT NULL,
   `world` varchar(64) NOT NULL,
@@ -2447,66 +2934,72 @@ CREATE TABLE IF NOT EXISTS `whimc_player_positions` (
   `username` varchar(16) NOT NULL,
   `gamemode` varchar(16) DEFAULT NULL,
   `uuid` varchar(36) NOT NULL,
-  `time` bigint(20) NOT NULL
+  `time` bigint NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- Dumping data for table whimc.whimc_player_positions: 0 rows
-/*!40000 ALTER TABLE `whimc_player_positions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `whimc_player_positions` ENABLE KEYS */;
 
 -- Dumping structure for table whimc.whimc_player_region_events
 CREATE TABLE IF NOT EXISTS `whimc_player_region_events` (
-  `rowid` bigint(20) NOT NULL,
+  `rowid` bigint NOT NULL,
   `region` varchar(64) NOT NULL,
   `region_members` text,
   `trigger` varchar(16) NOT NULL,
   `isEnter` bit(1) NOT NULL,
-  `x` int(11) NOT NULL,
-  `y` int(11) NOT NULL,
-  `z` int(11) NOT NULL,
+  `x` int NOT NULL,
+  `y` int NOT NULL,
+  `z` int NOT NULL,
   `yaw` float DEFAULT NULL,
   `pitch` float DEFAULT NULL,
   `world` varchar(64) NOT NULL,
   `username` varchar(16) NOT NULL,
   `uuid` varchar(36) NOT NULL,
-  `time` bigint(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `time` bigint NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Dumping data for table whimc.whimc_player_region_events: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.whimc_progress
 CREATE TABLE IF NOT EXISTS `whimc_progress` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
+  `rowid` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
-  `time` bigint(20) NOT NULL,
+  `time` bigint NOT NULL,
   `observation` double NOT NULL,
   `science_tools` double NOT NULL,
   `exploration` double NOT NULL,
+  `poi_exploration` double NOT NULL DEFAULT '0',
   `quest` double NOT NULL,
   `score` double NOT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table whimc.whimc_progress: ~1 rows (approximately)
+-- Dumping data for table whimc.whimc_progress: ~0 rows (approximately)
 
 -- Dumping structure for table whimc.whimc_progress_commands
 CREATE TABLE IF NOT EXISTS `whimc_progress_commands` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
+  `rowid` int NOT NULL AUTO_INCREMENT,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(36) NOT NULL,
-  `time` bigint(20) NOT NULL,
+  `time` bigint NOT NULL,
   `command` varchar(36) NOT NULL,
   PRIMARY KEY (`rowid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
--- Dumping data for table whimc.whimc_progress_commands: ~0 rows (approximately)
+-- Dumping data for table whimc.whimc_progress_commands: ~5 rows (approximately)
+INSERT INTO `whimc_progress_commands` (`rowid`, `uuid`, `username`, `world`, `time`, `command`) VALUES
+	(1, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775533145123, 'progress'),
+	(2, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775535276609, 'progress'),
+	(3, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775537441612, 'progress'),
+	(4, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775665520647, 'progress'),
+	(5, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', 1775767345349, 'progress'),
+	(6, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', 1781134556429, 'progress');
 
 -- Dumping structure for table whimc.whimc_sciencetools
 CREATE TABLE IF NOT EXISTS `whimc_sciencetools` (
-  `rowid` int(11) NOT NULL AUTO_INCREMENT,
-  `time` bigint(20) NOT NULL,
+  `rowid` int NOT NULL AUTO_INCREMENT,
+  `time` bigint NOT NULL,
   `uuid` varchar(36) NOT NULL,
   `username` varchar(16) NOT NULL,
   `world` varchar(64) NOT NULL,
@@ -2519,15 +3012,17 @@ CREATE TABLE IF NOT EXISTS `whimc_sciencetools` (
   KEY `time` (`time`),
   KEY `uuid` (`uuid`),
   KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
--- Dumping data for table whimc.whimc_sciencetools: ~4 rows (approximately)
+-- Dumping data for table whimc.whimc_sciencetools: ~6 rows (approximately)
 INSERT INTO `whimc_sciencetools` (`rowid`, `time`, `uuid`, `username`, `world`, `x`, `y`, `z`, `tool`, `measurement`) VALUES
 	(1, 1704427170017, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'Hub', -74.97680213079853, 52, 215.63895291002802, 'TEMPERATURE', '5.6°C'),
 	(2, 1704427204348, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'EarthControl', -102.40260148153375, 78, 7.207627163173096, 'ATMOSPHERE', '78% nitrogen, 21% oxygen, 0.9% argon, 0.04% carbon dioxide'),
 	(3, 1704427209546, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'EarthControl', -102.2740196157501, 78, 4.850252936264442, 'GRAVITY', '1.0000times the Earth\'s gravity'),
 	(4, 1704427218896, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'EarthControl', -103.63045781227615, 78, 7.921552791933482, 'MAGNETIC_FIELD', 'The magnetic field strength is moderate'),
-	(5, 1767763850511, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'MynoaClose', 1329.6717161050299, 63, 949.3740608899155, 'ATMOSPHERE', '75% nitrogen, 21% oxygen, 1% argon, 1% carbon dioxide, 1% methane, 1% ammonia');
+	(5, 1767763850511, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'MynoaClose', 1329.6717161050299, 63, 949.3740608899155, 'ATMOSPHERE', '75% nitrogen, 21% oxygen, 1% argon, 1% carbon dioxide, 1% methane, 1% ammonia'),
+	(6, 1775667814398, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'LunarCrater', -126.82843425019904, 55, 50.65692446740609, 'GRAVITY', '17% of the Earth\'s gravity'),
+	(7, 1781130107126, 'b96975b5-0b3f-47da-950a-3918165706cf', 'Geph', 'ColderStrip', -88.61956461963425, 74, 14.316876193483626, 'TEMPERATURE', '27.3°C');
 
 -- Dumping structure for table whimc.whimc_skills
 CREATE TABLE IF NOT EXISTS `whimc_skills` (
@@ -2544,17 +3039,17 @@ CREATE TABLE IF NOT EXISTS `whimc_skills` (
 
 -- Dumping structure for table whimc.whimc_tags
 CREATE TABLE IF NOT EXISTS `whimc_tags` (
-  `rowid` int(11) NOT NULL,
-  `uuid` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `username` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `world` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rowid` int NOT NULL,
+  `uuid` varchar(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `world` varchar(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `x` double NOT NULL,
   `y` double NOT NULL,
   `z` double NOT NULL,
-  `time` bigint(20) NOT NULL,
-  `tag` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `time` bigint NOT NULL,
+  `tag` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `active` tinyint(1) NOT NULL,
-  `expiration` bigint(20) DEFAULT NULL
+  `expiration` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table whimc.whimc_tags: ~0 rows (approximately)
