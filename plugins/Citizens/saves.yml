@@ -9964,17 +9964,17 @@ npc:
         skinName: 238b9c8f-4b49-4cb9-9aad-3a65fab60c29
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY1MzY3NjE0OTk4OSwKICAicHJvZmlsZUlkIiA6ICI4N2RiMmNjNWY4Y2I0MjI4YTU0OGRiMzJlM2Y0NmFmNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJZVG1hdGlhczEzbG9sIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdhNDBlY2M3N2Q1NGZjY2I0YTc1M2I4Mzg3YWVjMjE0NDljNDg5YjU3NmI5ODgxODNmMDEwYzI5MWJlOTQzZjgiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==
       location:
-        bodyYaw: 138.82994
+        bodyYaw: 137.21877
         x: -40.5531
         y: 58.0
         z: -23.3
-        yaw: 130.5316
+        yaw: 129.7964
         pitch: 0.0
         worldid: eb473101-56b0-4f61-8c42-8f70eef23acd
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn afscientist Scientist
+        - command: agents spawn player afscientist Scientist
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10019,7 +10019,7 @@ npc:
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn amscientist Scientist
+        - command: agents spawn player amscientist Scientist
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10064,7 +10064,7 @@ npc:
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn hfscientist Scientist
+        - command: agents spawn player hfscientist Scientist
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10109,7 +10109,7 @@ npc:
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn hmscientist Scientist
+        - command: agents spawn player hmscientist Scientist
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10154,7 +10154,7 @@ npc:
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn wfscientist Scientist
+        - command: agents spawn player wfscientist Scientist
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10189,17 +10189,17 @@ npc:
         skinName: 52a7f711-2830-4a91-b4d7-8065f7db118e
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYxNDM3OTA0NjA4MiwKICAicHJvZmlsZUlkIiA6ICI5NGMzZGM3YTdiMmQ0NzQ1YmVlYjQzZDc2ZjRjNDVkYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGVRdWFzb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1MTQ0MmMwZmM4NjI0NzMzMTE4YTExMzQyZjY0YTY4MDEyYzNhMWYzYjgzY2JiN2ZiYjkxMmFlZjMyNzdiZCIKICAgIH0KICB9Cn0=
       location:
-        bodyYaw: 16.231667
+        bodyYaw: 119.95259
         x: -39.3
         y: 58.0
         z: -37.3057
-        yaw: 16.2317
+        yaw: 99.9526
         pitch: 0.0
         worldid: eb473101-56b0-4f61-8c42-8f70eef23acd
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn wmscientist Scientist
+        - command: agents spawn player wmscientist Scientist
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10234,17 +10234,17 @@ npc:
         skinName: c3db5784-c056-4aad-8889-6a6439284848
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY1MzY3NDkzODc4NSwKICAicHJvZmlsZUlkIiA6ICIwZWQ2MDFlMDhjZTM0YjRkYWUxZmI4MDljZmEwNTM5NiIsCiAgInByb2ZpbGVOYW1lIiA6ICJOZWVkTW9yZUFjY291bnRzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzhlNWY0NjcwM2ZkMDQ1YWZiMmU0NTkwZGMwODAzNzE0NzQxMjQ4ODM2OTJmNDQ4YTlkNDNmZGU0OTY5MzI3ZjciCiAgICB9CiAgfQp9
       location:
-        bodyYaw: 9.845146
+        bodyYaw: 69.5226
         x: -39.3003
         y: 58.0
         z: -40.3269
-        yaw: 9.8451
+        yaw: 69.5226
         pitch: 0.0
         worldid: eb473101-56b0-4f61-8c42-8f70eef23acd
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn bfscientist Scientist
+        - command: agents spawn player bfscientist Scientist
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10279,17 +10279,17 @@ npc:
         skinName: 2ea1320c-d0e4-4a27-9652-0f392bbfc22d
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY1MzY3NTUxNTczNSwKICAicHJvZmlsZUlkIiA6ICI3ZGEyYWIzYTkzY2E0OGVlODMwNDhhZmMzYjgwZTY4ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2xkYXBmZWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQwMWUyYzllNTQ2NTA4YTJhYmIzODExZThlMDYzNGY5ZDFmYWY5ZTRkYTZmZDRmYmI1NGY3MjY4ZjNkNjRhYiIKICAgIH0KICB9Cn0=
       location:
-        bodyYaw: 4.632141
+        bodyYaw: 45.389038
         x: -39.3281
         y: 58.0
         z: -43.4987
-        yaw: 4.6321
+        yaw: 45.389
         pitch: 0.0
         worldid: eb473101-56b0-4f61-8c42-8f70eef23acd
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn bmscientist Scientist
+        - command: agents spawn player bmscientist Scientist 
           hand: RIGHT
           player: true
       type: PLAYER
@@ -10324,17 +10324,17 @@ npc:
         skinName: 24b9d50a-c482-4224-bb56-a4891012e71c
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYyNzg0MTQ0NTM3MCwKICAicHJvZmlsZUlkIiA6ICI3ZTY3MDQ1Zjk0NGI0YzFkYmUxNDMzMzFmZmI1MTJlZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJCYXRDYXRUaGVBcnRpc3QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU0ZjUwNjQzNTRmYmEzZjFkYTQ4MmIxZmJlMzk3NzU0MDg4NWI4ZWE3ZmRhNzc2MmZlZjdkZDEwYTFmN2RmYyIKICAgIH0KICB9Cn0=
       location:
-        bodyYaw: 8.614861
+        bodyYaw: 30.411728
         x: -39.3
         y: 58.0
         z: -46.4272
-        yaw: 8.6149
+        yaw: 30.4117
         pitch: 0.0
         worldid: eb473101-56b0-4f61-8c42-8f70eef23acd
         world: NoMoon
       commandtrait:
         commands:
-        - command: agents spawn astronaut Astronaut
+        - command: agents spawn player astronaut Astronaut
           hand: RIGHT
           player: true
       type: PLAYER
@@ -14626,6 +14626,7 @@ npc:
   '493':
     metadata:
       cached-skin-uuid-name: astronaut
+      flyable: false
     name: Bob
     uuid: 62584909-b445-4bbe-8cf4-9f713d083eef
     traits:
@@ -14638,6 +14639,7 @@ npc:
         text: true
       followtrait:
         followingUUID: b96975b5-0b3f-47da-950a-3918165706cf
+        margin: 2.5
       type: PLAYER
       lookclose:
         randomPitchRange:
@@ -14647,17 +14649,24 @@ npc:
         - 0.0
         - 360.0
       location:
-        x: 0.0
-        y: 0.0
-        z: 0.0
-        yaw: 0.0
-        pitch: 0.0
-    traitnames: spawned,owner,skintrait,mounttrait,expertagentspawn,lookclose,location,followtrait,type,chunktickettrait
+        x: -35.5181
+        y: 72.0
+        z: 0.9233
+        yaw: -35.985
+        pitch: -4.156
+        bodyYaw: -35.98502
+        worldid: eb473101-56b0-4f61-8c42-8f70eef23acd
+        world: NoMoon
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,skintrait,mounttrait,lookclose,followtrait,type,inventory,expertagentspawn,location,agentpermanentflying,agentfollowcatchup,chunktickettrait
     navigator:
-      pathfindingrange: 15.0
+      pathfindingrange: 48.0
       speedmodifier: 1.0
       avoidwater: false
-      usedefaultstuckaction: true
+      usedefaultstuckaction: false
+      stationaryticks: 1200
   '501':
     metadata:
       cached-skin-uuid: 53e733b5-9458-4188-9cf8-cfaf8edbf86c
@@ -19383,47 +19392,3 @@ npc:
       speedmodifier: 1.0
       avoidwater: false
       usedefaultstuckaction: true
-  '667':
-    metadata:
-      flyable: false
-      cached-skin-uuid-name: astronaut
-    traits:
-      scoreboardtrait:
-        tags:
-        - CITIZENS_NPC
-      skintrait:
-        signature: s+zW2Wc2q4aaITHOxcn+MP4TmkWy6wSFi7rzlaLEORCkQtrLDbV8AhWfaIgo8PDC/dBsH8DyNxEJAan1w2uPJ6oZyRz+SXlFNNFGWmmTfQgU9tPWO8lLiHjlHCslKrKWy2I3blNPMJluuI9Qsz5FN9dCv/zuWS5aCpp6vsaqJUqUCYKXpNo3MBEAhe9TMcpFrvdoqVH1MF160OxoaE18w9PbanHvil+oVyp5PvCZZ5x2jx5ni322ru86fpJg/3AeWbdoty6GFO1J9kbIBAT9knJHx0gOtGB/8gaUxP0CrwYz93Qfyc200LpF9wjecBAHflx9+JXBtjduV0b7CjBYKvBnKony2xd+Mtg2FkJ6zoWHHDzbjcV/ZCanM+2ORNIGuhT4w7JDbkgkFDiFV5ssHH8GLTT3wUGfseq0BKCiCK/RWmRRym7Vfj8DSxGFwj19ppyVbnKeS1MAL+b15H50xR/qqXFLQqBAjdXMDiGwdDBi5Pw1wW8L1djMvpII0E8m+jItlioZuLIMmplvmE30CaNaPVFNmrQOMGINNq+TX5nOzohhpxpqRSnZTRplVG8IvvoLm6Hdd2c7V5p/dp4azKAbn/s/G72daQUXcc7EXnNsd87ooBvEksa/9j1qjvoOZBAA8Po+HmpHQjOQEhP1KZ7zH8vmyPVX6stWGYpbM04=
-        skinName: astronaut
-        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYyNzg0MTQ0NTM3MCwKICAicHJvZmlsZUlkIiA6ICI3ZTY3MDQ1Zjk0NGI0YzFkYmUxNDMzMzFmZmI1MTJlZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJCYXRDYXRUaGVBcnRpc3QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU0ZjUwNjQzNTRmYmEzZjFkYTQ4MmIxZmJlMzk3NzU0MDg4NWI4ZWE3ZmRhNzc2MmZlZjdkZDEwYTFmN2RmYyIKICAgIH0KICB9Cn0=
-      lookclose:
-        randomPitchRange:
-        - 0.0
-        - 0.0
-        randomYawRange:
-        - 0.0
-        - 360.0
-      expertagentspawn:
-        text: true
-        player: Geph
-      location:
-        world: ColderStrip
-        worldid: 413f0fdb-041c-448e-aa50-d81bb702298b
-        x: -141.7306
-        y: 69.0
-        z: 9.2694
-        bodyYaw: 135.0015
-        pitch: 26.5996
-        yaw: 135.0015
-      type: PLAYER
-      followtrait:
-        margin: 2.5
-        followingUUID: b96975b5-0b3f-47da-950a-3918165706cf
-    traitnames: scoreboardtrait,spawned,rotationtrait,skintrait,lookclose,type,inventory,followtrait,expertagentspawn,location,agentpermanentflying,agentfollowcatchup,chunktickettrait
-    name: walker
-    navigator:
-      pathfindingrange: 48.0
-      stationaryticks: 1200
-      usedefaultstuckaction: false
-      speedmodifier: 1.0
-      avoidwater: false
-    uuid: 8952fe33-dd6d-46af-bb0d-30361efe91b1
