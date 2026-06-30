@@ -2,8 +2,8 @@
 
 
 # Plugin language. Empty: system language.
-# Available: en_US (default, fallback) and fr_FR.
-lang: en_US
+# Available: en-US (default, fallback) and fr-FR.
+lang: en-US
 
 
 # Allows collection of anonymous statistics on plugin environment and usage

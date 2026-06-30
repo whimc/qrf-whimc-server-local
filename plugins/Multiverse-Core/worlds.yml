@@ -35,7 +35,7 @@ BlackHole:
     yaw: 175.3532
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -113,7 +113,7 @@ BrownDwarf:
     yaw: 182.86385
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -191,7 +191,7 @@ Cancri:
     yaw: 0.49727994
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -269,7 +269,7 @@ CancriCold:
     yaw: 178.85205
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -347,7 +347,7 @@ ColderCold:
     yaw: -167.4577
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -425,7 +425,7 @@ ColderHot:
     yaw: -166.03253
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -581,7 +581,7 @@ ETLife:
     yaw: -175.09433
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -737,7 +737,7 @@ Gliese:
     yaw: -0.8146809
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -893,7 +893,7 @@ Icarus:
     yaw: -40.951347
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -971,7 +971,7 @@ Kepler:
     yaw: 90.56174
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1049,7 +1049,7 @@ LunarCrater:
     yaw: -35.54892
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1127,7 +1127,7 @@ Mars:
     yaw: 83.4029
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1361,7 +1361,7 @@ MynoaMangrove:
     yaw: 70.447815
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1439,7 +1439,7 @@ NeutronStar:
     yaw: -90.45085
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1595,7 +1595,7 @@ Pillars:
     yaw: 12.905579
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1673,7 +1673,7 @@ Quasar:
     yaw: -134.53365
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1751,7 +1751,7 @@ RocketLaunch:
     yaw: -304.4964
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1829,7 +1829,7 @@ Sagittarius:
     yaw: -109.49948
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1907,7 +1907,7 @@ SolarSystem:
     yaw: 0.15043648
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -1985,7 +1985,7 @@ Supercluster:
     yaw: 92.09924
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -2063,7 +2063,7 @@ TiltedFrozen:
     yaw: -156.11392
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -2141,7 +2141,7 @@ TiltedMelting:
     yaw: 19.238234
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -2219,7 +2219,7 @@ TiltedWarm:
     yaw: -31.830261
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -2297,7 +2297,7 @@ Trappist:
     yaw: 92.70046
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -2375,7 +2375,7 @@ TwoMoons:
     yaw: 287.83252
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -2531,7 +2531,7 @@ TwoMoonsLow:
     yaw: -112.2424
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
@@ -2609,7 +2609,7 @@ Universe:
     yaw: 86.25293
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@bukkit'
       spawn-limit: '@unset'
       exceptions: []
