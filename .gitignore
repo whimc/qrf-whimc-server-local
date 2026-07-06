@@ -18,8 +18,7 @@ libraries/
 # Paper cache directory
 cache/
 
-# Server JARs (Paper auto-downloads; never commit)
-paper-*.jar
+# Server version files
 versions/
 
 # World lock and backup files
