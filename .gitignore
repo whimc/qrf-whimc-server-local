@@ -177,3 +177,9 @@ worlds/*/serverconfig/
 # Best practice: only stage saves.yml when you've deliberately
 # changed NPC configurations, not on routine commits.
 # ============================================================
+
+# IntelliJ project files
+.idea/
+
+# QRF-Agent LLM context books are not for the public repo
+plugins/WHIMC-QRF-Agent/llm-context/
